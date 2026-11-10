@@ -1,0 +1,18 @@
+filename = 'townstead-0.7.6+1.21.1.jar'
+name = 'Townstead'
+side = 'both'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '0.7.6+1.21.1'
+
+[download]
+hash = 'ca06e8071c8114aa846a2de7feb2cc92e63b1a3ed4ff6c47870f09fb2bdc5bbb9b5fb8ee1c48a63ec830e178d0acd6e78bc900c917d0aa6af8ea24cb6c03dd1a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/A4ZpjU2k/versions/UeECuHLT/townstead-0.7.6%2B1.21.1.jar'
+
+[update.modrinth]
+mod-id = 'A4ZpjU2k'
+version = 'UeECuHLT'

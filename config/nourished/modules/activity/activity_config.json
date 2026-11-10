@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "sprintEnabled": true,
+  "swimEnabled": true,
+  "miningEnabled": true,
+  "combatEnabled": true,
+  "starvationEnabled": true,
+  "miningCostPerBlock": 5.0E-4,
+  "combatCostPerKill": 0.01,
+  "sprintDecayBoost": 4.0E-4,
+  "swimDecayBoost": 4.0E-4,
+  "starvationPenalty": 0.02
+}

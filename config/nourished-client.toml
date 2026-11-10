@@ -1,0 +1,125 @@
+[gui]
+	#Allowed Values: BOTTOM_LEFT, TOP_LEFT, TOP_RIGHT, BOTTOM_RIGHT
+	hudAnchor = "BOTTOM_LEFT"
+	# Default: 0
+	# Range: -2000 ~ 2000
+	hudOffsetX = 0
+	# Default: 0
+	# Range: -2000 ~ 2000
+	hudOffsetY = 0
+	# Default: 60
+	# Range: 40 ~ 120
+	hudBarWidth = 60
+	# Default: 1.0
+	# Range: 0.3 ~ 3.0
+	hudScale = 1.0
+	# Default: 52
+	# Range: 30 ~ 100
+	hudReservedBottom = 52
+	hudDraggable = true
+	dietBarDragEnabled = true
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	hudHideAboveThreshold = 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	hudShowAboveThreshold = 1.0
+	hudShowZeroBars = false
+	hudRevealOnNutrientGain = true
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	hudBackgroundOpacity = 0.8
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	hudBorderOpacity = 1.0
+	# Default: 0.0
+	# Range: -1.0 ~ 1.0
+	hudBackgroundShade = 0.0
+	# Default: 0.0
+	# Range: -1.0 ~ 1.0
+	hudBorderShade = 0.0
+	# Default: 1.0
+	# Range: 0.2 ~ 2.0
+	hudTextBrightness = 1.0
+	# Default: 1.0
+	# Range: 0.2 ~ 2.0
+	hudIconBrightness = 1.0
+	# Default: 1.0
+	# Range: 0.2 ~ 2.0
+	calorieHudTextBrightness = 1.0
+	# Default: 1.0
+	# Range: 0.2 ~ 2.0
+	calorieHudIconBrightness = 1.0
+	# Default: 1.0
+	# Range: 0.2 ~ 2.0
+	activityLogHudTextBrightness = 1.0
+	# Default: 1.0
+	# Range: 0.2 ~ 2.0
+	activityLogHudIconBrightness = 1.0
+	# Default: 1.0
+	# Range: 0.2 ~ 2.0
+	dietTextBrightness = 1.0
+	# Default: 1.0
+	# Range: 0.2 ~ 2.0
+	dietIconBrightness = 1.0
+	hudVerticalLayout = true
+	hudClassicMode = false
+	enableActivityLogHud = true
+	enableCalorieHistoryHud = true
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	calorieHudBackgroundOpacity = 0.8
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	calorieHudBorderOpacity = 1.0
+	# Default: 0.0
+	# Range: -1.0 ~ 1.0
+	calorieHudBackgroundShade = 0.0
+	# Default: 0.0
+	# Range: -1.0 ~ 1.0
+	calorieHudBorderShade = 0.0
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	activityLogHudBackgroundOpacity = 0.8
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	activityLogHudBorderOpacity = 1.0
+	# Default: 0.0
+	# Range: -1.0 ~ 1.0
+	activityLogHudBackgroundShade = 0.0
+	# Default: 0.0
+	# Range: -1.0 ~ 1.0
+	activityLogHudBorderShade = 0.0
+	dietBarOrder = []
+	# Default: 1.0
+	# Range: 0.5 ~ 1.5
+	dietScale = 1.0
+	# Default: 0
+	# Range: -2000 ~ 2000
+	dietOffsetX = 0
+	# Default: 0
+	# Range: -2000 ~ 2000
+	dietOffsetY = 0
+	# Default: 1.0
+	# Range: 0.5 ~ 1.5
+	recentMealsBoxScale = 1.0
+	# Default: 1.0
+	# Range: 0.5 ~ 1.5
+	eatMoreBoxScale = 1.0
+	#Allowed Values: DYNAMIC, HUB
+	dietScreenMode = "DYNAMIC"
+	dietScreenModeMigrationDone = false
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	dietBackgroundOpacity = 0.8
+	showRecentMeals = true
+	showEatMoreOf = true
+	showActiveEffects = true
+	showCaloriesBox = true
+	showBalanceBox = true
+	showDietScreenButton = true
+	recentMealsEatMoreOffsetMigrationDone = false
+	recentMealsEatMoreLocalOffsetMigrationDone = false
+	recentMealsEatMoreLocalSizeMigrationDone = false
+	recentMealsRowHeightMigrationDone = false
+	intakeBreakdownOffsetMigrationDone = false

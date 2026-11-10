@@ -1,0 +1,210 @@
+#Overall behavior profile. v0.1 defaults to cinematic pressure, not hardcore punishment.
+#Allowed Values: CINEMATIC, SMART, HARDCORE
+intensity = "CINEMATIC"
+#Whether tactical decisions are logged when debug commands enable runtime debug.
+debugLogging = false
+
+[mobs]
+	#Enable Hostile Tactics behavior for zombies.
+	zombies = true
+	#Enable Hostile Tactics behavior for skeletons.
+	skeletons = true
+	#Enable Hostile Tactics behavior for piglins.
+	piglins = true
+	#Enable Hostile Tactics behavior for creepers.
+	creepers = true
+	#Enable Hostile Tactics behavior for spiders.
+	spiders = true
+	#Enable Hostile Tactics behavior for pillagers.
+	pillagers = true
+	#Enable Hostile Tactics behavior for endermen.
+	endermen = true
+
+[worldInteraction]
+	#Allow smart mobs to place, break, or move allowed blocks when Minecraft mobGriefing also permits it.
+	active = true
+	#How boldly mobs may interact with blocks. OFF disables all block changes; CINEMATIC keeps changes sparse and readable.
+	#Allowed Values: OFF, CINEMATIC
+	mode = "CINEMATIC"
+	#Minimum ticks between block interactions per mob.
+	# Default: 80
+	# Range: 20 ~ 1200
+	cooldownTicks = 80
+
+[perception]
+	#Default short memory lifetime for last seen/heard signals.
+	# Default: 1800
+	# Range: 20 ~ 3600
+	memoryTtlTicks = 1800
+	#Maximum range for local smart mob perception scans.
+	# Default: 24
+	# Range: 6 ~ 64
+	range = 24
+
+[warbandTactics]
+	#Allow local cross-mob coordination between core hostile mobs.
+	enabled = true
+	#Radius in blocks for local Warband coordination.
+	# Default: 16
+	# Range: 4 ~ 32
+	radius = 16
+	#Ticks that a short Warband focus signal remains useful.
+	# Default: 80
+	# Range: 20 ~ 400
+	signalTtlTicks = 80
+	#Minimum ticks between Warband signal broadcasts per mob.
+	# Default: 40
+	# Range: 10 ~ 400
+	commandCooldownTicks = 40
+	#Minimum total core-trio participants before a Warband signal is emitted.
+	# Default: 2
+	# Range: 2 ~ 8
+	minParticipants = 2
+	#Limit v0.7 Warband coordination to zombies, skeletons, and creepers.
+	coreTrioOnly = true
+
+[zombieTactics]
+	#Allow zombie hordes to spread around visible targets instead of forming a single pile.
+	surround = true
+	#Allow local zombie callers to share honest last seen/heard signals with nearby zombies.
+	roleCoordination = true
+	#Allow blocked or crowded zombies to make short sidesteps without changing vanilla attack goals.
+	antiStuck = true
+	#Radius in blocks for local zombie horde coordination.
+	# Default: 14
+	# Range: 4 ~ 32
+	groupRadius = 14
+	#Minimum ticks between local caller signal shares per zombie.
+	# Default: 60
+	# Range: 20 ~ 400
+	callerCooldownTicks = 60
+	#Minimum ticks between anti-stuck sidesteps per zombie.
+	# Default: 40
+	# Range: 20 ~ 400
+	unstuckCooldownTicks = 40
+	#Preferred side offset in blocks for zombie flankers.
+	# Default: 5
+	# Range: 2 ~ 10
+	flankDistance = 5
+	#Replace vanilla zombie melee combat AI with one Hostile Tactics goal that owns movement, look, and melee timing.
+	replaceVanillaAttackGoal = true
+	#Allow one or two nearby zombies to rally before switching into horde surround at the preferred group size.
+	groupUp = true
+	#Total zombies wanted before full horde surround behavior starts.
+	# Default: 3
+	# Range: 2 ~ 8
+	preferredGroupSize = 3
+	#Radius in blocks for finding nearby zombies to rally with before surrounding.
+	# Default: 18
+	# Range: 4 ~ 32
+	rallyRadius = 18
+
+[skeletonTactics]
+	#Allow skeletons to seek better height, cover, and spacing positions.
+	positioning = true
+	#Allow skeletons that see a target to share local crossfire signals with nearby skeletons.
+	groupCoordination = true
+	#Minimum preferred skeleton combat range in blocks.
+	# Default: 8
+	# Range: 4 ~ 32
+	preferredMinRange = 8
+	#Maximum preferred skeleton combat range in blocks.
+	# Default: 18
+	# Range: 8 ~ 48
+	preferredMaxRange = 18
+	#Visible targets at or inside this distance make skeletons actively back up.
+	# Default: 9
+	# Range: 4 ~ 16
+	keepRangeDistance = 9
+	#Blocks skeletons try to move when keeping range or falling back from a bad position.
+	# Default: 6
+	# Range: 3 ~ 12
+	retreatDistance = 6
+	#Ticks between skeleton vantage and crossfire reposition attempts.
+	# Default: 12
+	# Range: 8 ~ 60
+	repositionPulseTicks = 12
+	#Replace vanilla skeleton bow AI with one Hostile Tactics goal that owns movement, look, and fair bow timing.
+	replaceVanillaBowGoal = true
+	#Radius in blocks for skeleton height and cover position scans.
+	# Default: 10
+	# Range: 4 ~ 20
+	vantageScanRadius = 10
+	#Radius in blocks for local skeleton crossfire coordination.
+	# Default: 14
+	# Range: 4 ~ 32
+	groupRadius = 14
+
+[creeperTactics]
+	#Allow creepers to use cover and darkness for short ambush approach pulses.
+	ambush = true
+	#Replace vanilla creeper swell and melee combat goals with one Hostile Tactics goal that owns movement, look, and fair fuse control.
+	replaceVanillaCombatGoals = true
+	#Allow creepers to stop swelling only when the explosion would clearly be wasted.
+	smartFuse = true
+	#Allow creepers with line of sight to sometimes prioritize moving behind the target's view direction.
+	rearApproach = true
+	#Chance that a visible creeper chooses rear approach during a short role lock. This should stay below 1.0 for readability.
+	# Default: 0.65
+	# Range: 0.0 ~ 1.0
+	rearApproachChance = 0.65
+	#Preferred distance in blocks behind the target's current look direction.
+	# Default: 4
+	# Range: 2 ~ 8
+	rearApproachDistance = 4
+	#Radius in blocks for counting nearby hostile pressure that makes rear approach more relevant.
+	# Default: 10
+	# Range: 4 ~ 24
+	pressureAssistRadius = 10
+	#Minimum ticks between creeper tactical movement pulses.
+	# Default: 60
+	# Range: 20 ~ 400
+	repositionCooldownTicks = 60
+	#Raw light level below which creepers may prefer an ambush approach.
+	# Default: 8
+	# Range: 0 ~ 15
+	ambushLightThreshold = 8
+
+[spiderTactics]
+	#Replace vanilla spider melee combat AI with one Hostile Tactics goal that owns movement, look, and vanilla-like melee timing.
+	replaceVanillaAttackGoal = true
+	#Allow nearby spiders to spread out and pressure as a local pack.
+	packCoordination = true
+	#Allow spiders to use existing fair cobweb trap placement when world interaction rules permit it.
+	webTraps = true
+	#Allow spider packs to move toward cutoff points ahead or beside a visible moving target.
+	cutOffRetreat = true
+	#Radius in blocks for local spider pack coordination.
+	# Default: 12
+	# Range: 4 ~ 32
+	groupRadius = 12
+	#Ticks between spider pack reposition attempts.
+	# Default: 16
+	# Range: 8 ~ 80
+	repositionPulseTicks = 16
+
+[endermanTactics]
+	#Replace vanilla enderman melee combat movement with one Hostile Tactics goal that owns movement, look, and fair disruption timing.
+	replaceVanillaCombatGoal = true
+	#Allow angry or recently attacked endermen trapped in boats or minecarts to dismount after a short readable delay.
+	vehicleEscape = true
+	#Allow endermen to recognize visible low-ceiling shelters and pressure openings instead of walking into impossible spaces.
+	lowCeilingCounter = true
+	#Allow limited low-ceiling disruption when normal mobGriefing and Hostile Tactics world-interaction rules permit it.
+	blockDisruption = true
+	#Minimum readable delay before a trapped enderman escapes a boat or minecart.
+	# Default: 10
+	# Range: 0 ~ 100
+	vehicleEscapeDelayMinTicks = 10
+	#Maximum readable delay before a trapped enderman escapes a boat or minecart.
+	# Default: 30
+	# Range: 0 ~ 200
+	vehicleEscapeDelayMaxTicks = 30
+	#Minimum ticks between Hostile Tactics enderman tactical teleports.
+	# Default: 60
+	# Range: 10 ~ 400
+	teleportCooldownTicks = 60
+	#Radius in blocks for finding fair low-ceiling shelter edge positions.
+	# Default: 4
+	# Range: 2 ~ 8
+	ceilingProbeRadius = 4

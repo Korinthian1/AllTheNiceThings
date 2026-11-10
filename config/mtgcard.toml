@@ -1,0 +1,123 @@
+#Import settings.
+#anyone_can_import: if true, any player can use the custom card importer.
+#ops_can_import: if true, server operators can use the importer.
+#whitelist: if anyone_can_import is false, only these usernames can import.
+[import]
+	#Allow anyone to import custom cards.
+	anyone_can_import = false
+	#Allow server operators to import when public importing is disabled.
+	ops_can_import = true
+	#Usernames allowed to import when anyone_can_import=false.
+	whitelist = []
+
+#Card settings.
+#language: Scryfall language code for downloaded cards.
+#Examples: en, es, fr, de, it, pt, ja, ko, ru, zhs, zht
+[cards]
+	#Preferred Scryfall language code (falls back to English if not available).
+	language = "en"
+
+#Client display settings.
+#card_peek_position: screen edge used by the held-card preview: left or right.
+#cache_multiplayer_art: save art received from multiplayer servers for reuse later.
+[client]
+	#Held-card preview position: left or right.
+	card_peek_position = "right"
+	#When true, card art received from multiplayer servers is saved in the local MTGCard art cache. When false, it is only kept for the current session.
+	cache_multiplayer_art = false
+
+#Pack settings.
+#custom_chances are 0.0 to 1.0 (e.g. 0.10 = 10%).
+#debug: enables verbose server-side booster pack logs.
+#mob_drops: controls booster pack drops from hostile mobs and bosses.
+[pack]
+	#Enable verbose booster pack debug logging on the server.
+	debug = false
+
+	[pack.custom_chances]
+		#Chance for a custom COMMON.
+		common = 0.1
+		#Chance for a custom UNCOMMON.
+		uncommon = 0.05
+		#Chance for a custom wildcard (common/uncommon).
+		wildcard_c_or_u = 0.05
+		#Chance for a custom RARE/MYTHIC.
+		rare_or_mythic = 0.01
+		#Chance for a custom random card.
+		random = 0.1
+		#Chance for a custom random FOIL card.
+		random_foil = 0.08
+		#Chance for a custom basic land.
+		basic_land = 0.15
+		#Chance for a custom token/art slot.
+		token_or_art = 0.02
+
+	#Mob pack drops.
+	#enabled: master toggle for booster pack drops from hostile mobs and the listed bosses.
+	#player_kill_only: if true, only player kills can drop booster packs.
+	#chance: 0.0 to 1.0 chance for normal hostile mobs.
+	#blacklist: entity ids that should never drop booster packs, for example minecraft:zombie.
+	#bosses: guaranteed pack counts for supported bosses, clamped to 2..3.
+	[pack.mob_drops]
+		#Enable booster pack drops from hostile mobs and configured bosses.
+		enabled = false
+		#If true, booster packs only drop when the mob was killed by a player.
+		player_kill_only = true
+		#Chance for a non-boss hostile mob to drop 1 booster pack.
+		chance = 0.01
+		#Entity ids that should never drop booster packs (example: minecraft:zombie).
+		blacklist = []
+
+		#Guaranteed boss pack drops.
+		#Each count is clamped to 2..3 while mob drops are enabled.
+		[pack.mob_drops.bosses]
+			#Guaranteed booster pack count for the Warden.
+			warden_count = 2
+			#Guaranteed booster pack count for the Elder Guardian.
+			elder_guardian_count = 2
+			#Guaranteed booster pack count for the Ender Dragon.
+			ender_dragon_count = 2
+			#Guaranteed booster pack count for the Wither.
+			wither_count = 2
+
+#Dice behavior settings.
+[dice]
+	#When true, normal use throws physical dice. When false, normal use performs the original instant hand-held roll. Sneak-use placement is always available.
+	physical_enabled = false
+
+	#Mob dice drops.
+	#enabled: master toggle for random dice drops from hostile mobs.
+	#player_kill_only: if true, only player kills can drop dice.
+	#chance: 0.0 to 1.0 chance for a hostile mob to drop one random dice item.
+	#blacklist: entity ids that should never drop dice, for example minecraft:zombie.
+	#bosses: guaranteed random dice drop counts for supported bosses, clamped to 0..3.
+	[dice.mob_drops]
+		#Enable random dice drops from hostile mobs.
+		enabled = false
+		#If true, dice only drop when the mob was killed by a player.
+		player_kill_only = true
+		#Chance for a hostile mob to drop 1 random dice item.
+		chance = 0.01
+		#Entity ids that should never drop dice (example: minecraft:zombie).
+		blacklist = []
+
+		#Guaranteed boss dice drops.
+		#Each count is clamped to 0..3 and each dropped item rolls a random dice type.
+		[dice.mob_drops.bosses]
+			#Guaranteed random dice drop count for the Warden.
+			warden_count = 0
+			#Guaranteed random dice drop count for the Elder Guardian.
+			elder_guardian_count = 0
+			#Guaranteed random dice drop count for the Ender Dragon.
+			ender_dragon_count = 0
+			#Guaranteed random dice drop count for the Wither.
+			wither_count = 0
+
+#Price display settings (Large View panel).
+#item: which item is used as the icon.
+#basis: which Scryfall price to use: USD, EUR, or TIX.
+[price]
+	#Item id used as the price icon (ex: minecraft:diamond).
+	item = "minecraft:diamond"
+	#Price basis: USD, EUR, or TIX.
+	basis = "USD"

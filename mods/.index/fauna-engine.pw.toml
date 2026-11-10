@@ -1,0 +1,18 @@
+filename = 'faunaengine-1.1-1.21.1-neoforge.jar'
+name = 'FAUNA Engine'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'faunaengine-1.1+1.21.1-neoforge.jar'
+
+[download]
+hash = '07ab536b1d7e7be40aca1f21ba22ceb9cb954e6b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9501976
+project-id = 1766276
