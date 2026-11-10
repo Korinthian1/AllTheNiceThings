@@ -1,0 +1,18 @@
+[13:42:01] [INIT] KubeJS 2101.7.2-build.381; MC 2101 NeoForge
+[13:42:01] [INIT] Loaded plugins:
+[13:42:01] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[13:42:01] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[13:42:01] [INIT] - com.jesz.createdieselgenerators.compat.kubejs.CDGKubeJSPlugin
+[13:42:01] [INIT] - com.lowdragmc.lowdraglib2.integration.kjs.LDLibKubeJSPlugin
+[13:42:01] [INIT] - yesman.epicfight.compat.kubejs.EpicFightKubeJSPlugin
+[13:42:01] [INIT] - com.momosoftworks.coldsweat.compat.kubejs.KubePlugin
+[13:42:01] [INIT] - velrondevs.botania.integration.kubejs.BotaniaKubeJSPlugin
+[13:42:01] [INIT] - dev.marie.framework.kubejs.MarieKubePlugin
+[13:42:01] [INIT] - dev.gkissel.forgeweave.kubejs.ForgeweaveKubeJSPlugin
+[13:42:01] [INIT] - com.almostreliable.ponderjs.KubePlugin
+[13:42:01] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
+[13:42:01] [INIT] - com.tyzsskills.integration.kubejs.TyzsKubePlugin
+[13:42:01] [INFO] server_scripts:main.js#2: Hello, World! (Loaded server example script)
+[13:42:01] [INFO] Loaded script server_scripts:main.js in 0.001 s
+[13:42:01] [INFO] Loaded 1/1 KubeJS server scripts in 0.04 s with 0 errors and 0 warnings
+[13:42:16] [INFO] Server resource reload complete!

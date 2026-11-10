@@ -18,7 +18,7 @@ version = 3
 # 
 defaultGlobalExecutorParallelismExpression = "default"
 # ================================================================
-# (Default: LOW) Sets the thread priority preset for worker threads
+# (Default: BELOW_NORMAL) Sets the thread priority preset for worker threads
 # 
 # Available presets:
 # - UNSET: do not touch any thread priority settings, restores legacy behavior
@@ -49,7 +49,7 @@ defaultGlobalExecutorParallelismExpression = "default"
 # 
 threadPoolPriorityPreset = "default"
 # ================================================================
-# (Default: 5) Configures the parallelism of global executor
+# (Default: 3) Configures the parallelism of global executor
 globalExecutorParallelism = "default"
 
 [fixes]
@@ -72,6 +72,58 @@ globalExecutorParallelism = "default"
 	#  We has historically been doing this, and this config option allows you to disable this behavior.
 	# 
 	disableLoggingShutdownHook = "default"
+
+[vanillaWorldGenOptimizations]
+	# ================================================================
+	# (Default: true) Whether to use density function compiler to accelerate world generation
+	# 
+	# Density function: https://minecraft.wiki/w/Density_function
+	# 
+	# This functionality compiles density functions from world generation
+	# datapacks (including vanilla generation) to JVM bytecode to increase
+	# performance by allowing JVM JIT to better optimize the code
+	# 
+	# Currently, all functions provided by vanilla are implemented.
+	# Chunk upgrades from pre-1.18 versions are not implemented and will
+	# fall back to the unoptimized version of density functions.
+	# 
+	useDensityFunctionCompiler = "default"
+	# ================================================================
+	# (Default: true) Enables the built-in integrations with other worldgen mods in density function compiler.
+	# 
+	# Depends on vanillaWorldGenOptimizations.useDensityFunctionCompiler
+	# 
+	enableBuiltinDFCIntegrations = "default"
+	# ================================================================
+	# (Default: true) Whether to enable aquifer optimizations to accelerate overworld worldgen
+	# (may cause incompatibility with other mods)
+	optimizeAquifer = "default"
+	# ================================================================
+	# (Default: true) Whether to enable End Biome Cache to accelerate The End worldgen 
+	# This is no longer included in lithium-fabric 
+	# (may cause incompatibility with other mods)
+	# 
+	useEndBiomeCache = "default"
+	# ================================================================
+	# (Default: true) Whether to enable StructureWeightSampler optimizations to accelerate world generation
+	# 
+	# Set to false for the following reasons: 
+	# Incompatible with twilightforest@4.8.3345 (*) (defined in c2me) 
+	optimizeStructureWeightSampler = "default"
+
+	[vanillaWorldGenOptimizations.nativeAcceleration]
+		# ================================================================
+		# (Default: false) Enable the use of AVX512 for native acceleration
+		# 
+		# Currently, AVX512 implementation is generally slower than AVX2 implementations.
+		# If you ever decide to enable this, make sure you have verified that
+		# AVX512 implementations are faster on your machine.
+		# 
+		allowAVX512 = "default"
+		# ================================================================
+		# (Default: true) Enable the use of bundled native libraries to accelerate world generation
+		# 
+		enabled = "default"
 
 [chunkSystem]
 	# ================================================================
@@ -181,62 +233,9 @@ globalExecutorParallelism = "default"
 		# 
 		mode = "default"
 
-	[clientSideConfig.modifyMaxVDConfig]
-		# ================================================================
-		# (Default: true) Whether to modify maximum view distance
-		enabled = "default"
-		# ================================================================
-		# (Default: 66) Max render distance allowed in game options
-		maxViewDistance = "default"
-		# ================================================================
-		# (Default: true) Enable client-side support for extended render distance protocol (c2me:ext_render_distance_v1)
-		# This allows requesting render distances higher than 127 chunks from the server
-		# 
-		# Note: The server must advertise support this protocol for this to work
-		# 
-		enableExtRenderDistanceProtocol = "default"
-
-[vanillaWorldGenOptimizations]
-	# ================================================================
-	# (Default: true) Whether to use density function compiler to accelerate world generation
-	# 
-	# Density function: https://minecraft.wiki/w/Density_function
-	# 
-	# This functionality compiles density functions from world generation
-	# datapacks (including vanilla generation) to JVM bytecode to increase
-	# performance by allowing JVM JIT to better optimize the code
-	# 
-	# Currently, all functions provided by vanilla are implemented.
-	# Chunk upgrades from pre-1.18 versions are not implemented and will
-	# fall back to the unoptimized version of density functions.
-	# 
-	useDensityFunctionCompiler = "default"
-	# ================================================================
-	# (Default: true) Enables the built-in integrations with other worldgen mods in density function compiler.
-	# 
-	# Depends on vanillaWorldGenOptimizations.useDensityFunctionCompiler
-	# 
-	enableBuiltinDFCIntegrations = "default"
-	# ================================================================
-	# (Default: true) Whether to enable aquifer optimizations to accelerate overworld worldgen
-	# (may cause incompatibility with other mods)
-	optimizeAquifer = "default"
-	# ================================================================
-	# (Default: true) Whether to enable End Biome Cache to accelerate The End worldgen 
-	# This is no longer included in lithium-fabric 
-	# (may cause incompatibility with other mods)
-	# 
-	useEndBiomeCache = "default"
-	# ================================================================
-	# (Default: true) Whether to enable StructureWeightSampler optimizations to accelerate world generation
-	# 
-	# Set to false for the following reasons: 
-	# Incompatible with twilightforest@4.8.3345 (*) (defined in c2me) 
-	optimizeStructureWeightSampler = "default"
-
 [noTickViewDistance]
 	# ================================================================
-	# (Default: 15) No-tick view distance max concurrent chunk loads 
+	# (Default: 9) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
 	# ================================================================
@@ -256,13 +255,28 @@ globalExecutorParallelism = "default"
 	# 
 	chunkSendingSpeedMultiplierPercentage = "default"
 
+	[clientSideConfig.modifyMaxVDConfig]
+		# ================================================================
+		# (Default: true) Whether to modify maximum view distance
+		enabled = "default"
+		# ================================================================
+		# (Default: 65) Max render distance allowed in game options
+		maxViewDistance = "default"
+		# ================================================================
+		# (Default: true) Enable client-side support for extended render distance protocol (c2me:ext_render_distance_v1)
+		# This allows requesting render distances higher than 127 chunks from the server
+		# 
+		# Note: The server must advertise support this protocol for this to work
+		# 
+		enableExtRenderDistanceProtocol = "default"
+
 [ioSystem]
+	# ================================================================
+	# (Default: true) Whether to use the optimized implementation of IO system
+	replaceImpl = "default"
 	# ================================================================
 	# (Default: 8192) Soft limit for io worker nbt cache
 	chunkDataCacheSoftLimit = "default"
 	# ================================================================
 	# (Default: 32678) Hard limit for io worker nbt cache
 	chunkDataCacheLimit = "default"
-	# ================================================================
-	# (Default: true) Whether to use the optimized implementation of IO system
-	replaceImpl = "default"

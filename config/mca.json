@@ -268,14 +268,14 @@
   ],
   "professionConversionsMap": {},
   "shaderLocationsMap": {
-    "sirben": "mca:shaders/post/sirben.json",
-    "color_blind": "mca:shaders/post/color_blind.json"
+    "color_blind": "mca:shaders/post/color_blind.json",
+    "sirben": "mca:shaders/post/sirben.json"
   },
   "playerRendererBlacklist": {
-    "firstpersonmod": "arms",
-    "firstperson": "arms",
+    "epicfight": "all",
     "morph": "arms",
-    "epicfight": "all"
+    "firstperson": "arms",
+    "firstpersonmod": "arms"
   },
   "taxesMap": {
     "minecraft:emerald": 1.0
@@ -299,8 +299,8 @@
     "minecraft:ancient_city"
   ],
   "destinyLocationsToTranslationMap": {
-    "minecraft:shipwreck_beached": "destiny.story.sailing",
-    "default": "destiny.story.travelling"
+    "default": "destiny.story.travelling",
+    "minecraft:shipwreck_beached": "destiny.story.sailing"
   },
   "enabledTraits": {
     "mca:rainbow_eyes": true,

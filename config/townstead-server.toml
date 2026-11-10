@@ -114,6 +114,21 @@
 	# Range: 200 ~ 24000
 	cookRequestIntervalTicks = 3600
 
+[butchery]
+	#Allow butchers to slaughter whitelisted livestock inside their shop bounds.
+	enableVillagerSlaughter = true
+	#Permit villager-driven slaughter of humanoid carcasses (villagers, pillagers, witches).
+	#Off by default; the integration does not lean into this even when enabled.
+	allowHumanoidSlaughter = false
+	#Minimum ticks between kills for a single butcher villager.
+	# Default: 2400
+	# Range: 200 ~ 24000
+	villagerSlaughterThrottleTicks = 2400
+	#Add a second Master-tier trade pool with exotic cuts (brain, tongue, kidney, sweetbread).
+	includeExoticTrades = false
+	#When true, the butcher auto-hammers rare / display-worthy heads (evoker, vindicator, pillager, warden, dragon, player, wither skull, ice skull) into their breakdown drops. Off by default so those heads stay whole for trophies and armor.
+	hammerTrophyHeads = false
+
 [caregiving]
 	#Allow adults to feed hungry babies/toddlers/children.
 	enableFeedingYoung = true
@@ -191,18 +206,3 @@
 	debugVillagerSleep = false
 	#Enable verbose Townstead diagnostic logging across subsystems (animation bridge, etc.).
 	debugLogging = false
-
-[butchery]
-	#Allow butchers to slaughter whitelisted livestock inside their shop bounds.
-	enableVillagerSlaughter = true
-	#Permit villager-driven slaughter of humanoid carcasses (villagers, pillagers, witches).
-	#Off by default; the integration does not lean into this even when enabled.
-	allowHumanoidSlaughter = false
-	#Minimum ticks between kills for a single butcher villager.
-	# Default: 2400
-	# Range: 200 ~ 24000
-	villagerSlaughterThrottleTicks = 2400
-	#Add a second Master-tier trade pool with exotic cuts (brain, tongue, kidney, sweetbread).
-	includeExoticTrades = false
-	#When true, the butcher auto-hammers rare / display-worthy heads (evoker, vindicator, pillager, warden, dragon, player, wither skull, ice skull) into their breakdown drops. Off by default so those heads stay whole for trophies and armor.
-	hammerTrophyHeads = false

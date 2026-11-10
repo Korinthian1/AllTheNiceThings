@@ -1,9 +1,0 @@
-{
-	"favorites": [
-		"{data:{count:1,id:\"minecraft:oak_slab\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
-		"{data:{count:1,id:\"minecraft:stripped_cherry_wood\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
-		"{data:{count:1,id:\"minecraft:spruce_wood\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
-	],
-	"hiddenFavorites": [],
-	"displays": []
-}
