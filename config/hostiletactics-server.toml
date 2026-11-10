@@ -1,6 +1,6 @@
 #Overall behavior profile. v0.1 defaults to cinematic pressure, not hardcore punishment.
 #Allowed Values: CINEMATIC, SMART, HARDCORE
-intensity = "CINEMATIC"
+intensity = "HARDCORE"
 #Whether tactical decisions are logged when debug commands enable runtime debug.
 debugLogging = false
 
