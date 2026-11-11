@@ -1,4 +1,4 @@
-[13:42:11] [main/ERROR] [REI] TFREIServerPlugin of TFREIServerPlugin [twilightforest] plugin failed to reloadable-plugin/DisplaySerializerRegistryImpl/!
+[22:03:52] [main/ERROR] [REI] TFREIServerPlugin of TFREIServerPlugin [twilightforest] plugin failed to reloadable-plugin/DisplaySerializerRegistryImpl/!
 java.lang.RuntimeException: Attempted to load class me/shedaniel/rei/api/client/registry/display/DisplayCategory for invalid dist DEDICATED_SERVER
 	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.common.asm.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:60)
 	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:94)

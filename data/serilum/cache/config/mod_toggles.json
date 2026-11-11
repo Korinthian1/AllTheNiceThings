@@ -1,5 +1,9 @@
 {
 	"starterkit": {
+		"collective_list": true,
+		"mod_config": true
+	},
+	"villagernames": {
 		"collective_list": true
 	}
 }
