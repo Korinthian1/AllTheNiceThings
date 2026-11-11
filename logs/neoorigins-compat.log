@@ -1,9 +1,0 @@
-NeoOrigins Compat Translation Log — 2026-11-11T00:23:37.458413576
----------------------------------------------------------
-[PASS] origins:water_vision_night_vision  (origins:toggle_night_vision -> neoorigins:night_vision)
-[SKIP] origins:water_vision_clarity  (origins:action_over_time — no equivalent in Route A, requires Route B)
-[PASS] neoorigins:class_merchant_lucky_trader_luck  (multiple sub-power (native format))
-[PASS] neoorigins:class_merchant_lucky_trader_discount  (multiple sub-power (native format))
-[PASS] origins:water_vision_clarity  (origins:action_over_time -> Route B compiled)
----------------------------------------------------------
-Summary: 4 passed, 0 failed, 1 skipped
