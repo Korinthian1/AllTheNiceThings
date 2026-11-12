@@ -1,19 +1,19 @@
-[00:23:14] [INIT] KubeJS 2101.7.2-build.381; MC 2101 NeoForge
-[00:23:14] [INIT] Loaded plugins:
-[00:23:14] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
-[00:23:14] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
-[00:23:14] [INIT] - com.jesz.createdieselgenerators.compat.kubejs.CDGKubeJSPlugin
-[00:23:14] [INIT] - com.lowdragmc.lowdraglib2.integration.kjs.LDLibKubeJSPlugin
-[00:23:14] [INIT] - yesman.epicfight.compat.kubejs.EpicFightKubeJSPlugin
-[00:23:14] [INIT] - com.momosoftworks.coldsweat.compat.kubejs.KubePlugin
-[00:23:14] [INIT] - velrondevs.botania.integration.kubejs.BotaniaKubeJSPlugin
-[00:23:14] [INIT] - dev.marie.framework.kubejs.MarieKubePlugin
-[00:23:14] [INIT] - dev.gkissel.forgeweave.kubejs.ForgeweaveKubeJSPlugin
-[00:23:14] [INIT] - com.cyberday1.neoorigins.compat.kubejs.plugin.NeoOriginsKubeJSPlugin
-[00:23:14] [INIT] - com.almostreliable.ponderjs.KubePlugin
-[00:23:14] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
-[00:23:14] [INIT] - com.tyzsskills.integration.kubejs.TyzsKubePlugin
-[00:23:14] [INFO] server_scripts:main.js#2: Hello, World! (Loaded server example script)
-[00:23:14] [INFO] Loaded script server_scripts:main.js in 0.001 s
-[00:23:14] [INFO] Loaded 1/1 KubeJS server scripts in 0.086 s with 0 errors and 0 warnings
-[00:23:59] [INFO] Server resource reload complete!
+[08:31:28] [INIT] KubeJS 2101.7.2-build.381; MC 2101 NeoForge
+[08:31:28] [INIT] Loaded plugins:
+[08:31:28] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[08:31:28] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[08:31:28] [INIT] - com.jesz.createdieselgenerators.compat.kubejs.CDGKubeJSPlugin
+[08:31:28] [INIT] - com.lowdragmc.lowdraglib2.integration.kjs.LDLibKubeJSPlugin
+[08:31:28] [INIT] - yesman.epicfight.compat.kubejs.EpicFightKubeJSPlugin
+[08:31:28] [INIT] - com.momosoftworks.coldsweat.compat.kubejs.KubePlugin
+[08:31:28] [INIT] - velrondevs.botania.integration.kubejs.BotaniaKubeJSPlugin
+[08:31:28] [INIT] - dev.marie.framework.kubejs.MarieKubePlugin
+[08:31:28] [INIT] - dev.gkissel.forgeweave.kubejs.ForgeweaveKubeJSPlugin
+[08:31:28] [INIT] - com.cyberday1.neoorigins.compat.kubejs.plugin.NeoOriginsKubeJSPlugin
+[08:31:28] [INIT] - com.almostreliable.ponderjs.KubePlugin
+[08:31:28] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
+[08:31:28] [INIT] - com.tyzsskills.integration.kubejs.TyzsKubePlugin
+[08:31:29] [INFO] server_scripts:main.js#2: Hello, World! (Loaded server example script)
+[08:31:29] [INFO] Loaded script server_scripts:main.js in 0.001 s
+[08:31:29] [INFO] Loaded 1/1 KubeJS server scripts in 0.104 s with 0 errors and 0 warnings
+[08:32:07] [INFO] Server resource reload complete!
