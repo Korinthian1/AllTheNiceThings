@@ -16,16 +16,16 @@ updateIntervalTicks = 20
 	#Default item id to convert fully spoiled food into.
 	#Per-item / per-tag overrides take priority (see rottenOverrides).
 	#Example: minecraft:rotten_flesh
-	rottenReplacement = "minecraft:rotten_flesh"
+	rottenReplacement = ""
 	#Per-item or per-tag replacement when fully spoiled. Format: id_or_tag=item_id
 	#Prefix tags with #. Example: minecraft:bread=minecraft:rotten_flesh, #c:foods/fruit=minecraft:poisonous_potato
 	rottenOverrides = []
 
 [nutritionDecay]
 	#Reduce nutrition (hunger restored) as the food advances through stages.
-	decayNutrition = true
+	decayNutrition = false
 	#Reduce saturation modifier as the food advances through stages.
-	decaySaturation = true
+	decaySaturation = false
 	#Compounding nutrition multiplier applied per stage advanced (0.8 = −20% per stage).
 	#Stage 0 = 100%, stage 1 = 80%, stage 2 = 64%, etc.
 	# Default: 0.8
