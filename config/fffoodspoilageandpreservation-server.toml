@@ -61,7 +61,7 @@ updateIntervalTicks = 20
 	#Design default ambient is ~1.0; other containers are slower.
 	# Default: 1.0
 	# Range: 0.0 ~ 10.0
-	playerInventoryRate = 1.0
+	playerInventoryRate = 0.6
 	#Fallback rate for generic containers (chests, hoppers, shulker boxes, etc.).
 	#Design default: 0.9
 	# Default: 0.9

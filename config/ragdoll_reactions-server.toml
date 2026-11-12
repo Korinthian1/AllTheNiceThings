@@ -208,7 +208,7 @@ enabled = true
 	#Hard fall landing reactions for mobs.
 	[mobs.fall]
 		#When true, landing from a high fall ragdolls the mob.
-		enabled = true
+		enabled = false
 		#Minimum fall damage taken required to trigger a mob ragdoll.
 		# Default: 4.0
 		# Range: 0.0 ~ 1024.0
@@ -221,7 +221,7 @@ enabled = true
 	#Heavy melee/projectile hit reactions for mobs.
 	[mobs.damage]
 		#When true, taking a big hit knocks the mob into a ragdoll away from the attacker.
-		enabled = true
+		enabled = false
 		#Fraction of the mob's remaining health that a hit must deal to trigger a ragdoll.
 		# Default: 0.3333333333333333
 		# Range: 0.0 ~ 1.0
@@ -234,7 +234,7 @@ enabled = true
 	#Explosion reactions for mobs (vanilla and Create Big Cannons).
 	[mobs.explosion]
 		#When true, explosions can ragdoll nearby mobs.
-		enabled = true
+		enabled = false
 		#Minimum explosion power required to trigger a mob ragdoll.
 		# Default: 1.0
 		# Range: 0.0 ~ 256.0
@@ -251,7 +251,7 @@ enabled = true
 	#Sublevel collision reactions for mobs.
 	[mobs.impact]
 		#When true, a sublevel hitting a mob hard enough will ragdoll it.
-		enabled = true
+		enabled = false
 		#Minimum relative impact speed (m/s) between the sublevel and the mob required to trigger a ragdoll.
 		# Default: 4.0
 		# Range: 0.1 ~ 256.0
