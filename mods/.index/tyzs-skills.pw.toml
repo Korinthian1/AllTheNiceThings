@@ -1,0 +1,18 @@
+filename = "Tyz's skills 6.4.2 - 1.21.1.jar"
+name = "Tyz's Skills"
+side = 'both'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '6.4.2'
+
+[download]
+hash = '070abb0665dee3a442b57a9957eed206adf4b510e66ce648ba3e68098fa1cd4e570af01950df0be3163eaf0469d84b79e1afc8d3c44924399f074584084b55f3'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/4rKNK5O2/versions/OUmvFAPs/Tyz%27s skills 6.4.2 - 1.21.1.jar'
+
+[update.modrinth]
+mod-id = '4rKNK5O2'
+version = 'OUmvFAPs'

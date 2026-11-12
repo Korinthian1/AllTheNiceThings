@@ -1,0 +1,18 @@
+filename = 'hostile_tactics-neoforge-1.21.1-0.10.1.jar'
+name = 'Hostile Tactics'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '0.9.1'
+
+[download]
+hash = '3245a9a700615dfee4666b0b262ad2f38d65993484c42372802f5afa347843083381bc91e24e1b690321d30f9f116f854f3d347a5358fd5a67e91872c97be062'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/gvkYNFPn/versions/p6MKUmpy/hostile_tactics-neoforge-1.21.1-0.10.1.jar'
+
+[update.modrinth]
+mod-id = 'gvkYNFPn'
+version = 'p6MKUmpy'

@@ -1,18 +1,18 @@
-filename = 'diegesis-neoforge-1.21.1-1.0.0-beta.6.jar'
+filename = 'diegesis-neoforge-1.21.1-1.0.0-beta.7.jar'
 name = 'Diegesis'
 side = 'server'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'Diegesis 1.0.0-beta.6+1.21.1 (NeoForge)'
+x-prismlauncher-version-number = 'Diegesis 1.0.0-beta.7+1.21.1 (NeoForge)'
 
 [download]
-hash = 'c1bd113ca21860ded881cd423c429c8e1e05bbd8'
+hash = '9f35216f49d3f7c0189bab4261f4a63f1d0ceb84'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 9544161
+file-id = 9551298
 project-id = 1790227
