@@ -65,3 +65,4 @@
 {"epoch_ms":1794503933529,"boot_id":"9d57c757","stage":"MIXIN_APPLY","status":"POST_APPLY","details":{"priority":"1000","config":"create_radar.mixins.json","target":"com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption","mixin":"com.happysg.radar.mixin.CBCATMountedHeavyAutocannonContraptionMixin","phase":"DEFAULT"}}
 {"epoch_ms":1794503943169,"boot_id":"9d57c757","stage":"COMMON_SETUP","status":"QUEUED","details":{}}
 {"epoch_ms":1794503943612,"boot_id":"9d57c757","stage":"COMMON_SETUP","status":"COMPLETE","details":{}}
+{"epoch_ms":1794503944302,"boot_id":"9d57c757","stage":"MOD_LOAD","status":"COMPLETE","details":{}}
