@@ -1,0 +1,206 @@
+#Master toggle for food spoilage.
+enabled = true
+#Allow food with the same spoilage stage and modifiers to stack.
+#Keeps maximum spoilage progress and the oldest spoilage timestamp.
+#Freeze/thaw progress and its timestamp are averaged by transferred item count.
+#False requires identical spoilage and temperature histories.
+mergeSameStageFood = true
+#How often (in ticks) player inventories are scanned for spoilage updates.
+#Higher = better performance, lower = more accurate continuous spoilage.
+#Example: 20 = once per second.
+# Default: 20
+# Range: 1 ~ 200
+updateIntervalTicks = 20
+
+[stages]
+	#Default item id to convert fully spoiled food into.
+	#Per-item / per-tag overrides take priority (see rottenOverrides).
+	#Example: minecraft:rotten_flesh
+	rottenReplacement = "minecraft:rotten_flesh"
+	#Per-item or per-tag replacement when fully spoiled. Format: id_or_tag=item_id
+	#Prefix tags with #. Example: minecraft:bread=minecraft:rotten_flesh, #c:foods/fruit=minecraft:poisonous_potato
+	rottenOverrides = []
+
+[nutritionDecay]
+	#Reduce nutrition (hunger restored) as the food advances through stages.
+	decayNutrition = true
+	#Reduce saturation modifier as the food advances through stages.
+	decaySaturation = true
+	#Compounding nutrition multiplier applied per stage advanced (0.8 = −20% per stage).
+	#Stage 0 = 100%, stage 1 = 80%, stage 2 = 64%, etc.
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	nutritionPerStage = 0.8
+	#Compounding saturation multiplier applied per stage advanced (0.9 = −10% per stage).
+	# Default: 0.9
+	# Range: 0.0 ~ 1.0
+	saturationPerStage = 0.9
+	#Floor for the nutrition multiplier (never goes below this).
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	minNutritionFactor = 0.05
+	#Floor for the saturation multiplier (never goes below this).
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	minSaturationFactor = 0.0
+	#With FF Nutrition installed, scale the diet (nutrition category) credit of eaten food by the
+	#same decay, weighing hunger and saturation as FF Nutrition does. Off = spoiled food counts fully.
+	scaleFFNutrition = true
+
+[itemOverrides]
+	#Item ids or tags that never spoil.
+	#Prefix tags with #. Defaults: golden foods, rotten flesh, chorus fruit.
+	neverSpoil = ["minecraft:golden_apple", "minecraft:enchanted_golden_apple", "minecraft:golden_carrot", "minecraft:rotten_flesh", "minecraft:chorus_fruit", "minecraft:honey_bottle", "#c:foods/golden", "#c:foods/honey", "#fffoodspoilageandpreservation:never_spoil"]
+	#Per-item or per-tag spoil rate multipliers. Format: id_or_tag=multiplier
+	#multiplier 0 = never spoil, 0.5 = half speed, 2.0 = double speed.
+	#Defaults: dried kelp spoils 2× slower. Honey is in the never_spoil tag.
+	rateOverrides = ["minecraft:dried_kelp=0.5"]
+
+[containers]
+	#Spoil rate multiplier while food is in a player inventory (including hotbar).
+	#Design default ambient is ~1.0; other containers are slower.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	playerInventoryRate = 1.0
+	#Fallback rate for generic containers (chests, hoppers, shulker boxes, etc.).
+	#Design default: 0.9
+	# Default: 0.9
+	# Range: 0.0 ~ 10.0
+	defaultContainerRate = 0.9
+	#Spoil rate multiplier for food inside barrels. Design default: 0.6
+	# Default: 0.6
+	# Range: 0.0 ~ 10.0
+	barrelRate = 0.6
+	#Spoil rate multiplier for food inside ender chests. 0 fully prevents spoilage.
+	# Default: 0.0
+	# Range: 0.0 ~ 10.0
+	enderChestRate = 0.0
+	#Spoil rate multiplier for food inside bundle-style containers
+	#(vanilla bundles, backpacks, pouches detected via tags).
+	#Design default: 0.8
+	# Default: 0.8
+	# Range: 0.0 ~ 10.0
+	bundleRate = 0.8
+	#Item tags that identify bundle / backpack / pouch items whose contents use bundleRate.
+	#Also includes the vanilla bundle item by default via code.
+	#Example: #curios:back, #accessories:belt, #c:pouches
+	bundleItemTags = ["#curios:back", "#accessories:belt", "#c:pouches", "#c:tools/bundle"]
+
+[modifiers]
+	#Enable the datapack modifier system (cured, candied, frozen, custom, etc.).
+	#Modifier definitions live in data/<namespace>/fffoodspoilageandpreservation/modifier/.
+	enabled = true
+
+[temperature]
+	#Enable ambient temperature influence on spoil rate and automatic Frozen.
+	enabled = true
+	#World / container ambient temperature (MC units) at or below which food can freeze.
+	#Used for containers, biome fallback and Tough As Nails ambient proxies. Vanilla biomes ≈ −0.5…2.0. Example: 0.15
+	# Default: 0.15
+	# Range: -10.0 ~ 10.0
+	freezeThreshold = 0.15
+	#Ticks the food must stay at/below freeze threshold before auto-freeze modifiers apply.
+	#Example: 6000 = 5 minutes.
+	# Default: 6000
+	# Range: 1 ~ 72000
+	freezeDurationTicks = 6000
+	#World / container ambient temperature (MC units) at or above which frozen food thaws.
+	# Default: 0.5
+	# Range: -10.0 ~ 10.0
+	thawThreshold = 0.5
+	#Ticks the food must stay at/above thaw threshold before auto-thaw modifiers are removed.
+	#Example: 2000 = 100 seconds.
+	# Default: 2000
+	# Range: 1 ~ 72000
+	thawDurationTicks = 2000
+	#Extra spoil-rate multiplier applied in cold environments (below freeze threshold).
+	#Values < 1 slow spoilage. Example: 0.7
+	# Default: 0.7
+	# Range: 0.0 ~ 2.0
+	coldRateBonus = 0.7
+	#Extra spoil-rate multiplier applied in hot environments (above thaw threshold).
+	#Values > 1 accelerate spoilage. Example: 1.4
+	# Default: 1.4
+	# Range: 0.0 ~ 5.0
+	hotRateBonus = 1.4
+
+	[temperature.coldsweat]
+		#Cold Sweat BODY temperature (−100…100) at or below which food in the player inventory freezes.
+		#Only used when Cold Sweat is loaded. Example: −20
+		# Default: -20.0
+		# Range: -150.0 ~ 150.0
+		bodyFreezeThreshold = -20.0
+		#Cold Sweat BODY temperature (−100…100) at or above which Frozen food in the player inventory thaws.
+		#Only used when Cold Sweat is loaded. Example: 25
+		# Default: 25.0
+		# Range: -150.0 ~ 150.0
+		bodyThawThreshold = 25.0
+		#Ticks a fueled Cold Sweat Icebox needs to freeze food in its slots (the freeze rate).
+		#Lower = faster. Independent of the boiler thaw time. Only used when Cold Sweat is loaded.
+		#Example: 1200 = 60 seconds.
+		# Default: 1200
+		# Range: 1 ~ 72000
+		iceboxFreezeDurationTicks = 1200
+		#Ticks a fueled Cold Sweat Boiler needs to thaw frozen food in its slots (the thaw rate).
+		#Lower = faster. Independent of the icebox freeze time. Only used when Cold Sweat is loaded.
+		#Example: 400 = 20 seconds.
+		# Default: 400
+		# Range: 1 ~ 72000
+		boilerThawDurationTicks = 400
+
+[freshBuffs]
+	#Allow temporary positive effects when eating food in a stage with a buff_chance (the first stage by default).
+	enabled = true
+	#Extra chance added per point of (effective) nutrition. Example: 0.01 * 8 = +8%.
+	# Default: 0.01
+	# Range: 0.0 ~ 0.1
+	nutritionFactor = 0.01
+	#Extra chance added per point of (effective) saturation.
+	# Default: 0.02
+	# Range: 0.0 ~ 0.1
+	saturationFactor = 0.02
+	#Extra chance added per player experience level (capped by maxLevel).
+	# Default: 0.002
+	# Range: 0.0 ~ 0.05
+	levelFactor = 0.002
+	#Player levels above this no longer increase the fresh-buff chance.
+	# Default: 60
+	# Range: 1 ~ 1000
+	maxLevel = 60
+	#Default weighted buff table, used by stages that define no buffs of their own.
+	#Format: effect_id;duration_ticks;amplifier;weight
+	#Example: minecraft:regeneration;100;0;10  (Regeneration I for 5s, weight 10)
+	buffs = ["minecraft:regeneration;100;0;10", "minecraft:absorption;200;0;5", "minecraft:speed;200;0;8"]
+
+[nearSpoiledDebuffs]
+	#Allow temporary negative effects when eating food in a stage with a debuff_chance (the last stage by default).
+	enabled = true
+	#Chance reduction per player experience level (capped by maxLevel).
+	#Example: 0.004 * 50 = −20% chance at level 50.
+	# Default: 0.004
+	# Range: 0.0 ~ 0.05
+	levelReduction = 0.004
+	#Player levels above this no longer reduce the near-spoiled debuff chance.
+	# Default: 60
+	# Range: 1 ~ 1000
+	maxLevel = 60
+	#Default weighted debuff table, used by stages that define no debuffs of their own.
+	#Format: effect_id;duration_ticks;amplifier;weight
+	debuffs = ["minecraft:hunger;200;0;15", "minecraft:poison;100;0;8", "minecraft:nausea;150;0;10", "minecraft:weakness;200;0;6"]
+
+[rawDebuffs]
+	#Chance for temporary negative effects when eating items considered 'raw'.
+	enabled = true
+	#Base chance (0.0–1.0) to apply a random raw-food debuff.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	baseChance = 0.25
+	#Item ids or tags treated as raw food. Prefix tags with #.
+	#Example: #c:foods/raw_meat, minecraft:potato, #c:foods/raw_fish
+	rawItems = ["#c:foods/raw_meat", "#c:foods/raw_fish", "minecraft:potato", "minecraft:beef", "minecraft:porkchop", "minecraft:chicken", "minecraft:mutton", "minecraft:rabbit", "minecraft:cod", "minecraft:salmon"]
+	#Weighted debuff table for raw food. Format: effect_id;duration_ticks;amplifier;weight
+	debuffs = ["minecraft:hunger;300;0;12", "minecraft:poison;80;0;5"]
+
+[DEBUG]
+	#Enable extra server-side debug logging for spoilage updates.
+	debugLogging = false

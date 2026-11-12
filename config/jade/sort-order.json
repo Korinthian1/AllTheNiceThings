@@ -55,6 +55,8 @@
   "minecraft:zombie_villager": null,
   "productivebees:bee": null,
   "productivebees:solitary_nest": null,
+  "sable_player_ragdoll:mob_ragdoll_part_data": null,
+  "sable_player_ragdoll:ragdoll_part_data": null,
   "thirst:fluid_storage": null,
   "thirst:water_cauldron_fluid": null,
   "toms_storage:inventory_config": null,
