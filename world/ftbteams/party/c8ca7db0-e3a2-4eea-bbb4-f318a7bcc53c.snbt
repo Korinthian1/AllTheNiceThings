@@ -1,0 +1,26 @@
+{
+	id: "c8ca7db0-e3a2-4eea-bbb4-f318a7bcc53c"
+	type: "party"
+	owner: "b9f611a8-9d1a-4c78-bf73-fc6e70496a19"
+	ranks: {
+		b9f611a8-9d1a-4c78-bf73-fc6e70496a19: "owner"
+		a2a12298-b68c-4da6-86a3-239e186a5df6: "member"
+		85a511b6-9253-4fdd-8747-4ab89dbd9197: "invited"
+	}
+	properties: {
+		"ftbteams:display_name": "Battle Buddies"
+		"ftbteams:description": ""
+		"ftbteams:color": "#FF5984"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+		"ftbteams:team_stages": [ ]
+		"ftbteams:lives_remaining": 0
+	}
+	message_history: [
+		{ from: "00000000-0000-0000-0000-000000000000", date: 1794447216605L, text: "{\"translate\":\"ftbteams.message.joined\",\"with\":[\"MJH569\"],\"color\":\"yellow\"}" }
+		{ from: "b9f611a8-9d1a-4c78-bf73-fc6e70496a19", date: 1794449210994L, text: "{\"translate\":\"ftbteams.message.invited\",\"with\":[{\"text\":\"Antcentral\",\"color\":\"yellow\"}],\"color\":\"green\"}" }
+		{ from: "b9f611a8-9d1a-4c78-bf73-fc6e70496a19", date: 1794449210994L, text: "{\"translate\":\"ftbteams.message.invited\",\"with\":[{\"text\":\"dopestengie1\",\"color\":\"yellow\"}],\"color\":\"green\"}" }
+		{ from: "00000000-0000-0000-0000-000000000000", date: 1794449213723L, text: "{\"translate\":\"ftbteams.message.joined\",\"with\":[\"dopestengie1\"],\"color\":\"green\"}" }
+	]
+	extra: { }
+}

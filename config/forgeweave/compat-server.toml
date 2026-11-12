@@ -1,0 +1,237 @@
+#Compat toggles: one per integration with another mod. An integration that is off
+#answers nothing and adds nothing, and that is all it does -- gear that already
+#carries a fusion upgrade or an installed module keeps every component it has and
+#works again the moment the toggle comes back. Nothing here can lose saved state.
+#
+#Material presets are deliberately absent: they are never toggled, because a preset
+#that vanishes takes a material out of a world that was built with it.
+#
+#Every option in this folder is numeric where it can be, rather than a constant in
+#Java, so a pack can retune an integration without a fork.
+[compat]
+	#If true, Forgeweave's Draconic Evolution fusion upgrade ladder works: Draconic
+	#Evolution's fusion crafting multiblock accepts a Forgeweave tool as a catalyst and
+	#raises the rung's modifier. With this off no upgrade row matches, so the multiblock
+	#finds no Forgeweave recipe. Upgrades already on a tool are untouched and keep working.
+	#Note this does not remove the four fusion-metal ingot recipes: those are Draconic
+	#Evolution's own recipe type, so a datapack is what drops them.
+	draconicFusion = true
+	#If true, Forgeweave gear made of a fusion metal hosts Draconic Evolution modules:
+	#Draconic Evolution's module screen opens on it and its modules act on the tool. With
+	#this off no Forgeweave stack is a host, so the screen does not open and no module
+	#effect applies. Modules already installed stay on the stack, inert, and act again the
+	#moment the toggle comes back.
+	draconicModules = true
+	#If true, the Jade and WTHIT block overlays show Forgeweave's own lines: a casting
+	#table's cooling progress, a smeltery's molten contents, and the mining level a block
+	#needs beside the level of the tool being held. With this off both overlays still work,
+	#they just carry no Forgeweave line.
+	overlays = true
+	#If true, EMI shows Forgeweave's recipe categories (part crafting, tool assembly,
+	#the smeltery, casting, modifiers and the rest) through Forgeweave's own EMI plugin. With
+	#this off the plugin registers nothing. EMI's JEI bridge does not fill the gap: it skips
+	#any mod that ships its own EMI plugin, so with JEI installed too EMI still shows no
+	#Forgeweave category. Takes effect the next time EMI reloads, such as on rejoining.
+	emiPlugin = true
+	#If true, traits registered from a KubeJS startup script through ForgeweaveEvents.traits
+	#take effect. With this off a scripted trait resolves to nothing, so a material naming
+	#one behaves as if the id had no implementation. Built-in and datapack traits are
+	#unaffected either way.
+	kubejsTraits = true
+	#If true, Create's goggle overlays (stress readouts, fluid contents, goggle tooltips)
+	#fire for a helmet carrying the Forgeweave goggles modifier. With this off Create's
+	#overlays ignore Forgeweave helmets; the modifier stays on the helmet either way.
+	createGoggles = true
+	#If true, Forgeweave gear takes Apotheosis gem sockets: the socketed modifier can be
+	#applied, a gem can be seated in a socket, and a seated gem's bonus reaches the tool.
+	#With this off no socket is added and no gem is seated, and a seated gem grants nothing.
+	#The gems already in a stack's sockets stay there and grant again when this comes back.
+	apotheosisSockets = true
+	#If true, the energized tank heats a smeltery to its fuel sample's temperature by
+	#burning Forge Energy, and its crafting recipe resolves. With this off the block goes
+	#dormant: it contributes no heat and cannot be crafted, but one already placed still
+	#loads and keeps its sample, its buffer and its overdrive setting.
+	energizedTank = true
+	#How much Forge Energy an energized tank's buffer holds.
+	# Default: 100000
+	# Range: > 1
+	energizedTankBuffer = 100000
+	#An energized tank spends base x temperature / divisor Forge Energy per melt tick, so
+	#a hotter fuel sample costs proportionally more. This is the base; a smeltery melt tick
+	#runs once every four game ticks.
+	# Default: 100
+	# Range: > 0
+	energizedTankRfPerMeltTickBase = 100
+	#The divisor in the cost above. At the default of 1000 the base is what one melt tick
+	#costs a tank imitating a fuel that burns at 1000 degrees.
+	# Default: 1000
+	# Range: > 1
+	energizedTankTemperatureDivisor = 1000
+	#What pressing an energized tank's overdrive button multiplies its energy cost by.
+	# Default: 2.0
+	# Range: 1.0 ~ 100.0
+	energizedTankOverdriveCost = 2.0
+	#What pressing an energized tank's overdrive button multiplies the smeltery's melt
+	#progress by. Equal to the cost factor means overdrive is neither a discount nor a
+	#penalty, only a choice to go faster.
+	# Default: 2.0
+	# Range: 1.0 ~ 100.0
+	energizedTankOverdriveProgress = 2.0
+	#If true, the surgebound modifier (Powah's crystal ladder) can be applied at
+	#the Tool Station. A tool already carrying it keeps the modifier either way --
+	#off makes its bonus inert rather than revoking a level already spent on it.
+	powahModifiers = true
+	#Fraction of the tool's own FE capacity surgebound adds per level, levels I-IV.
+	# Default: 0.25
+	# Range: 0.0 ~ 10.0
+	surgeboundCapacityPerLevel = 0.25
+	#Fraction of the tool's own base mining speed surgebound adds per level, levels I-IV.
+	# Default: 0.05
+	# Range: 0.0 ~ 10.0
+	surgeboundMiningSpeedPerLevel = 0.05
+	#What the nitro step (level V) multiplies surgeboundCapacityPerLevel by, instead
+	#of adding a fifth flat step.
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	surgeboundNitroCapacityMultiplier = 2.0
+	#What the nitro step (level V) multiplies surgeboundMiningSpeedPerLevel by,
+	#instead of adding a fifth flat step.
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	surgeboundNitroMiningSpeedMultiplier = 2.0
+	#If true, Forgeweave's Occultism integration works: a ritual binds a spirit into a
+	#tool and grants it that ritual's modifier, Occultism's crusher spirits grind
+	#Forgeweave ores, and its mining spirits can return them. With this off the ritual
+	#recipe type is not registered and none of the three sets of rows load. A tool that
+	#already carries a ritual's modifier keeps it and keeps its effect.
+	occultismRituals = true
+	#If true, Forgeweave tools and armor that a loot table hands out arrive assembled, which
+	#is what makes them eligible for Apotheosis loot affixes: an unassembled tool is a
+	#category Apotheosis declines. Apotheosis decides affixability by its own predicate over
+	#the item and offers no seam a mod can veto at runtime, so this is the only part of that
+	#path Forgeweave owns. Off never discards anything: Forgeweave neither reads nor writes
+	#affix state, so a tool already carrying affixes keeps every component either way. Has no
+	#effect at all without Apotheosis installed.
+	apotheosisAffixes = true
+	#If true, Forgeweave gear may be enchanted at Apotheosis' enchanting table. This does not
+	#replace allowVanillaEnchanting: enchanting needs both, and with either one off the table
+	#and the anvil refuse the item. Nothing is stripped when it is off, and an already
+	#enchanted tool keeps its enchantments and keeps applying them. An enchantment never costs
+	#a modifier slot. Has no effect without Apothic Enchanting installed, which is the mod
+	#that owns the table.
+	apotheosisEnchanting = true
+	#If true, Forgeweave's generated Create recipes resolve: the heated mixer for
+	#the basic alloys, crushing wheels for Track B ores, and the mechanical press for
+	#ingot-to-plate. With this off none of those rows match; nothing Forgeweave owns
+	#changes either way.
+	createRecipes = true
+	#If true, Forgeweave's generated Immersive Engineering recipes resolve: the arc
+	#furnace for the basic alloys, the crusher for Track B ores, and the metal press
+	#for ingot-to-plate. With this off none of those rows match.
+	immersiveEngineeringRecipes = true
+	#If true, Forgeweave's generated EnderIO recipes resolve: the alloy smelter for
+	#the basic alloys and the SAG mill for Track B ores. With this off neither resolves.
+	enderIoRecipes = true
+	#If true, Forgeweave's molten fluids read as Powah thermo generator heat sources.
+	#With this off a thermo generator no longer burns them; Powah's own heat sources
+	#for its own fluids are untouched either way.
+	powahHeatSources = true
+	#If true, modifiers a datapack defines through forgeweave:modifier_definition take
+	#effect. With this off a pack-defined modifier resolves to nothing, so a tool carrying
+	#one behaves as if the id had no implementation. The modifier stays on the tool either
+	#way, with its level, and acts again the moment the toggle comes back. Built-in
+	#modifiers are unaffected either way.
+	modifierDefinitions = true
+	#If true, Track B's ore family generates in Allthemodium's mining dimension
+	#(allthemodium:mining). The tag-based tier equivalence itself (Forgeweave tools
+	#mining Allthemodium ore and Allthemodium tools mining Forgeweave ore) is not
+	#covered by this toggle: it is existence-gated only, the same as every material
+	#preset (D-M8-5), because a live config value has no site in a static tag file.
+	allthemodiumTiers = true
+	#If true, the Track A presets generated from Elementarium's c:ingots/* tag family
+	#register. Unlike every other material preset (D-M8-5 says presets are never
+	#toggled) these are generated rather than authored, so this is the way out of a
+	#bad interpolation that is not hand-editing generated JSON.
+	elementariumMaterials = true
+	#If true, Forgeweave gear carrying an atomic_matter_alloy part is a Mekanism module
+	#container: its Modification Station installs MekaTool and MekaSuit modules into it and
+	#Forgeweave's own hooks run their effects. Off makes the container inert rather than
+	#absent -- every effect goes neutral and the module screen stops opening, but a tool that
+	#already carries installed modules keeps Mekanism's own component untouched and works
+	#again the moment this returns. The atomic_matter_alloy material itself is never toggled.
+	#Has no effect at all without Mekanism installed.
+	mekanismModules = true
+	#Forge Energy one block break costs while a Mekanism excavation, blasting or vein mining
+	#module is installed and switched on. Paid out of the tool's own buffer, per block, so an
+	#area swing costs one block's price for each block it takes. A buffer that cannot pay it
+	#leaves the module doing nothing rather than working for free.
+	# Default: 400
+	# Range: > 0
+	mekanismEnergyPerBlock = 400
+	#Forge Energy a worn piece spends per point of damage its Mekanism absorption modules
+	#take off an incoming blow. An absorption the buffer cannot pay for in full does not
+	#happen at all, rather than happening at a discount.
+	# Default: 1000
+	# Range: > 0
+	mekanismEnergyPerAbsorbedPoint = 1000
+	#How many extra blocks one Mekanism vein mining swing breaks at most. A second bound on
+	#top of Mekanism's own traversal limit, so a generous Mekanism config cannot stall a tick.
+	# Default: 64
+	# Range: 0 ~ 4096
+	mekanismVeinMiningMaxBlocks = 64
+	#How many of Mekanism's own atomic alloys the Antiprotonic Nucleosynthesizer turns into
+	#one atomic_matter_alloy ingot. Baked into the generated recipe, so changing it needs a
+	#datagen run rather than a reload.
+	# Default: 1
+	# Range: 1 ~ 64
+	mekanismNucleosynthesizingAlloyCount = 1
+	#How much antimatter, in mB, that craft spends. Mekanism's own hardest nucleosynthesizing
+	#recipe spends 5.
+	# Default: 8
+	# Range: 1 ~ 10000
+	mekanismNucleosynthesizingAntimatter = 8
+	#How long, in ticks, that craft takes. Mekanism's own longest is 1250.
+	# Default: 2000
+	# Range: 1 ~ 100000
+	mekanismNucleosynthesizingDuration = 2000
+	#Forge Energy one jump of a Mekanism teleportation unit costs, paid out of the tool's
+	#own buffer. A buffer that cannot pay it leaves the right-click doing whatever the tool
+	#would have done anyway.
+	# Default: 1000
+	# Range: > 0
+	mekanismEnergyPerTeleport = 1000
+	#Forge Energy a Mekanism jetpack or gravitational modulating unit spends per tick, paid
+	#out of the worn piece's own buffer. An empty buffer grounds the module rather than
+	#flying for free.
+	# Default: 50
+	# Range: > 0
+	mekanismEnergyPerFlightTick = 50
+	#How far, in blocks, a Mekanism teleportation unit will move the player. Mekanism's own
+	#tool reaches 10.
+	# Default: 10
+	# Range: 1 ~ 256
+	mekanismTeleportMaxDistance = 10
+	#The fraction of incoming radiation one level of the rayward modifier blocks. Four
+	#levels at the default 0.25 come to exactly 1.0, a piece that shields completely; the
+	#total is clamped there, so raising this only makes the earlier levels worth more.
+	#Rayward is a Forgeweave modifier and follows the modifiers content toggle, not
+	#mekanismModules -- without Mekanism installed nothing asks it for a number.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	radiationShieldingPerLevel = 0.25
+	#If true, Forgeweave works with Mystical Agriculture: the Track B ores and brimspar
+	#get resource crops, and gear built from a Mystical Agriculture essence metal is
+	#accepted by Mystical Agriculture's own Tinkering Table so augments can be installed.
+	#A tool with any part made of a Mystical Agriculture or Agradditions material also
+	#makes the Wither and the Ender Dragon drop Cognizant Dust.
+	#
+	#Off makes the augment seam inert rather than absent: a Forgeweave tool still goes into
+	#the Tinkering Table's first slot, but it offers no augment slot, so nothing can be
+	#installed and nothing already installed does anything. Augment data is Mystical
+	#Agriculture's own and Forgeweave neither copies nor clears it, so a stack that already
+	#carries some keeps it and works again the moment this comes back. No restart needed.
+	#
+	#Whether the crops exist is decided when registries freeze, so adding or removing
+	#Mystical Agriculture itself needs a restart -- installing a mod always does. The
+	#material presets are unaffected either way: they are never toggled.
+	mysticalAgricultureAugments = true

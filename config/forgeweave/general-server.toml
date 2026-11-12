@@ -1,0 +1,44 @@
+#Forgeweave gameplay options: the upstream 1.12 options that have a behavior
+#site here, each keeping upstream's own default.
+#
+#This folder replaces the single config/forgeweave-server.toml. An existing copy of
+#that file was read once and its values split across these four files, and it was
+#then renamed to forgeweave-server.toml.migrated; nothing a pack had tuned was reset.
+#
+#Two standing rules for everything added here from Milestone 8 on. Everything numeric
+#is a config value, not a constant in Java. And every integration with another mod
+#beyond a material preset gets its own toggle in compat-server.toml -- material
+#presets are never toggled, because a preset that vanishes takes a material out of a
+#world that was built with it.
+#
+#No option in this folder needs a restart: each is read at the moment its behavior
+#runs, so editing a file and reloading is enough.
+[general]
+	#If true, Forgeweave tools can be enchanted at the vanilla enchanting table.
+	allowVanillaEnchanting = false
+	#Allows reusing patterns in the Stencil Table to turn them into other patterns.
+	reuseStencils = true
+	#Pattern and Part chests keep their inventory when harvested.
+	chestsKeepInventory = true
+	#Players who enter the world for the first time get the guide book.
+	spawnWithBook = true
+	#How many ingots one ore melts into at the top smeltery core tier. Lower tiers scale
+	#down from this by their own yield multiplier. Cannot go below 1.
+	# Default: 2.0
+	# Range: 1.0 ~ 64.0
+	oreToIngotRatio = 2.0
+	#Allows the creation of molten obsidian in the smeltery from lava and water.
+	obsidianAlloy = true
+	#Adds a crafting-table recipe that turns 3 gravel into a flint.
+	addFlintRecipe = true
+	#Crafting nine slime balls of mixed colours gives a pink slime block instead of
+	#a vanilla slime block.
+	matchVanillaSlimeblock = false
+	#Allows single-use clay casts to be moulded from molten clay and cast through.
+	enableClayCasts = true
+	#Allows the Part Builder to craft parts from materials that are meant to be cast
+	#in the Smeltery (every metal). Off by default: a metal part comes from a cast.
+	craftCastableMaterials = false
+	#Registry names or block-entity classnames that a station's side-inventory panel
+	#should never connect to. Mainly for compatibility.
+	craftingStationBlacklist = []

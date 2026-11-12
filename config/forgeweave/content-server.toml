@@ -1,0 +1,58 @@
+#Content family toggles. A family that is off cannot be assembled or obtained,
+#its recipes are hidden from JEI and its items from the creative tab, and the
+#parts, patterns and casts that serve only it become unobtainable too. Nothing is
+#unregistered: items already in a world keep working, and every option here takes
+#effect the moment it is reloaded.
+[content]
+	#If true, harvest tools (pickaxe, shovel, hatchet, mattock, kama, hammer, excavator,
+	#lumber axe, scythe, vein hammer) can be assembled and obtained.
+	harvestTools = true
+	#If true, melee weapons (broadsword, longsword, rapier, battlesign, frying pan, dagger,
+	#battleaxe, scimitar, katana, warmace, cleaver) can be assembled and obtained.
+	meleeWeapons = true
+	#If true, ranged weapons (shortbow, longbow, crossbow, shuriken, arrows) can be assembled
+	#and obtained.
+	rangedWeapons = true
+	#If true, armor (helmet, chestplate, leggings and boots, plate and heavy) can be assembled
+	#and obtained.
+	armor = true
+	#If true, gadgets (the Slimesling, in every colour) can be crafted and obtained.
+	gadgets = true
+	#If true, the smeltery melts, alloys and casts. With this off its blocks stay placeable
+	#but no melting, alloying or casting recipe resolves, and the smeltery GUI says so.
+	smeltery = true
+	#Multiplies the smeltery's per-tick melt progress. 1.0 matches unmodified melt speed;
+	#2.0 halves the number of ticks a melt takes, 0.5 doubles it. Does not change what
+	#temperature a recipe requires, only how fast progress accumulates once melting.
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	meltSpeedMultiplier = 1.0
+	#If true, modifiers, embossments and fortifications can be applied to tools at the Tool
+	#Station. Repair and part exchange are unaffected, and anything already on a tool keeps
+	#working either way -- only applying a new one is refused.
+	modifiers = true
+	#If true, a part exchange at the Tool Station or Tool Forge hands the part it displaced
+	#back to the player. This is the default and matches every existing world. Set to false
+	#for upstream 1.12's own behaviour, where the displaced part is simply lost. Either way,
+	#an upgrade a partner mod's module container had to give up because the new part set
+	#can no longer carry it is unaffected and always comes back.
+	returnExchangedParts = true
+	#If true, tools and armor gain XP from being used and earn a modifier slot per level.
+	#With this off nothing accrues XP and no level-up message, sound or tooltip appears.
+	#Slots already earned keep counting either way, so no modifier already applied is lost.
+	toolLeveling = true
+	#How much XP a tool's first level costs. The area-of-effect tools (hammer, excavator,
+	#lumber axe, scythe, vein hammer) cost nine times this, since they break nine blocks
+	#at a time.
+	# Default: 500
+	# Range: > 1
+	defaultBaseXP = 500
+	#How much the XP cost multiplies per level, minimum 2. Note that the first two levels
+	#both cost the base amount; the multiplier starts applying from the third.
+	# Default: 2.0
+	# Range: 2.0 ~ 100.0
+	levelMultiplier = 2.0
+	#The highest level a tool can reach. Zero or lower means no limit.
+	# Default: -1
+	# Range: > -1
+	maximumLevels = -1
