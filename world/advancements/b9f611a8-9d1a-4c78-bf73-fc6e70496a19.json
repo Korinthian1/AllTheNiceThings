@@ -847,6 +847,7 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "bread": "2026-11-10 23:51:11 -0800",
+      "cooked_chicken": "2026-11-11 18:24:16 -0800",
       "cooked_beef": "2026-11-11 00:32:59 -0800",
       "cooked_salmon": "2026-11-11 17:02:23 -0800"
     },
@@ -6373,9 +6374,9 @@
     },
     "done": true
   },
-  "born_in_chaos_v1:big_boy": {
+  "minecraft:adventure/sleep_in_bed": {
     "criteria": {
-      "big_boy_0": "2026-11-11 16:36:16 -0800"
+      "slept_in_bed": "2026-11-11 16:17:11 -0800"
     },
     "done": true
   },
@@ -6385,147 +6386,27 @@
     },
     "done": true
   },
-  "minecraft:adventure/sleep_in_bed": {
-    "criteria": {
-      "slept_in_bed": "2026-11-11 16:17:11 -0800"
-    },
-    "done": true
-  },
-  "born_in_chaos_v1:fighting_nightmares": {
-    "criteria": {
-      "fighting_nightmares_0": "2026-11-11 16:31:20 -0800"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/cherry_planks": {
     "criteria": {
       "has_log": "2026-11-11 16:22:21 -0800"
     },
     "done": true
   },
-  "betterend:recipes/decorations/lucernia_hanging_sign": {
+  "natures_spirit:recipes/building_blocks/sugi_planks": {
     "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
+      "has_logs": "2026-11-11 16:22:21 -0800"
     },
     "done": true
   },
-  "bookofdragons:root": {
+  "twilightforest:recipes/building_blocks/stonecutting/cherry_log/hollow_cherry_log": {
     "criteria": {
-      "has_book": "2026-11-11 16:57:15 -0800"
+      "has_block": "2026-11-11 16:22:21 -0800"
     },
     "done": true
   },
-  "betternether:recipes/decorations/nether_reed_hanging_sign": {
+  "minecraft:recipes/building_blocks/cherry_wood": {
     "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_limestone_brick_slab_from_stone_types_limestone_stonecutting": {
-    "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/chert_slab": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "betternether:recipes/decorations/willow_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/oak_slab": {
-    "criteria": {
-      "has_planks": "2026-11-11 17:05:35 -0800"
-    },
-    "done": true
-  },
-  "betternether:recipes/decorations/stalagnate_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_limestone_wall_from_stone_types_limestone_stonecutting": {
-    "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/chert_stairs_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "bookofdragons:sworn_you_had_teeth": {
-    "criteria": {
-      "ask": "2026-11-11 16:31:27 -0800"
-    },
-    "done": true
-  },
-  "archers:recipes/combat/archer_armor_head": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/oak_door": {
-    "criteria": {
-      "has_planks": "2026-11-11 17:05:35 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/decorations/polished_chert_wall_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "wizards:recipes/combat/wizard_robe_legs": {
-    "criteria": {
-      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
-    },
-    "done": true
-  },
-  "betterend:recipes/decorations/lacugrove_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "betterend:recipes/decorations/umbrella_tree_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/polished_cut_limestone_wall_from_stone_types_limestone_stonecutting": {
-    "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
-    },
-    "done": true
-  },
-  "wizards:recipes/combat/wizard_robe_chest": {
-    "criteria": {
-      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_limestone_bricks_from_stone_types_limestone_stonecutting": {
-    "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
-    },
-    "done": true
-  },
-  "paladins:recipes/combat/priest_robe_head": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
+      "has_log": "2026-11-11 16:22:21 -0800"
     },
     "done": true
   },
@@ -6535,69 +6416,63 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/gold_nugget_from_smelting": {
-    "criteria": {
-      "has_golden_shovel": "2026-11-11 16:38:49 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/chert_bricks_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "betterend:recipes/decorations/dragon_tree_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_limestone_from_stone_types_limestone_stonecutting": {
-    "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
-    },
-    "done": true
-  },
-  "betterend:recipes/decorations/mossy_glowshroom_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/chert_brick_slab_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "betterend:recipes/decorations/end_lotus_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/building_blocks/organic_compost_from_rotten_flesh": {
-    "criteria": {
-      "has_rotten_flesh": "2026-11-11 16:37:22 -0800"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/stick_from_bamboo_item": {
     "criteria": {
       "has_bamboo": "2026-11-11 16:22:54 -0800"
     },
     "done": true
   },
-  "hybrid_aquatic:recipes/building_blocks/oak_raft_from_oak_planks": {
+  "minecraft:recipes/decorations/scaffolding": {
     "criteria": {
-      "has_oak_planks": "2026-11-11 17:05:35 -0800"
+      "has_bamboo": "2026-11-11 16:22:54 -0800"
     },
     "done": true
   },
-  "forgeweave:recipes/misc/graveyard_soil": {
+  "minecraft:recipes/building_blocks/bamboo_block": {
     "criteria": {
-      "has_rotten_flesh": "2026-11-11 16:37:22 -0800"
+      "has_bamboo": "2026-11-11 16:22:54 -0800"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/squid_ink_pasta": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-11 16:23:32 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/black_dye": {
+    "criteria": {
+      "has_ink_sac": "2026-11-11 16:23:32 -0800"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_limestone_brick_slab_from_stone_types_limestone_stonecutting": {
+    "criteria": {
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_limestone_wall_from_stone_types_limestone_stonecutting": {
+    "criteria": {
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/polished_cut_limestone_wall_from_stone_types_limestone_stonecutting": {
+    "criteria": {
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_limestone_bricks_from_stone_types_limestone_stonecutting": {
+    "criteria": {
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_limestone_from_stone_types_limestone_stonecutting": {
+    "criteria": {
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
     },
     "done": true
   },
@@ -6613,39 +6488,9 @@
     },
     "done": true
   },
-  "paladins:recipes/combat/priest_robe_legs": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "betternether:recipes/decorations/nether_mushroom_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "bookofdragons:everything_we_know": {
-    "criteria": {
-      "fact": "2026-11-11 16:31:26 -0800"
-    },
-    "done": true
-  },
   "create:recipes/building_blocks/polished_cut_limestone_from_stone_types_limestone_stonecutting": {
     "criteria": {
       "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/drying/monster_jerky": {
-    "criteria": {
-      "has_meat": "2026-11-11 16:37:22 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/polished_chert_stairs_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
     },
     "done": true
   },
@@ -6655,99 +6500,9 @@
     },
     "done": true
   },
-  "natures_spirit:recipes/decorations/chert_tile_wall_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "born_in_chaos_v1:dark_creator": {
-    "criteria": {
-      "dark_creator_0": "2026-11-11 16:32:58 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/sugi_planks": {
-    "criteria": {
-      "has_logs": "2026-11-11 16:22:21 -0800"
-    },
-    "done": true
-  },
-  "born_in_chaos_v1:the_wind_darkening": {
-    "criteria": {
-      "the_wind_darkening_0": "2026-11-11 16:31:23 -0800"
-    },
-    "done": true
-  },
-  "butchery:recipes/oakdisplayrecipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-11-11 17:05:35 -0800"
-    },
-    "done": true
-  },
-  "sophisticatedstorage:recipes/misc/oak_storage_connector": {
-    "criteria": {
-      "has_oak_planks": "2026-11-11 17:05:35 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/blue_dye": {
-    "criteria": {
-      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
-    },
-    "done": true
-  },
-  "born_in_chaos_v1:lifeturnedouttobeacomedy": {
-    "criteria": {
-      "lifeturnedouttobeacomedy_0": "2026-11-11 16:36:40 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/chert_tiles_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/polished_chert_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "born_in_chaos_v1:horror_underthe_mantle": {
-    "criteria": {
-      "horror_underthe_mantle_0": "2026-11-11 16:37:00 -0800"
-    },
-    "done": true
-  },
-  "wizards:recipes/combat/wizard_robe_feet": {
-    "criteria": {
-      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/oak_stairs": {
-    "criteria": {
-      "has_planks": "2026-11-11 17:05:35 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/oak_fence": {
-    "criteria": {
-      "has_planks": "2026-11-11 17:05:35 -0800"
-    },
-    "done": true
-  },
   "create:recipes/building_blocks/small_limestone_brick_wall_from_stone_types_limestone_stonecutting": {
     "criteria": {
       "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/polished_chert": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
     },
     "done": true
   },
@@ -6763,66 +6518,6 @@
     },
     "done": true
   },
-  "natures_spirit:recipes/decorations/chert_brick_wall_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/building_blocks/stonecutting/cherry_log/hollow_cherry_log": {
-    "criteria": {
-      "has_block": "2026-11-11 16:22:21 -0800"
-    },
-    "done": true
-  },
-  "apotheosis:progression/summit": {
-    "criteria": {
-      "rare_legs": "2026-11-11 16:41:11 -0800"
-    },
-    "done": false
-  },
-  "betternether:recipes/decorations/anchor_tree_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "goety:goety/kill_a_warlock": {
-    "criteria": {
-      "kill_a_warlock": "2026-11-11 16:32:26 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/chert_brick_stairs_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/scaffolding": {
-    "criteria": {
-      "has_bamboo": "2026-11-11 16:22:54 -0800"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/building_blocks/stonecutting/oak_log/hollow_oak_log": {
-    "criteria": {
-      "has_block": "2026-11-11 16:58:40 -0800"
-    },
-    "done": true
-  },
-  "betternether:recipes/decorations/gloomwood_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "minecraft:adventure/shoot_arrow": {
-    "criteria": {
-      "shot_arrow": "2026-11-11 16:53:47 -0800"
-    },
-    "done": true
-  },
   "create:recipes/building_blocks/polished_cut_limestone_stairs_from_stone_types_limestone_stonecutting": {
     "criteria": {
       "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
@@ -6835,15 +6530,105 @@
     },
     "done": true
   },
-  "paladins:recipes/combat/priest_robe_chest": {
+  "create:recipes/building_blocks/limestone_from_stone_types_limestone_stonecutting": {
     "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
     },
     "done": true
   },
-  "born_in_chaos_v1:dark_metallurgy": {
+  "create:recipes/building_blocks/limestone_pillar_from_stone_types_limestone_stonecutting": {
     "criteria": {
-      "dark_metallurgy_0": "2026-11-11 16:37:22 -0800"
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/small_limestone_brick_stairs_from_stone_types_limestone_stonecutting": {
+    "criteria": {
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/small_limestone_brick_slab_from_stone_types_limestone_stonecutting": {
+    "criteria": {
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_limestone_slab_from_stone_types_limestone_stonecutting": {
+    "criteria": {
+      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/chert_slab": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/chert_stairs_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/decorations/polished_chert_wall_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/chert_bricks_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/chert_brick_slab_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/polished_chert_stairs_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/decorations/chert_tile_wall_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/chert_tiles_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/polished_chert_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/polished_chert": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/decorations/chert_brick_wall_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/chert_brick_stairs_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
     },
     "done": true
   },
@@ -6859,13 +6644,25 @@
     },
     "done": true
   },
-  "born_in_chaos_v1:good_demoman": {
+  "natures_spirit:recipes/building_blocks/polished_chert_slab_from_chert_stonecutting": {
     "criteria": {
-      "good_demoman_0": "2026-11-11 16:35:25 -0800"
+      "has_chert": "2026-11-11 16:28:22 -0800"
     },
     "done": true
   },
-  "natures_spirit:recipes/building_blocks/polished_chert_slab_from_chert_stonecutting": {
+  "natures_spirit:recipes/building_blocks/chiseled_chert_from_chert_stonecutting": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/chert_stairs": {
+    "criteria": {
+      "has_chert": "2026-11-11 16:28:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/chert_slab_from_chert_stonecutting": {
     "criteria": {
       "has_chert": "2026-11-11 16:28:22 -0800"
     },
@@ -6877,39 +6674,105 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/oak_planks": {
+  "graveyard:graveyard/kill_graveyard_mob": {
     "criteria": {
-      "has_logs": "2026-11-11 16:58:40 -0800"
+      "skeleton_creeper": "2026-11-11 16:30:04 -0800"
     },
     "done": true
   },
-  "natures_spirit:recipes/building_blocks/pink_sandstone": {
+  "betterend:recipes/decorations/lucernia_hanging_sign": {
     "criteria": {
-      "has_sand": "2026-11-11 16:37:26 -0800"
+      "has_chain": "2026-11-11 16:31:02 -0800"
     },
     "done": true
   },
-  "goety:goety/kill_a_wraith": {
+  "betternether:recipes/decorations/nether_reed_hanging_sign": {
     "criteria": {
-      "kill_a_wraith": "2026-11-11 16:32:01 -0800"
+      "has_chain": "2026-11-11 16:31:02 -0800"
     },
     "done": true
   },
-  "born_in_chaos_v1:junior_summoner": {
+  "betternether:recipes/decorations/willow_hanging_sign": {
     "criteria": {
-      "junior_summoner_0": "2026-11-11 16:32:34 -0800"
+      "has_chain": "2026-11-11 16:31:02 -0800"
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/dog_food": {
+  "betternether:recipes/decorations/stalagnate_hanging_sign": {
     "criteria": {
-      "has_any_ingredient": "2026-11-11 16:37:22 -0800"
+      "has_chain": "2026-11-11 16:31:02 -0800"
     },
     "done": true
   },
-  "create:recipes/building_blocks/limestone_from_stone_types_limestone_stonecutting": {
+  "archers:recipes/combat/archer_armor_head": {
     "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/lacugrove_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbrella_tree_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "paladins:recipes/combat/priest_robe_head": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/dragon_tree_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/mossy_glowshroom_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/end_lotus_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "paladins:recipes/combat/priest_robe_legs": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betternether:recipes/decorations/nether_mushroom_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betternether:recipes/decorations/anchor_tree_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betternether:recipes/decorations/gloomwood_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "paladins:recipes/combat/priest_robe_chest": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
     },
     "done": true
   },
@@ -6919,15 +6782,381 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/oak_trapdoor": {
+  "betternether:recipes/decorations/rubeus_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/helix_tree_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "archers:recipes/combat/archer_armor_chest": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "archers:recipes/combat/archer_armor_legs": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "archers:recipes/combat/archer_armor_feet": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "paladins:recipes/combat/priest_robe_feet": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betternether:recipes/decorations/wart_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betternether:recipes/decorations/nether_sakura_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/tenanea_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/jellyshroom_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betternether:recipes/decorations/gloomwood_dark_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/pythadendron_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "betternether:recipes/decorations/mushroom_fir_hanging_sign": {
+    "criteria": {
+      "has_chain": "2026-11-11 16:31:02 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:fighting_nightmares": {
+    "criteria": {
+      "fighting_nightmares_0": "2026-11-11 16:31:20 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:the_wind_darkening": {
+    "criteria": {
+      "the_wind_darkening_0": "2026-11-11 16:31:23 -0800"
+    },
+    "done": true
+  },
+  "bookofdragons:everything_we_know": {
+    "criteria": {
+      "fact": "2026-11-11 16:31:26 -0800"
+    },
+    "done": true
+  },
+  "bookofdragons:sworn_you_had_teeth": {
+    "criteria": {
+      "ask": "2026-11-11 16:31:27 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:exorcism": {
+    "criteria": {
+      "exorcism_0": "2026-11-11 16:31:35 -0800"
+    },
+    "done": true
+  },
+  "goety:goety/kill_a_wraith": {
+    "criteria": {
+      "kill_a_wraith": "2026-11-11 16:32:01 -0800"
+    },
+    "done": true
+  },
+  "goety:goety/kill_a_warlock": {
+    "criteria": {
+      "kill_a_warlock": "2026-11-11 16:32:26 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:junior_summoner": {
+    "criteria": {
+      "junior_summoner_0": "2026-11-11 16:32:34 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:dark_creator": {
+    "criteria": {
+      "dark_creator_0": "2026-11-11 16:32:58 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:good_demoman": {
+    "criteria": {
+      "good_demoman_0": "2026-11-11 16:35:25 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:big_boy": {
+    "criteria": {
+      "big_boy_0": "2026-11-11 16:36:16 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:lifeturnedouttobeacomedy": {
+    "criteria": {
+      "lifeturnedouttobeacomedy_0": "2026-11-11 16:36:40 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:horror_underthe_mantle": {
+    "criteria": {
+      "horror_underthe_mantle_0": "2026-11-11 16:37:00 -0800"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/building_blocks/organic_compost_from_rotten_flesh": {
+    "criteria": {
+      "has_rotten_flesh": "2026-11-11 16:37:22 -0800"
+    },
+    "done": true
+  },
+  "forgeweave:recipes/misc/graveyard_soil": {
+    "criteria": {
+      "has_rotten_flesh": "2026-11-11 16:37:22 -0800"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/monster_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-11 16:37:22 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:dark_metallurgy": {
+    "criteria": {
+      "dark_metallurgy_0": "2026-11-11 16:37:22 -0800"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/dog_food": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-11 16:37:22 -0800"
+    },
+    "done": true
+  },
+  "mynethersdelight:recipes/building_blocks/crafting/letios_compost_from_rotten_flesh": {
+    "criteria": {
+      "has_rotten_flesh": "2026-11-11 16:37:22 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/pink_sandstone": {
+    "criteria": {
+      "has_sand": "2026-11-11 16:37:26 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/kaolin_bricks": {
+    "criteria": {
+      "has_kaolin": "2026-11-11 16:38:22 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_shovel": "2026-11-11 16:38:49 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_shovel": "2026-11-11 16:38:49 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_feather": "2026-11-11 16:39:02 -0800"
+    },
+    "done": true
+  },
+  "apotheosis:progression/summit": {
+    "criteria": {
+      "rare_legs": "2026-11-11 16:41:11 -0800"
+    },
+    "done": false
+  },
+  "wizards:recipes/combat/wizard_robe_legs": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
+    },
+    "done": true
+  },
+  "wizards:recipes/combat/wizard_robe_chest": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/blue_dye": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
+    },
+    "done": true
+  },
+  "wizards:recipes/combat/wizard_robe_feet": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
+    },
+    "done": true
+  },
+  "wizards:recipes/combat/wizard_robe_head": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lapis_block": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2026-11-11 16:48:15 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/packed_ice": {
+    "criteria": {
+      "has_ice": "2026-11-11 16:53:19 -0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/ol_betsy": {
+    "criteria": {
+      "shot_crossbow": "2026-11-11 16:53:46 -0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/shoot_arrow": {
+    "criteria": {
+      "shot_arrow": "2026-11-11 16:53:47 -0800"
+    },
+    "done": true
+  },
+  "bookofdragons:root": {
+    "criteria": {
+      "has_book": "2026-11-11 16:57:15 -0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2026-11-11 16:57:15 -0800"
+    },
+    "done": true
+  },
+  "bookofdragons:meet_hooligan": {
+    "criteria": {
+      "traded_with_hooligan": "2026-11-11 16:57:15 -0800"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/oak_log/hollow_oak_log": {
+    "criteria": {
+      "has_block": "2026-11-11 16:58:40 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2026-11-11 16:58:40 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2026-11-11 16:58:40 -0800"
+    },
+    "done": true
+  },
+  "paladins:recipes/combat/wooden_great_hammer": {
+    "criteria": {
+      "has_oak_log": "2026-11-11 16:58:40 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab": {
     "criteria": {
       "has_planks": "2026-11-11 17:05:35 -0800"
     },
     "done": true
   },
-  "create:recipes/building_blocks/limestone_pillar_from_stone_types_limestone_stonecutting": {
+  "minecraft:recipes/redstone/oak_door": {
     "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
+      "has_planks": "2026-11-11 17:05:35 -0800"
+    },
+    "done": true
+  },
+  "hybrid_aquatic:recipes/building_blocks/oak_raft_from_oak_planks": {
+    "criteria": {
+      "has_oak_planks": "2026-11-11 17:05:35 -0800"
+    },
+    "done": true
+  },
+  "butchery:recipes/oakdisplayrecipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-11-11 17:05:35 -0800"
+    },
+    "done": true
+  },
+  "sophisticatedstorage:recipes/misc/oak_storage_connector": {
+    "criteria": {
+      "has_oak_planks": "2026-11-11 17:05:35 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-11 17:05:35 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_fence": {
+    "criteria": {
+      "has_planks": "2026-11-11 17:05:35 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-11 17:05:35 -0800"
     },
     "done": true
   },
@@ -6955,93 +7184,9 @@
     },
     "done": true
   },
-  "natures_spirit:recipes/building_blocks/chiseled_chert_from_chert_stonecutting": {
-    "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
-    },
-    "done": true
-  },
-  "betternether:recipes/decorations/rubeus_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cherry_wood": {
-    "criteria": {
-      "has_log": "2026-11-11 16:22:21 -0800"
-    },
-    "done": true
-  },
-  "betterend:recipes/decorations/helix_tree_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "archers:recipes/combat/archer_armor_chest": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/small_limestone_brick_stairs_from_stone_types_limestone_stonecutting": {
-    "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/brewing/fermented_spider_eye": {
-    "criteria": {
-      "has_spider_eye": "2026-11-11 16:48:15 -0800"
-    },
-    "done": true
-  },
-  "natures_spirit:recipes/building_blocks/kaolin_bricks": {
-    "criteria": {
-      "has_kaolin": "2026-11-11 16:38:22 -0800"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/small_limestone_brick_slab_from_stone_types_limestone_stonecutting": {
-    "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
-    },
-    "done": true
-  },
-  "born_in_chaos_v1:exorcism": {
-    "criteria": {
-      "exorcism_0": "2026-11-11 16:31:35 -0800"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/oak_pressure_plate": {
     "criteria": {
       "has_planks": "2026-11-11 17:05:35 -0800"
-    },
-    "done": true
-  },
-  "archers:recipes/combat/archer_armor_legs": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "wizards:recipes/combat/wizard_robe_head": {
-    "criteria": {
-      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/bamboo_block": {
-    "criteria": {
-      "has_bamboo": "2026-11-11 16:22:54 -0800"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_limestone_slab_from_stone_types_limestone_stonecutting": {
-    "criteria": {
-      "has_stone_types_limestone": "2026-11-11 16:27:58 -0800"
     },
     "done": true
   },
@@ -7051,57 +7196,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/lapis_block": {
-    "criteria": {
-      "has_lapis_lazuli": "2026-11-11 16:47:30 -0800"
-    },
-    "done": true
-  },
-  "archers:recipes/combat/archer_armor_feet": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_nugget_from_blasting": {
-    "criteria": {
-      "has_golden_shovel": "2026-11-11 16:38:49 -0800"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/squid_ink_pasta": {
-    "criteria": {
-      "has_any_ingredient": "2026-11-11 16:23:32 -0800"
-    },
-    "done": true
-  },
-  "minecraft:adventure/ol_betsy": {
-    "criteria": {
-      "shot_crossbow": "2026-11-11 16:53:46 -0800"
-    },
-    "done": true
-  },
-  "paladins:recipes/combat/priest_robe_feet": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/black_dye": {
-    "criteria": {
-      "has_ink_sac": "2026-11-11 16:23:32 -0800"
-    },
-    "done": true
-  },
   "butchery:recipes/oakcounterrecipe": {
     "criteria": {
       "has_ingredient_0": "2026-11-11 17:05:35 -0800"
-    },
-    "done": true
-  },
-  "betternether:recipes/decorations/wart_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
     },
     "done": true
   },
@@ -7117,63 +7214,9 @@
     },
     "done": true
   },
-  "graveyard:graveyard/kill_graveyard_mob": {
-    "criteria": {
-      "skeleton_creeper": "2026-11-11 16:30:04 -0800"
-    },
-    "done": true
-  },
-  "betternether:recipes/decorations/nether_sakura_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/oak_wood": {
-    "criteria": {
-      "has_log": "2026-11-11 16:58:40 -0800"
-    },
-    "done": true
-  },
   "sophisticatedstorage:recipes/misc/oak_barrel": {
     "criteria": {
       "has_oak_plank": "2026-11-11 17:05:35 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/arrow": {
-    "criteria": {
-      "has_feather": "2026-11-11 16:39:02 -0800"
-    },
-    "done": true
-  },
-  "betterend:recipes/decorations/tenanea_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "betterend:recipes/decorations/jellyshroom_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "paladins:recipes/combat/wooden_great_hammer": {
-    "criteria": {
-      "has_oak_log": "2026-11-11 16:58:40 -0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/packed_ice": {
-    "criteria": {
-      "has_ice": "2026-11-11 16:53:19 -0800"
-    },
-    "done": true
-  },
-  "minecraft:adventure/trade": {
-    "criteria": {
-      "traded": "2026-11-11 16:57:15 -0800"
     },
     "done": true
   },
@@ -7183,51 +7226,165 @@
     },
     "done": true
   },
-  "mynethersdelight:recipes/building_blocks/crafting/letios_compost_from_rotten_flesh": {
-    "criteria": {
-      "has_rotten_flesh": "2026-11-11 16:37:22 -0800"
-    },
-    "done": true
-  },
-  "betternether:recipes/decorations/gloomwood_dark_hanging_sign": {
-    "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
-    },
-    "done": true
-  },
-  "bookofdragons:meet_hooligan": {
-    "criteria": {
-      "traded_with_hooligan": "2026-11-11 16:57:15 -0800"
-    },
-    "done": true
-  },
   "create:recipes/building_blocks/oak_window": {
     "criteria": {
       "has_ingredient": "2026-11-11 17:05:35 -0800"
     },
     "done": true
   },
-  "natures_spirit:recipes/building_blocks/chert_stairs": {
+  "bookofdragons:scale_collector": {
     "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
+      "has_skrill_scales": "2026-11-11 17:36:47 -0800"
+    },
+    "done": false
+  },
+  "alexsmobs:alexsmobs/grizzly_bear": {
+    "criteria": {
+      "killed_by": "2026-11-11 17:49:37 -0800"
     },
     "done": true
   },
-  "betterend:recipes/decorations/pythadendron_hanging_sign": {
+  "alexsmobs:alexsmobs/seagull_steal": {
     "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
+      "ex": "2026-11-11 17:58:41 -0800"
     },
     "done": true
   },
-  "betternether:recipes/decorations/mushroom_fir_hanging_sign": {
+  "hybrid_delights:recipes/cooking/fried_chicken": {
     "criteria": {
-      "has_chain": "2026-11-11 16:31:02 -0800"
+      "has_any_ingredient": "2026-11-11 18:00:08 -0800"
     },
     "done": true
   },
-  "natures_spirit:recipes/building_blocks/chert_slab_from_chert_stonecutting": {
+  "twilightforest:recipes/drying/chicken_jerky": {
     "criteria": {
-      "has_chert": "2026-11-11 16:28:22 -0800"
+      "has_meat": "2026-11-11 18:00:08 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_chicken": {
+    "criteria": {
+      "has_chicken": "2026-11-11 18:00:08 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_chicken_from_campfire_cooking": {
+    "criteria": {
+      "has_chicken": "2026-11-11 18:00:08 -0800"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/chicken_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-11 18:00:08 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_chicken_from_smoking": {
+    "criteria": {
+      "has_chicken": "2026-11-11 18:00:08 -0800"
+    },
+    "done": true
+  },
+  "hybrid_delights:recipes/cooking/chicken_nugget": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-11 18:00:08 -0800"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/roast_chicken_block": {
+    "criteria": {
+      "has_cooked_chicken": "2026-11-11 18:08:07 -0800"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/chicken_sandwich": {
+    "criteria": {
+      "has_cooked_chicken": "2026-11-11 18:08:07 -0800"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:bypassingthe_expiration_date": {
+    "criteria": {
+      "bypassingthe_expiration_date_0": "2026-11-11 18:12:51 -0800"
+    },
+    "done": true
+  },
+  "hybrid_aquatic:recipes/food/cooked_crayfish_from_smelting": {
+    "criteria": {
+      "has_raw_crayfish": "2026-11-11 18:19:48 -0800"
+    },
+    "done": true
+  },
+  "hybrid_aquatic:recipes/food/cooked_crayfish_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_crayfish": "2026-11-11 18:19:48 -0800"
+    },
+    "done": true
+  },
+  "hybrid_aquatic:recipes/food/cooked_crayfish_from_smoking": {
+    "criteria": {
+      "has_raw_crayfish": "2026-11-11 18:19:48 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/sugi_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-11 18:26:07 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/redstone/sugi_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-11 18:26:07 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/redstone/sugi_door": {
+    "criteria": {
+      "has_planks": "2026-11-11 18:26:07 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/redstone/sugi_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-11 18:26:07 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/decorations/sugi_fence": {
+    "criteria": {
+      "has_planks": "2026-11-11 18:26:07 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/redstone/sugi_button": {
+    "criteria": {
+      "has_planks": "2026-11-11 18:26:07 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/building_blocks/sugi_slab": {
+    "criteria": {
+      "has_planks": "2026-11-11 18:26:07 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/redstone/sugi_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-11 18:26:07 -0800"
+    },
+    "done": true
+  },
+  "natures_spirit:recipes/decorations/sugi_sign": {
+    "criteria": {
+      "has_planks": "2026-11-11 18:26:07 -0800"
+    },
+    "done": true
+  },
+  "alexsmobs:alexsmobs/crimson_mosquito_larva": {
+    "criteria": {
+      "rat_upgrade_basic": "2026-11-11 18:36:22 -0800"
     },
     "done": true
   },
