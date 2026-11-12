@@ -1,8 +1,8 @@
 {
   "version": "1.2",
   "analysis_version": "auto-13-11-6",
-  "mod_list_hash": "-170497408",
-  "calculated_at": 1794447516759,
+  "mod_list_hash": "398355973",
+  "calculated_at": 1794494920363,
   "profiles": {
     "butchery:rotten_kidney": {
       "protein": 2.7
@@ -14,6 +14,9 @@
       "fruit": 0.2,
       "sugar": 7.4,
       "water": 1.0
+    },
+    "twilightdelight:raw_naga_meat": {
+      "protein": 2.88
     },
     "mynethersdelight:spicy_cotton": {
       "grain": 1.08,
@@ -40,12 +43,12 @@
       "protein": 5.76
     },
     "hybrid_delights:chicken_nugget": {
-      "protein": 0.6,
+      "protein": 1.8000001,
       "sugar": 4.4,
       "water": 1.6
     },
     "hybrid_delights:fried_chicken": {
-      "protein": 1.2,
+      "protein": 2.4,
       "sugar": 4.4,
       "water": 1.6
     },
@@ -129,6 +132,14 @@
     "farmersdelight:cooked_salmon_slice": {
       "protein": 0.78000003
     },
+    "twilightdelight:slime_wafer": {
+      "grain": 1.2,
+      "protein": 0.8,
+      "vegetable": 0.8,
+      "fruit": 0.4,
+      "sugar": 0.9,
+      "water": 1.125
+    },
     "lendersdelight:cooked_berserker": {
       "protein": 3.6000001
     },
@@ -187,6 +198,9 @@
     },
     "butchery:raw_dolphin_meat": {
       "protein": 1.8000001
+    },
+    "twilightdelight:chaos_ink_drink": {
+      "protein": 2.4
     },
     "lendersdelight:amethyst_crab_meat_slice": {
       "protein": 1.8000001
@@ -251,11 +265,27 @@
       "grain": 0.5,
       "protein": 0.90000004
     },
+    "twilightdelight:experiment_110": {
+      "grain": 4.32,
+      "protein": 2.88,
+      "vegetable": 3.1200001,
+      "fruit": 1.44,
+      "sugar": 1.32,
+      "water": 1.0
+    },
     "butchery:cooked_warden_meat": {
       "protein": 9.0
     },
     "crabbersdelight:tropical_fish_slice": {
       "protein": 0.6
+    },
+    "twilightdelight:experiment_113": {
+      "grain": 2.16,
+      "protein": 1.44,
+      "vegetable": 1.5600001,
+      "fruit": 0.72,
+      "sugar": 0.66,
+      "water": 1.0
     },
     "hybrid_aquatic:cooked_tentacle": {
       "grain": 0.6,
@@ -318,6 +348,12 @@
       "protein": 1.2,
       "vegetable": 4.2
     },
+    "twilightdelight:magic_cake_scroll": {
+      "grain": 0.5,
+      "protein": 0.6,
+      "sugar": 0.5,
+      "water": 0.5
+    },
     "butchery:cooked_enderman_liver": {
       "protein": 5.4
     },
@@ -371,8 +407,7 @@
     "farmersdelight:steak_and_potatoes": {
       "grain": 1.0,
       "protein": 3.6000001,
-      "vegetable": 7.2,
-      "sugar": 0.125
+      "vegetable": 7.2
     },
     "hybrid_aquatic:hagfish": {
       "protein": 0.6
@@ -431,7 +466,7 @@
       "protein": 6.4,
       "vegetable": 4.6,
       "fruit": 2.3,
-      "sugar": 2.425,
+      "sugar": 2.3,
       "water": 3.0
     },
     "betterend:shadow_berry_cooked": {
@@ -449,12 +484,20 @@
     "starcatcher:lily_snapper": {
       "protein": 1.2
     },
+    "twilightdelight:cooked_insect": {
+      "grain": 0.72,
+      "protein": 0.48000002,
+      "vegetable": 0.52,
+      "fruit": 0.24000001,
+      "sugar": 6.16,
+      "water": 1.0
+    },
     "hybrid_delights:tuna_nachos": {
       "grain": 0.36,
       "protein": 2.04,
       "vegetable": 4.46,
       "fruit": 0.120000005,
-      "sugar": 0.23500001,
+      "sugar": 0.11000001,
       "water": 0.33333334
     },
     "hybrid_delights:fish_kebab": {
@@ -507,6 +550,9 @@
       "sugar": 5.6,
       "water": 1.0
     },
+    "deeperdarker:angler_fish": {
+      "protein": 1.2
+    },
     "minecraft:suspicious_stew": {
       "protein": 1.2
     },
@@ -537,7 +583,7 @@
       "protein": 1.2
     },
     "alexsmobs:mosquito_repellent_stew": {
-      "sugar": 0.125
+      "water": 1.6
     },
     "mynethersdelight:slices_of_bread": {
       "grain": 0.17466667,
@@ -591,11 +637,20 @@
       "sugar": 9.200001,
       "water": 4.6
     },
+    "twilightdelight:glacier_ice_tea": {
+      "sugar": 4.4,
+      "water": 1.6
+    },
     "twilightforest:monster_jerky": {
       "protein": 2.4
     },
     "starcatcher:lush_pike": {
       "protein": 1.2
+    },
+    "twilightdelight:liveroot_venison_noodle_soup": {
+      "grain": 0.33333334,
+      "protein": 2.7333336,
+      "vegetable": 5.1
     },
     "starcatcher_delight:magma_fish_balls": {
       "grain": 0.33333334,
@@ -605,11 +660,27 @@
     "mynethersdelight:deviled_egg": {
       "protein": 1.0
     },
+    "twilightdelight:ghast_burger": {
+      "grain": 0.36,
+      "protein": 2.64,
+      "vegetable": 8.059999,
+      "fruit": 0.120000005,
+      "sugar": 0.11000001,
+      "water": 0.33333334
+    },
     "crabbersdelight:cooked_tropical_fish": {
       "protein": 1.2
     },
     "starcatcher:mirage_carp": {
       "protein": 1.2
+    },
+    "twilightdelight:raw_meef_slice": {
+      "grain": 0.54,
+      "protein": 0.36,
+      "vegetable": 0.39000002,
+      "fruit": 0.18,
+      "sugar": 0.165,
+      "water": 0.25
     },
     "create:bar_of_chocolate": {
       "sugar": 0.8
@@ -622,6 +693,14 @@
     },
     "starcatcher:blue_herring": {
       "protein": 1.2
+    },
+    "twilightdelight:insect_roll": {
+      "grain": 0.86,
+      "protein": 0.24000001,
+      "vegetable": 0.26,
+      "fruit": 0.120000005,
+      "sugar": 3.08,
+      "water": 0.5
     },
     "starcatcher:sporefish": {
       "protein": 1.2
@@ -737,7 +816,7 @@
       "protein": 0.2,
       "vegetable": 0.2,
       "fruit": 2.5,
-      "sugar": 11.725,
+      "sugar": 11.6,
       "water": 1.0
     },
     "butchery:cooked_pork_loin": {
@@ -746,6 +825,9 @@
     "mynethersdelight:sausage_and_potatoes": {
       "protein": 1.44,
       "vegetable": 3.0
+    },
+    "twilightdelight:bowl_of_chaos_stew": {
+      "water": 1.1
     },
     "butchery:raw_bee_back_meat": {
       "protein": 1.8000001
@@ -893,10 +975,18 @@
       "protein": 2.7
     },
     "minecraft:mushroom_stew": {
-      "sugar": 0.125
+      "vegetable": 9.0
     },
     "starcatcher:pale_carp": {
       "protein": 1.2
+    },
+    "twilightdelight:plate_of_delicious_in_maze": {
+      "grain": 5.76,
+      "protein": 3.8400002,
+      "vegetable": 4.16,
+      "fruit": 1.9200001,
+      "sugar": 1.7600001,
+      "water": 1.0
     },
     "brewinandchewin:ham_and_cheese_sandwich": {
       "protein": 0.8
@@ -974,6 +1064,9 @@
       "sugar": 0.33,
       "water": 1.0
     },
+    "twilightdelight:chocolate_113": {
+      "sugar": 0.8
+    },
     "starcatcher:suneater": {
       "protein": 1.2
     },
@@ -999,6 +1092,14 @@
     "butchery:raw_beef_mince": {
       "protein": 3.6000001
     },
+    "createnuclear:yellowcake": {
+      "grain": 6.0,
+      "protein": 4.0,
+      "vegetable": 4.0,
+      "fruit": 2.0,
+      "sugar": 2.0,
+      "water": 1.0
+    },
     "starcatcher_delight:temaki_epic": {
       "grain": 1.0,
       "protein": 1.2
@@ -1023,6 +1124,17 @@
     },
     "butchery:cooked_lungs": {
       "protein": 0.90000004
+    },
+    "twilightdelight:plate_of_saucy_grilled_naga": {
+      "grain": 5.76,
+      "protein": 3.8400002,
+      "vegetable": 4.16,
+      "fruit": 1.9200001,
+      "sugar": 1.7600001,
+      "water": 1.0
+    },
+    "deeperdarker:cooked_angler_fish": {
+      "protein": 1.2
     },
     "farmersdelight:stuffed_potato": {
       "protein": 3.8000002,
@@ -1052,6 +1164,14 @@
       "vegetable": 6.3999996,
       "sugar": 2.4,
       "water": 0.5
+    },
+    "twilightdelight:naga_meatball_congee": {
+      "grain": 1.3,
+      "protein": 3.0800002,
+      "vegetable": 3.2,
+      "fruit": 0.1,
+      "sugar": 5.2,
+      "water": 1.0
     },
     "butchery:cooked_ham": {
       "protein": 1.8000001
@@ -1087,7 +1207,7 @@
       "vegetable": 3.0
     },
     "minecraft:poisonous_potato": {
-      "grain": 1.0
+      "grain": 0.25
     },
     "hybrid_delights:mostly_eaten_pumpkin_fishsicle": {
       "vegetable": 7.7999997
@@ -1131,6 +1251,9 @@
     "butchery:raw_cod_fillet": {
       "protein": 2.7
     },
+    "twilightdelight:cooked_naga_piece": {
+      "protein": 2.88
+    },
     "crabbersdelight:squid_kebab": {
       "grain": 1.08,
       "protein": 1.9200001,
@@ -1167,6 +1290,11 @@
       "sugar": 4.4,
       "water": 1.6
     },
+    "twilightdelight:torchberry_pie_slice": {
+      "grain": 0.25,
+      "sugar": 1.25,
+      "water": 0.5
+    },
     "starcatcher:downfall_bream": {
       "protein": 1.2
     },
@@ -1185,6 +1313,14 @@
       "protein": 0.6,
       "sugar": 1.1,
       "water": 0.4
+    },
+    "twilightdelight:redcanp": {
+      "grain": 2.16,
+      "protein": 1.44,
+      "vegetable": 1.5600001,
+      "fruit": 0.72,
+      "sugar": 0.66,
+      "water": 1.0
     },
     "butchery:cooked_evoker_meat": {
       "protein": 2.7
@@ -1283,6 +1419,9 @@
       "sugar": 4.4,
       "water": 1.6
     },
+    "twilightdelight:cooked_naga_meat": {
+      "protein": 2.88
+    },
     "hybrid_aquatic:herring": {
       "protein": 0.6
     },
@@ -1308,8 +1447,7 @@
       "protein": 1.8000001
     },
     "farmersdelight:mixed_salad": {
-      "vegetable": 5.7,
-      "sugar": 0.125
+      "vegetable": 5.7
     },
     "malum:runic_sap": {
       "grain": 1.8000001,
@@ -1392,7 +1530,7 @@
       "water": 1.0
     },
     "twilightforest:moss_soup": {
-      "sugar": 0.125
+      "water": 1.1
     },
     "butchery:poison_sac": {
       "grain": 0.90000004,
@@ -1416,7 +1554,7 @@
       "protein": 3.8000002,
       "vegetable": 3.2,
       "fruit": 0.1,
-      "sugar": 0.225,
+      "sugar": 0.1,
       "water": 0.5
     },
     "forgeweave:magma_slime_drop": {
@@ -1428,7 +1566,12 @@
       "water": 1.0
     },
     "alexsmobs:sopa_de_macaco": {
-      "sugar": 0.125
+      "grain": 1.5,
+      "protein": 1.0,
+      "vegetable": 1.0,
+      "fruit": 0.5,
+      "sugar": 0.5,
+      "water": 1.0
     },
     "born_in_chaos_v1:stimulating_decoction": {
       "sugar": 4.0,
@@ -1444,6 +1587,10 @@
     "betternether:black_apple": {
       "fruit": 3.5200002,
       "sugar": 1.2
+    },
+    "deeperdarker:bloom_berries": {
+      "fruit": 1.12,
+      "sugar": 3.4
     },
     "butchery:raw_ravager_meat": {
       "protein": 6.3
@@ -1492,6 +1639,10 @@
       "sugar": 4.4,
       "water": 1.0
     },
+    "twilightdelight:antler_wine": {
+      "sugar": 4.0,
+      "water": 1.0
+    },
     "butchery:raw_pillager_meat": {
       "protein": 2.7
     },
@@ -1505,7 +1656,7 @@
       "protein": 3.6000001
     },
     "farmersdelight:nether_salad": {
-      "sugar": 0.125
+      "vegetable": 10.5
     },
     "netherexotics:curious_fruits_salad": {
       "grain": 1.2,
@@ -1558,6 +1709,17 @@
     "twilightforest:beef_jerky": {
       "protein": 3.6000001
     },
+    "twilightdelight:torchberry_venison_sandwich": {
+      "grain": 0.36,
+      "protein": 1.44,
+      "vegetable": 2.36,
+      "fruit": 0.120000005,
+      "sugar": 4.11,
+      "water": 1.3333334
+    },
+    "twilightdelight:thousand_plant_stew": {
+      "water": 1.1
+    },
     "lendersdelight:symbiocto_tentacle": {
       "protein": 1.44
     },
@@ -1596,6 +1758,11 @@
       "sugar": 8.0,
       "water": 1.0
     },
+    "twilightdelight:fried_hydra_chop": {
+      "grain": 0.33333334,
+      "protein": 11.8,
+      "vegetable": 3.0
+    },
     "natures_delight:fafaru": {
       "protein": 1.2,
       "vegetable": 4.2,
@@ -1604,6 +1771,9 @@
     },
     "mynethersdelight:enchanted_golden_egg": {
       "protein": 1.0
+    },
+    "twilightdelight:bowl_of_ghastling_mousse_cake": {
+      "grain": 4.8
     },
     "botania:mana_bottle": {
       "sugar": 4.4,
@@ -1637,6 +1807,14 @@
     },
     "butchery:cooked_leg_of_lamb": {
       "protein": 2.7
+    },
+    "twilightdelight:grilled_tomahawk_smeak": {
+      "grain": 2.16,
+      "protein": 1.6400001,
+      "vegetable": 5.7599998,
+      "fruit": 0.72,
+      "sugar": 0.66,
+      "water": 2.0
     },
     "crabbersdelight:clam_bake": {
       "grain": 1.08,
@@ -1694,6 +1872,14 @@
     "mynethersdelight:egg_soup": {
       "protein": 1.0
     },
+    "twilightdelight:fried_insect": {
+      "grain": 0.72,
+      "protein": 0.48000002,
+      "vegetable": 7.72,
+      "fruit": 0.24000001,
+      "sugar": 6.16,
+      "water": 1.0
+    },
     "hybrid_delights:pickled_bull_kelp": {
       "sugar": 1.1,
       "water": 0.4
@@ -1714,6 +1900,10 @@
       "fruit": 0.3,
       "sugar": 0.3,
       "water": 1.0
+    },
+    "twilightdelight:twilight_cake_slice": {
+      "grain": 0.3942857,
+      "sugar": 0.119642854
     },
     "natures_delight:coconut_bread": {
       "grain": 0.36,
@@ -1903,6 +2093,9 @@
     "farmersdelight:vegetable_soup": {
       "vegetable": 6.6
     },
+    "twilightdelight:mushgloom_sauce": {
+      "vegetable": 4.2
+    },
     "natures_delight:coconut_pancakes": {
       "grain": 1.0,
       "fruit": 8.160001,
@@ -1925,6 +2118,10 @@
     "starcatcher_delight:fish_and_chips_epic": {
       "protein": 1.2,
       "vegetable": 3.0
+    },
+    "twilightdelight:twilight_spring": {
+      "sugar": 4.4,
+      "water": 1.6
     },
     "hybrid_aquatic:lionfish": {
       "protein": 1.2
@@ -1970,6 +2167,11 @@
     "crabbersdelight:cooked_crab": {
       "protein": 1.44
     },
+    "twilightdelight:crab_claw_pasta": {
+      "grain": 0.33333334,
+      "protein": 0.33333334,
+      "vegetable": 5.1
+    },
     "starcatcher_delight:honey_taiyaki": {
       "sugar": 1.0
     },
@@ -1984,7 +2186,7 @@
       "protein": 0.72,
       "vegetable": 3.78,
       "fruit": 0.36,
-      "sugar": 0.455,
+      "sugar": 0.33,
       "water": 1.0
     },
     "hybrid_aquatic:sirenian_beef": {
@@ -2025,6 +2227,17 @@
       "fruit": 3.7200003,
       "sugar": 3.41,
       "water": 2.0
+    },
+    "twilightdelight:hydra_piece": {
+      "protein": 5.4
+    },
+    "twilightdelight:hydra_burger": {
+      "grain": 0.36,
+      "protein": 11.04,
+      "vegetable": 8.66,
+      "fruit": 0.120000005,
+      "sugar": 0.11000001,
+      "water": 0.33333334
     },
     "lendersdelight:coral_and_void": {
       "grain": 1.0,
@@ -2068,6 +2281,10 @@
       "sugar": 4.4,
       "water": 1.6
     },
+    "twilightdelight:phantom_bone_broth": {
+      "protein": 0.1,
+      "water": 1.0
+    },
     "mynethersdelight:plate_of_ghasta_with_cream": {
       "protein": 0.3
     },
@@ -2083,6 +2300,15 @@
     "born_in_chaos_v1:bottle_of_magical_energy": {
       "sugar": 4.0,
       "water": 1.0
+    },
+    "twilightdelight:naga_stew": {
+      "protein": 2.88,
+      "vegetable": 6.2999997
+    },
+    "twilightdelight:mushgloom_meef_pasta": {
+      "grain": 0.33333334,
+      "protein": 1.5333334,
+      "vegetable": 4.2
     },
     "netherexotics:rambutan": {
       "grain": 0.3,
@@ -2120,6 +2346,14 @@
     "butchery:cooked_villager_steak": {
       "protein": 3.6000001
     },
+    "twilightdelight:velvet_antler_stewed_chicken_soup": {
+      "grain": 0.72,
+      "protein": 1.6800001,
+      "vegetable": 0.52,
+      "fruit": 0.24000001,
+      "sugar": 7.0400004,
+      "water": 1.0
+    },
     "starcatcher_delight:watermelon_taiyaki": {
       "grain": 0.33333334,
       "protein": 1.5333334,
@@ -2146,6 +2380,14 @@
       "vegetable": 0.2,
       "fruit": 0.1,
       "sugar": 8.0,
+      "water": 1.0
+    },
+    "twilightdelight:raw_insect": {
+      "grain": 0.72,
+      "protein": 0.48000002,
+      "vegetable": 0.52,
+      "fruit": 0.24000001,
+      "sugar": 6.16,
       "water": 1.0
     },
     "aquamirae:cooked_spinefish": {
@@ -2197,8 +2439,7 @@
     "mynethersdelight:hotdog_with_nether_salad": {
       "grain": 0.18,
       "protein": 0.84000003,
-      "vegetable": 0.13000001,
-      "sugar": 0.11750001,
+      "vegetable": 5.38,
       "water": 0.16666667
     },
     "paradise_lost:blackcurrant": {
@@ -2208,8 +2449,14 @@
     "starcatcher:mothfish": {
       "protein": 1.2
     },
+    "twilightdelight:raw_naga_piece": {
+      "protein": 1.44
+    },
     "butchery:raw_warden_meat": {
       "protein": 9.0
+    },
+    "twilightdelight:raw_venison_rib": {
+      "protein": 0.6
     },
     "farmersdelight:fried_rice": {
       "grain": 1.0
@@ -2276,7 +2523,7 @@
       "protein": 2.0,
       "vegetable": 0.2,
       "fruit": 0.1,
-      "sugar": 4.125,
+      "sugar": 4.0,
       "water": 1.0
     },
     "minecraft:rotten_flesh": {
@@ -2337,6 +2584,22 @@
     "hybrid_aquatic:tiger_barb": {
       "protein": 0.6
     },
+    "twilightdelight:twilight_salad": {
+      "grain": 0.72,
+      "protein": 0.48000002,
+      "vegetable": 5.62,
+      "fruit": 0.24000001,
+      "sugar": 10.16,
+      "water": 2.0
+    },
+    "twilightdelight:ghast_tentacle_salad": {
+      "grain": 2.16,
+      "protein": 1.44,
+      "vegetable": 1.5600001,
+      "fruit": 0.72,
+      "sugar": 1.6600001,
+      "water": 1.0
+    },
     "butchery:cooked_camel_meat": {
       "protein": 1.8000001
     },
@@ -2372,6 +2635,17 @@
     "butchery:cooked_lamb_shoulder": {
       "protein": 1.8000001
     },
+    "twilightdelight:fiery_blood_curd": {
+      "protein": 10.8,
+      "vegetable": 1.9499999,
+      "sugar": 4.0,
+      "water": 1.0
+    },
+    "twilightdelight:stuffed_crab_claw": {
+      "vegetable": 7.5,
+      "sugar": 4.0,
+      "water": 1.0
+    },
     "hybrid_delights:pufferfish_slice": {
       "protein": 0.3
     },
@@ -2382,7 +2656,12 @@
       "protein": 1.2
     },
     "twilightforest:meef_stroganoff": {
-      "protein": 8.400001
+      "grain": 2.16,
+      "protein": 1.44,
+      "vegetable": 14.76,
+      "fruit": 0.72,
+      "sugar": 4.66,
+      "water": 2.0
     },
     "alexsmobs:raw_catfish": {
       "protein": 1.2
@@ -2415,6 +2694,14 @@
     },
     "starcatcher:obidontiee": {
       "protein": 1.2
+    },
+    "twilightdelight:tomato_sauce_113": {
+      "grain": 2.16,
+      "protein": 1.44,
+      "vegetable": 3.6599998,
+      "fruit": 0.72,
+      "sugar": 0.66,
+      "water": 1.0
     },
     "starcatcher_delight:fish_and_chips_legendary": {
       "protein": 1.2,
@@ -2544,6 +2831,18 @@
     "hybrid_aquatic:mussel": {
       "protein": 2.4
     },
+    "twilightdelight:plate_of_meef_wellington": {
+      "grain": 5.0400004,
+      "protein": 3.3600001,
+      "vegetable": 3.6399999,
+      "fruit": 1.6800001,
+      "sugar": 1.54,
+      "water": 1.0
+    },
+    "twilightdelight:grilled_ghast": {
+      "protein": 2.4,
+      "vegetable": 3.6
+    },
     "farmersdelight:baked_cod_stew": {
       "protein": 2.2,
       "vegetable": 5.1
@@ -2626,6 +2925,9 @@
     "lendersdelight:red_coral_stew": {
       "vegetable": 2.1
     },
+    "twilightdelight:chocolate_wafer": {
+      "sugar": 0.8
+    },
     "lendersdelight:koboleton_pumpkin": {
       "protein": 2.88
     },
@@ -2635,6 +2937,14 @@
     },
     "starcatcher:vesani": {
       "protein": 1.2
+    },
+    "twilightdelight:glow_113": {
+      "grain": 3.16,
+      "protein": 1.44,
+      "vegetable": 1.5600001,
+      "fruit": 0.72,
+      "sugar": 4.66,
+      "water": 2.0
     },
     "starcatcher_delight:healthy_fish_omelette_common": {
       "protein": 2.2,
@@ -2648,6 +2958,12 @@
     },
     "minecraft:cooked_salmon": {
       "protein": 1.2
+    },
+    "twilightdelight:hydra_skewer": {
+      "protein": 11.04
+    },
+    "twilightdelight:phytochemical_juice": {
+      "protein": 0.24000001
     },
     "hybrid_delights:mostly_eaten_melon_fishsicle": {
       "fruit": 3.456,
@@ -2691,8 +3007,7 @@
     "farmersdelight:roasted_mutton_chops": {
       "grain": 1.0,
       "protein": 1.8000001,
-      "vegetable": 3.6,
-      "sugar": 0.125
+      "vegetable": 3.6
     },
     "hybrid_aquatic:moray_eel": {
       "protein": 1.2
@@ -2704,6 +3019,10 @@
       "fruit": 0.120000005,
       "sugar": 0.11000001,
       "water": 0.33333334
+    },
+    "twilightdelight:witchcraft_bone_broth": {
+      "protein": 0.1,
+      "water": 1.0
     },
     "starcatcher_delight:nigiri_legendary": {
       "grain": 1.0,
@@ -2726,6 +3045,11 @@
     },
     "farmersdelight:onion": {
       "vegetable": 4.2
+    },
+    "twilightdelight:glowstew": {
+      "grain": 1.0,
+      "sugar": 4.0,
+      "water": 1.0
     },
     "betterarrows:example_item": {
       "grain": 0.3,
@@ -2783,8 +3107,7 @@
       "protein": 3.6000001
     },
     "farmersdelight:bacon_and_eggs": {
-      "protein": 1.9749999,
-      "sugar": 0.125
+      "protein": 1.9749999
     },
     "alexsmobs:banana": {
       "fruit": 3.5200002,
@@ -2796,6 +3119,12 @@
     "born_in_chaos_v1:smoked_flesh": {
       "protein": 2.4
     },
+    "twilightdelight:berry_stick": {
+      "protein": 1.2,
+      "fruit": 1.12,
+      "sugar": 7.4,
+      "water": 1.0
+    },
     "hybrid_aquatic:clownfish": {
       "protein": 0.6
     },
@@ -2804,7 +3133,7 @@
       "protein": 1.48,
       "vegetable": 0.52,
       "fruit": 0.24000001,
-      "sugar": 0.34500003,
+      "sugar": 0.22000001,
       "water": 0.5
     },
     "minecraft:bread": {
@@ -2818,6 +3147,14 @@
     "minecraft:glow_berries": {
       "fruit": 3.5200002,
       "sugar": 1.2
+    },
+    "twilightdelight:cooked_tomahawk_smeaxe": {
+      "grain": 2.16,
+      "protein": 1.44,
+      "vegetable": 1.5600001,
+      "fruit": 0.72,
+      "sugar": 0.66,
+      "water": 1.0
     },
     "hybrid_delights:cured_cod_roe": {
       "protein": 1.44,
@@ -2834,6 +3171,10 @@
     "starcatcher_delight:starcaught_fillet_uncommon": {
       "protein": 0.72
     },
+    "twilightdelight:jack_phantom": {
+      "grain": 1.0,
+      "vegetable": 1.9499999
+    },
     "starcatcher_delight:healthy_fish_omelette_legendary": {
       "protein": 2.2,
       "vegetable": 4.2
@@ -2842,7 +3183,6 @@
       "grain": 0.18,
       "protein": 0.84000003,
       "vegetable": 2.98,
-      "sugar": 0.11750001,
       "water": 0.16666667
     },
     "butchery:raw_strider_meat": {
@@ -2902,6 +3242,14 @@
       "sugar": 1.1,
       "water": 0.4
     },
+    "twilightdelight:milky_113": {
+      "grain": 2.16,
+      "protein": 1.6400001,
+      "vegetable": 1.5600001,
+      "fruit": 0.72,
+      "sugar": 1.6600001,
+      "water": 2.0
+    },
     "natures_delight:coconut_sauce": {
       "fruit": 8.160001,
       "sugar": 1.8000001
@@ -2923,6 +3271,17 @@
     "butchery:raw_witch_meat": {
       "protein": 5.4
     },
+    "twilightdelight:plate_of_fiery_snakes": {
+      "grain": 7.2000003,
+      "protein": 4.8,
+      "vegetable": 5.2,
+      "fruit": 2.4,
+      "sugar": 2.2,
+      "water": 1.0
+    },
+    "twilightdelight:borer_tear_soup": {
+      "water": 1.1
+    },
     "hexerei:tallow_impurity": {
       "grain": 0.3,
       "protein": 0.2,
@@ -2943,6 +3302,10 @@
     },
     "born_in_chaos_v1:coffee_candy": {
       "water": 1.6
+    },
+    "twilightdelight:torchberry_juice": {
+      "sugar": 5.0,
+      "water": 1.0
     },
     "butchery:cooked_enderman_intestines": {
       "protein": 5.4
@@ -2977,6 +3340,9 @@
     },
     "butchery:raw_green_frog_leg": {
       "protein": 2.7
+    },
+    "twilightdelight:cooked_helmet_crab_claw": {
+      "protein": 2.88
     },
     "starcatcher:sludge_catfish": {
       "protein": 1.2
@@ -3013,8 +3379,14 @@
       "grain": 1.0,
       "protein": 1.2
     },
+    "twilightdelight:cooked_venison_rib": {
+      "protein": 1.8000001
+    },
     "butchery:cooked_intestines": {
       "protein": 0.90000004
+    },
+    "twilightdelight:liveroot_pork_fried_rice": {
+      "grain": 1.0
     },
     "butchery:raw_brown_axolotl_fillet": {
       "protein": 1.8000001
@@ -3027,6 +3399,14 @@
     },
     "betternether:stalagnate_bowl_wart": {
       "vegetable": 1.9499999
+    },
+    "twilightdelight:ghast_brain_salad": {
+      "grain": 5.17,
+      "protein": 4.48,
+      "vegetable": 11.919999,
+      "fruit": 1.6400001,
+      "sugar": 1.5200001,
+      "water": 2.0
     },
     "paradise_lost:amadrys_bread_glazed_filled": {
       "grain": 0.6,
@@ -3096,7 +3476,7 @@
       "protein": 1.2,
       "vegetable": 6.2999997,
       "fruit": 1.12,
-      "sugar": 3.525
+      "sugar": 3.4
     },
     "brewinandchewin:quiche_slice": {
       "grain": 0.25,
@@ -3119,11 +3499,27 @@
       "sugar": 4.0,
       "water": 1.0
     },
+    "twilightdelight:regret_soup": {
+      "grain": 4.32,
+      "protein": 2.88,
+      "vegetable": 3.1200001,
+      "fruit": 1.44,
+      "sugar": 1.32,
+      "water": 1.0
+    },
     "brewinandchewin:vodka": {
       "vegetable": 3.0
     },
     "butchery:cooked_gold_axolotl_fillet": {
       "protein": 1.8000001
+    },
+    "twilightdelight:raw_tomahawk_smeaxe": {
+      "grain": 2.16,
+      "protein": 1.44,
+      "vegetable": 1.5600001,
+      "fruit": 0.72,
+      "sugar": 0.66,
+      "water": 1.0
     },
     "minecraft:honey_bottle": {
       "sugar": 4.4,
@@ -3203,6 +3599,10 @@
     "hybrid_aquatic:tetra": {
       "protein": 0.6
     },
+    "twilightdelight:hydra_stew": {
+      "protein": 10.8,
+      "vegetable": 3.0
+    },
     "starcatcher:yellowstone_fish": {
       "protein": 1.2
     },
@@ -3250,6 +3650,14 @@
       "sugar": 0.4,
       "water": 1.0
     },
+    "twilightdelight:thickcut_ghast_fries": {
+      "grain": 2.4933333,
+      "protein": 1.7733334,
+      "vegetable": 6.66,
+      "fruit": 0.72,
+      "sugar": 0.66,
+      "water": 1.0
+    },
     "butchery:raw_pink_axolotl_fillet": {
       "protein": 1.8000001
     },
@@ -3283,14 +3691,20 @@
       "protein": 0.6
     },
     "mynethersdelight:blue_tenderloin_steak": {
-      "protein": 2.88,
-      "sugar": 0.125
+      "protein": 2.88
     },
     "starcatcher:hollowbelly_darter": {
       "protein": 1.2
     },
     "starcatcher:willish": {
       "protein": 1.2
+    },
+    "twilightdelight:phantom_energy_bar": {
+      "grain": 0.18,
+      "protein": 0.120000005,
+      "vegetable": 0.13000001,
+      "sugar": 0.305,
+      "water": 0.16666667
     },
     "butchery:cooked_pufferfish": {
       "protein": 2.7
@@ -3304,8 +3718,7 @@
     },
     "minecraft:rabbit_stew": {
       "protein": 1.8000001,
-      "vegetable": 7.5,
-      "sugar": 0.125
+      "vegetable": 7.5
     },
     "starcatcher_delight:hosomaki_legendary": {
       "grain": 1.0,
@@ -3313,6 +3726,9 @@
     },
     "butchery:cooked_green_frog_leg": {
       "protein": 2.7
+    },
+    "twilightdelight:deadbug_stick": {
+      "protein": 1.2
     },
     "netherexotics:rambutan_juice": {
       "grain": 0.3,
@@ -3388,7 +3804,7 @@
       "protein": 0.2,
       "vegetable": 0.2,
       "fruit": 3.2199998,
-      "sugar": 17.425,
+      "sugar": 17.3,
       "water": 1.0
     },
     "farmersdelight:cabbage_rolls": {
@@ -3402,6 +3818,14 @@
       "fruit": 0.120000005,
       "sugar": 0.11000001,
       "water": 0.33333334
+    },
+    "twilightdelight:naga_chip": {
+      "grain": 0.72,
+      "protein": 0.48000002,
+      "vegetable": 0.52,
+      "fruit": 0.24000001,
+      "sugar": 0.22000001,
+      "water": 1.0
     },
     "farmersdelight:sweet_berry_cheesecake_slice": {
       "grain": 0.25,
@@ -3490,8 +3914,7 @@
     },
     "hybrid_delights:tuna_salad": {
       "protein": 2.8000002,
-      "vegetable": 4.2,
-      "sugar": 0.125
+      "vegetable": 4.2
     },
     "lendersdelight:cooked_koboleton_meat": {
       "protein": 2.88
@@ -3522,6 +3945,14 @@
     "farmersdelight:honey_glazed_ham": {
       "sugar": 1.0
     },
+    "twilightdelight:velvet_antler_slice": {
+      "grain": 0.72,
+      "protein": 0.48000002,
+      "vegetable": 0.52,
+      "fruit": 0.24000001,
+      "sugar": 7.0400004,
+      "water": 1.0
+    },
     "forgeweave:blue_slime_ball": {
       "grain": 0.3,
       "protein": 0.2,
@@ -3549,8 +3980,7 @@
       "sugar": 0.8
     },
     "hexalia:mandrake_stew": {
-      "vegetable": 3.0,
-      "sugar": 0.125
+      "vegetable": 3.0
     },
     "butchery:raw_sausage": {
       "protein": 2.7,
@@ -3593,6 +4023,10 @@
       "fruit": 0.1,
       "sugar": 0.1,
       "water": 1.0
+    },
+    "twilightdelight:hydra_stuffed_potato": {
+      "protein": 10.8,
+      "vegetable": 7.2
     },
     "starcatcher:mossfin": {
       "protein": 1.2
@@ -3668,6 +4102,14 @@
     },
     "butchery:withered_heart": {
       "protein": 16.2
+    },
+    "twilightdelight:raw_tomahawk_smeak": {
+      "grain": 2.16,
+      "protein": 1.44,
+      "vegetable": 1.5600001,
+      "fruit": 0.72,
+      "sugar": 0.66,
+      "water": 1.0
     },
     "minecraft:apple": {
       "fruit": 1.12,
@@ -3751,6 +4193,12 @@
     "hybrid_aquatic:dragonfish": {
       "protein": 0.6
     },
+    "twilightdelight:red_thread_pasta": {
+      "vegetable": 2.1,
+      "fruit": 1.12,
+      "sugar": 3.4,
+      "water": 1.1
+    },
     "mynethersdelight:hot_cream_cone": {
       "protein": 0.3
     },
@@ -3797,6 +4245,14 @@
       "vegetable": 1.0666667,
       "sugar": 1.7333332,
       "water": 0.33333334
+    },
+    "twilightdelight:omazeo": {
+      "grain": 0.72,
+      "protein": 0.48000002,
+      "vegetable": 0.52,
+      "fruit": 0.24000001,
+      "sugar": 6.16,
+      "water": 1.0
     },
     "crabbersdelight:coconut_pudding": {
       "protein": 1.0,
@@ -3857,6 +4313,9 @@
       "sugar": 1.54,
       "water": 1.0
     },
+    "twilightdelight:thorn_rose_tea": {
+      "sugar": 1.0
+    },
     "butchery:raw_donkey_steak": {
       "protein": 2.7
     },
@@ -3868,7 +4327,7 @@
     "farmersdelight:fruit_salad": {
       "vegetable": 6.2999997,
       "fruit": 2.88,
-      "sugar": 8.525
+      "sugar": 8.4
     },
     "butchery:cooked_kidney": {
       "protein": 0.90000004
@@ -3928,6 +4387,14 @@
     "butchery:cooked_silverfish_chunks": {
       "protein": 1.8000001
     },
+    "twilightdelight:cooked_tomahawk_smeak": {
+      "grain": 2.16,
+      "protein": 1.44,
+      "vegetable": 1.5600001,
+      "fruit": 0.72,
+      "sugar": 0.66,
+      "water": 1.0
+    },
     "starcatcher:ward": {
       "protein": 1.2
     },
@@ -3955,6 +4422,9 @@
     },
     "starcatcher:sandtail": {
       "protein": 1.2
+    },
+    "twilightdelight:cooked_meef_slice": {
+      "protein": 2.1000001
     },
     "goety:refuse_bottle": {
       "sugar": 4.0,
@@ -4023,6 +4493,7 @@
       "water": 1.5
     },
     "crabbersdelight:coral_crunch": {
+      "protein": 0.2,
       "sugar": 4.4,
       "water": 1.6
     },
@@ -4042,6 +4513,9 @@
       "sugar": 4.0,
       "water": 1.0
     },
+    "twilightdelight:plate_of_lily_chicken": {
+      "protein": 11.52
+    },
     "twilightforest:mutton_jerky": {
       "protein": 1.8000001
     },
@@ -4058,6 +4532,12 @@
       "vegetable": 0.4,
       "fruit": 0.2,
       "sugar": 7.2,
+      "water": 1.0
+    },
+    "twilightdelight:glow_venison_rib_with_pasta": {
+      "grain": 1.0,
+      "protein": 1.5333334,
+      "sugar": 4.0,
       "water": 1.0
     },
     "minecraft:cooked_beef": {
@@ -4108,6 +4588,11 @@
     "butchery:calamari": {
       "protein": 0.90000004
     },
+    "twilightdelight:torchberry_cookie": {
+      "grain": 0.125,
+      "sugar": 0.5,
+      "water": 0.125
+    },
     "farmersdelight:bone_broth": {
       "fruit": 3.5200002,
       "sugar": 1.3046875
@@ -4149,12 +4634,7 @@
       "protein": 1.2
     },
     "twilightforest:shika_senbei": {
-      "grain": 1.2,
-      "protein": 0.8,
-      "vegetable": 0.8,
-      "fruit": 0.4,
-      "sugar": 0.4,
-      "water": 1.0
+      "grain": 0.5
     },
     "starcatcher:ironjaw_herring": {
       "protein": 1.2
@@ -4175,6 +4655,10 @@
     },
     "butchery:cooked_enderman_stomach": {
       "protein": 4.5
+    },
+    "twilightdelight:naga_skewers": {
+      "protein": 2.04,
+      "vegetable": 5.25
     },
     "twilightforest:meef_jerky": {
       "protein": 1.2
@@ -4244,6 +4728,9 @@
     "starcatcher:glowing_dark": {
       "protein": 1.2
     },
+    "twilightdelight:glowing_curry_rice": {
+      "grain": 1.0
+    },
     "butchery:cooked_pork_belly": {
       "protein": 3.6000001
     },
@@ -4281,6 +4768,10 @@
     },
     "starcatcher_delight:chocolate_taiyaki": {
       "sugar": 0.8
+    },
+    "twilightdelight:tear_drink": {
+      "sugar": 2.2,
+      "water": 1.6
     },
     "butchery:cooked_witch_meat": {
       "protein": 5.4
@@ -4327,11 +4818,14 @@
       "protein": 1.2
     },
     "mynethersdelight:rock_soup": {
-      "protein": 1.0,
-      "sugar": 0.125
+      "protein": 1.0
     },
     "mynethersdelight:roasted_sausage": {
       "protein": 1.44
+    },
+    "twilightdelight:tomb_of_the_phantom": {
+      "grain": 0.33333334,
+      "protein": 0.33333334
     },
     "starcatcher:shadowfin": {
       "protein": 1.2
@@ -4351,6 +4845,9 @@
     },
     "hybrid_aquatic:anglerfish": {
       "protein": 0.6
+    },
+    "twilightdelight:honey_113": {
+      "sugar": 1.0
     },
     "butchery:cooked_chuck_steak": {
       "protein": 1.8000001
@@ -4451,6 +4948,14 @@
       "grain": 1.0,
       "protein": 0.72
     },
+    "twilightdelight:maze_slime_wafer": {
+      "grain": 1.2,
+      "protein": 0.8,
+      "vegetable": 0.8,
+      "fruit": 0.4,
+      "sugar": 0.4,
+      "water": 1.0
+    },
     "butchery:cooked_ravager_meat": {
       "protein": 6.3
     },
@@ -4496,6 +5001,14 @@
     },
     "hybrid_aquatic:cooked_lobster": {
       "protein": 1.2
+    },
+    "twilightdelight:meef_wrap": {
+      "grain": 0.36,
+      "protein": 1.44,
+      "vegetable": 6.5599995,
+      "fruit": 0.120000005,
+      "sugar": 0.11000001,
+      "water": 0.33333334
     },
     "farmersdelight:cooked_chicken_cuts": {
       "protein": 1.8000001
@@ -4544,6 +5057,11 @@
     "farmersdelight:salmon_roll": {
       "grain": 0.5,
       "protein": 0.3
+    },
+    "twilightdelight:aurora_pie_slice": {
+      "grain": 0.25,
+      "sugar": 0.25,
+      "water": 0.25
     },
     "lendersdelight:deepling_meat": {
       "protein": 2.88

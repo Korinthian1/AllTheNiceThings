@@ -23,12 +23,6 @@
     },
     "done": true
   },
-  "numismatics:root": {
-    "criteria": {
-      "0": "2026-11-10 23:49:32 -0800"
-    },
-    "done": true
-  },
   "pipeorgans:root": {
     "criteria": {
       "0": "2026-11-10 23:49:32 -0800"
@@ -4479,6 +4473,30 @@
   "minecraft:story/iron_tools": {
     "criteria": {
       "iron_pickaxe": "2026-11-11 19:33:46 -0800"
+    },
+    "done": true
+  },
+  "immersive_armors:recipes/misc/wooden": {
+    "criteria": {
+      "has_item": "2026-11-12 06:42:12 -0800"
+    },
+    "done": true
+  },
+  "mca:recipes/misc/bouquet": {
+    "criteria": {
+      "has_item": "2026-11-12 06:42:12 -0800"
+    },
+    "done": true
+  },
+  "createnuclear:root": {
+    "criteria": {
+      "0": "2026-11-12 06:42:12 -0800"
+    },
+    "done": true
+  },
+  "immersive_armors:recipes/misc/robe": {
+    "criteria": {
+      "has_item": "2026-11-12 06:42:12 -0800"
     },
     "done": true
   },
