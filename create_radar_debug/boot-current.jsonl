@@ -66,3 +66,5 @@
 {"epoch_ms":1794503943169,"boot_id":"9d57c757","stage":"COMMON_SETUP","status":"QUEUED","details":{}}
 {"epoch_ms":1794503943612,"boot_id":"9d57c757","stage":"COMMON_SETUP","status":"COMPLETE","details":{}}
 {"epoch_ms":1794503944302,"boot_id":"9d57c757","stage":"MOD_LOAD","status":"COMPLETE","details":{}}
+{"epoch_ms":1794503982302,"boot_id":"9d57c757","stage":"SERVER","status":"STARTED","details":{}}
+{"epoch_ms":1794504270189,"boot_id":"9d57c757","stage":"BOOT","status":"GRACEFUL_SHUTDOWN","details":{"side":"server"}}
