@@ -1,0 +1,11 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "tag": "c:logs/archwood"
+  },
+  "result": {
+    "id": "excessive_utilities:mini_chest",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

@@ -1,0 +1,16 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "forbidden_arcanus:fungyss_stem"
+    },
+    {
+      "item": "forbidden_arcanus:fungyss_hyphae"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:diagonal_wood",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

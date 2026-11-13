@@ -1,0 +1,11 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "item": "undergarden:ancient_root"
+  },
+  "result": {
+    "id": "undergarden:ancient_root_slab",
+    "count": 8
+  },
+  "type": "sawmill:woodcutting"
+}

@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "malum:runewood_log"
+    },
+    {
+      "item": "malum:runewood"
+    },
+    {
+      "item": "malum:stripped_runewood_log"
+    },
+    {
+      "item": "malum:stripped_runewood"
+    }
+  ],
+  "result": {
+    "id": "supplementaries:malum/way_sign_runewood",
+    "count": 4
+  },
+  "type": "sawmill:woodcutting"
+}

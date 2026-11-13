@@ -1,0 +1,18 @@
+filename = 'refinedstorage-neoforge-2.0.9.jar'
+name = 'Refined Storage'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'v2.0.9'
+
+[download]
+hash = 'bf05b983968e75b5466a270c68d1fdc7ba2a5e77'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8211701
+project-id = 243076

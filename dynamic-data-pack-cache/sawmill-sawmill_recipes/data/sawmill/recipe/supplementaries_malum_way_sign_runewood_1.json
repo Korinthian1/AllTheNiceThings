@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "malum:runewood_planks"
+  },
+  "result": {
+    "id": "supplementaries:malum/way_sign_runewood",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

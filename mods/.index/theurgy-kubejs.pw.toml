@@ -1,0 +1,25 @@
+filename = 'theurgy_kubejs-1.21.1-neoforge-1.6.0.jar'
+name = 'Theurgy KubeJS'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'theurgy_kubejs-1.21.1-neoforge-1.6.0.jar'
+
+[download]
+hash = 'c1aff07b124b56aa8f45e746e76d48697b7147ee'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8838118
+project-id = 963206
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '430636'
+type = 'REQUIRED'

@@ -1,0 +1,21 @@
+filename = 'ars_creo-1.21.1-5.4.0.jar'
+name = 'Ars Creo'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ars_creo-1.21.1-5.4.0'
+
+[download]
+hash = '22a6afd4fbe76354acc9c1ba076c89a94d120d94'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8139067
+project-id = 575698
+
+[[x-prismlauncher-dependencies]]
+addonId = '328085'
+type = 'REQUIRED'

@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:pomegranate_log"
+    },
+    {
+      "item": "productivetrees:pomegranate_wood"
+    },
+    {
+      "item": "productivetrees:pomegranate_stripped_log"
+    },
+    {
+      "item": "productivetrees:pomegranate_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:diagonal_wood",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

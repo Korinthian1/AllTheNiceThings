@@ -1,0 +1,18 @@
+filename = 'cobblegengalore-1.21.1-0.2.9.jar'
+name = 'Cobblegen Galore'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'cobblegengalore-1.21.1-0.2.9.jar'
+
+[download]
+hash = 'd08c1d93e7918eebed6e405d0680d11d33c80bf6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8523192
+project-id = 1108467

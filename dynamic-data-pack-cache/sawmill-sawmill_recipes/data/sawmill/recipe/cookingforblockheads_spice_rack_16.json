@@ -1,0 +1,11 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "item": "undergarden:ancient_root"
+  },
+  "result": {
+    "id": "cookingforblockheads:spice_rack",
+    "count": 4
+  },
+  "type": "sawmill:woodcutting"
+}

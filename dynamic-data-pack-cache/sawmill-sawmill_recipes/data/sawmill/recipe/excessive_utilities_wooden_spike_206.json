@@ -1,0 +1,16 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "naturesaura:ancient_log"
+    },
+    {
+      "item": "naturesaura:ancient_bark"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:wooden_spike",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

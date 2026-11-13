@@ -1,0 +1,25 @@
+filename = 'botanypotsmystical-neoforge-1.21.1-21.1.12.jar'
+name = 'Botany Pots - Mystical Agriculture Compat'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'botanypotsmystical-neoforge-1.21.1-21.1.12.jar'
+
+[download]
+hash = '73ee9e944ddca5d70b9224d96d8208bd43cc4531'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8177218
+project-id = 1329409
+
+[[x-prismlauncher-dependencies]]
+addonId = '228525'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1023259'
+type = 'REQUIRED'

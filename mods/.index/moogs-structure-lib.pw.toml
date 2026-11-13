@@ -1,0 +1,18 @@
+filename = 'MoogsStructureLib-neoforge-1.21.1-3.4.2.jar'
+name = "Moog's Structure Lib (moogs_structures)"
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = "Moog's Structure Lib 3.4.2-1.21+ [NEOFORGE]"
+
+[download]
+hash = 'c379b8d5dc1a4b1e8987da1052d6b4de81354d72'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9047179
+project-id = 1337167

@@ -1,0 +1,23 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "malum:runewood_log"
+    },
+    {
+      "item": "malum:runewood"
+    },
+    {
+      "item": "malum:stripped_runewood_log"
+    },
+    {
+      "item": "malum:stripped_runewood"
+    }
+  ],
+  "result": {
+    "id": "actuallyadditions:wood_casing",
+    "count": 1
+  },
+  "ingredient_count": 2,
+  "type": "sawmill:woodcutting"
+}

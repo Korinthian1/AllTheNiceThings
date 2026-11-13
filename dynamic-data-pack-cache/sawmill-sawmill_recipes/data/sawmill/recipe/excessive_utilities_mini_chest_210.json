@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:peach_log"
+    },
+    {
+      "item": "productivetrees:peach_wood"
+    },
+    {
+      "item": "productivetrees:peach_stripped_log"
+    },
+    {
+      "item": "productivetrees:peach_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:mini_chest",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

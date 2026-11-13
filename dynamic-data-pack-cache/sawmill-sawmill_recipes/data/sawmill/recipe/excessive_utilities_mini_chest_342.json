@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:mandarin_log"
+    },
+    {
+      "item": "productivetrees:mandarin_wood"
+    },
+    {
+      "item": "productivetrees:mandarin_stripped_log"
+    },
+    {
+      "item": "productivetrees:mandarin_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:mini_chest",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

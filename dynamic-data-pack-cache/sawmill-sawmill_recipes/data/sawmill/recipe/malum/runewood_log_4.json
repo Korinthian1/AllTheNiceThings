@@ -1,0 +1,11 @@
+{
+  "group": "log",
+  "ingredient": {
+    "item": "malum:runewood"
+  },
+  "result": {
+    "id": "malum:stripped_runewood",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

@@ -1,0 +1,11 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "tag": "c:logs/archwood"
+  },
+  "result": {
+    "id": "excessive_utilities:wooden_sickle",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

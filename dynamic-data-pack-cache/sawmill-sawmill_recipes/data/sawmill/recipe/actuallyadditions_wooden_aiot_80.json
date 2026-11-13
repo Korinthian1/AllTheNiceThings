@@ -1,0 +1,23 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "malum:soulwood_log"
+    },
+    {
+      "item": "malum:soulwood"
+    },
+    {
+      "item": "malum:stripped_soulwood_log"
+    },
+    {
+      "item": "malum:stripped_soulwood"
+    }
+  ],
+  "result": {
+    "id": "actuallyadditions:wooden_aiot",
+    "count": 1
+  },
+  "ingredient_count": 3,
+  "type": "sawmill:woodcutting"
+}

@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "productivetrees:hazel_planks"
+  },
+  "result": {
+    "id": "excessive_utilities:diagonal_wood",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

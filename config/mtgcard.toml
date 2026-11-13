@@ -4,7 +4,7 @@
 #whitelist: if anyone_can_import is false, only these usernames can import.
 [import]
 	#Allow anyone to import custom cards.
-	anyone_can_import = true
+	anyone_can_import = false
 	#Allow server operators to import when public importing is disabled.
 	ops_can_import = true
 	#Usernames allowed to import when anyone_can_import=false.
@@ -118,6 +118,6 @@
 #basis: which Scryfall price to use: USD, EUR, or TIX.
 [price]
 	#Item id used as the price icon (ex: minecraft:diamond).
-	item = "minecraft:emerald"
+	item = "minecraft:diamond"
 	#Price basis: USD, EUR, or TIX.
 	basis = "USD"

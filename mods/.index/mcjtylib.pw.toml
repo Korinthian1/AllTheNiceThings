@@ -1,0 +1,21 @@
+filename = 'mcjtylib-1.21-9.0.22.jar'
+name = 'McJtyLib'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'McJtyLib - 1.21-9.0.22'
+
+[download]
+hash = 'd4c3e722916c573eed03dcc9d9dc31c3e23b3037'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9318254
+project-id = 233105
+
+[[x-prismlauncher-dependencies]]
+addonId = '245211'
+type = 'OPTIONAL'

@@ -1,0 +1,21 @@
+filename = 'sawmill-1.21-1.9.0-neoforge.jar'
+name = 'Universal Sawmill'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'sawmill-1.21-1.9.0-neoforge'
+
+[download]
+hash = 'fb13c5e2b0303bb162348dcce6754e8ad9d58d1d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9422876
+project-id = 964817
+
+[[x-prismlauncher-dependencies]]
+addonId = '499980'
+type = 'REQUIRED'

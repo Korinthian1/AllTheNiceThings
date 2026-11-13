@@ -1,0 +1,18 @@
+filename = 'shiny-1.21.1-1.3.0.jar'
+name = 'Shiny! Mobs'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'shiny-1.21.1-1.3.0.jar'
+
+[download]
+hash = 'fb0f224f2021a4661297b0b6caef703904a6371b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8262268
+project-id = 552172

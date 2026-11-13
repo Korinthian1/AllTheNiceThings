@@ -1,0 +1,12 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "item": "cataclysm:chorus_stem"
+  },
+  "result": {
+    "id": "excessive_utilities:slightly_larger_chest",
+    "count": 1
+  },
+  "ingredient_count": 5,
+  "type": "sawmill:woodcutting"
+}

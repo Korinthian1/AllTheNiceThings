@@ -1,0 +1,18 @@
+filename = 'camol-1.21.1-0.4.0.jar'
+name = 'Camol'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'camol-1.21.1-0.4.0.jar'
+
+[download]
+hash = '97f13ee93b8946b70807ca7da69598daf083c67d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9019881
+project-id = 1214396

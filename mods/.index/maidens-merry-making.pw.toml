@@ -1,0 +1,29 @@
+filename = 'merrymaking-1.21.1-17.jar'
+name = "Mama's Merrymaking - A Minecraft Christmas and Winter Holiday Mod"
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'merrymaking-1.21.1-17.jar'
+
+[download]
+hash = 'fa0158ce772b0032509f63ebd0ece4e943bb3831'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8978980
+project-id = 430867
+
+[[x-prismlauncher-dependencies]]
+addonId = '388172'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '306770'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1130473'
+type = 'REQUIRED'

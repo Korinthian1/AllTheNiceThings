@@ -1,0 +1,18 @@
+filename = 'invtweaks-1.21.1-1.4.0.jar'
+name = 'Inventory Tweaks Refoxed'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'invtweaks-1.21.1-1.4.0.jar'
+
+[download]
+hash = '26104f9735ead0d4defd09aa26110eca852d1610'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9488021
+project-id = 976858

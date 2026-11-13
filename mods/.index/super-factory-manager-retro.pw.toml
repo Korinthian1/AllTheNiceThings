@@ -1,0 +1,21 @@
+filename = 'retrofactorymanager-1.21.1-1.0.6.jar'
+name = 'Retro Factory Manager'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Retro Factory Manager 1.0.6 for MC 1.21.1'
+
+[download]
+hash = 'c650c9d58d388bcbe5ab96f37269719e2b9546cf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9394516
+project-id = 1632863
+
+[[x-prismlauncher-dependencies]]
+addonId = '306935'
+type = 'REQUIRED'

@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:cedar_log"
+    },
+    {
+      "item": "productivetrees:cedar_wood"
+    },
+    {
+      "item": "productivetrees:cedar_stripped_log"
+    },
+    {
+      "item": "productivetrees:cedar_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:mini_chest",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

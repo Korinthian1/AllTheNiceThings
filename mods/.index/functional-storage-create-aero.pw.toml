@@ -1,0 +1,33 @@
+filename = 'functionalstoragecreateaero-1.0.0.jar'
+name = 'Functional Storage: Create & Aero'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'functionalstoragecreateaero-1.0.0.jar'
+
+[download]
+hash = '0a87d396e1001e7e6eb50f7cab5b257df8b46079'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8699635
+project-id = 1662331
+
+[[x-prismlauncher-dependencies]]
+addonId = '676721'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '328085'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '556861'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1312371'
+type = 'OPTIONAL'

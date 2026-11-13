@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "productivetrees:salak_planks"
+  },
+  "result": {
+    "id": "excessive_utilities:mini_chest",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "malum:soulwood_planks"
+  },
+  "result": {
+    "id": "malum:soulwood_planks_fence",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

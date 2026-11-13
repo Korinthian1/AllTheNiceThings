@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "malum:soulwood_planks"
+  },
+  "result": {
+    "id": "malum:rustic_soulwood_tiles_slab",
+    "count": 2
+  },
+  "type": "sawmill:woodcutting"
+}

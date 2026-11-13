@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:bay_leaf_log"
+    },
+    {
+      "item": "productivetrees:bay_leaf_wood"
+    },
+    {
+      "item": "productivetrees:bay_leaf_stripped_log"
+    },
+    {
+      "item": "productivetrees:bay_leaf_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "productivetrees:bay_leaf_pressure_plate",
+    "count": 2
+  },
+  "type": "sawmill:woodcutting"
+}

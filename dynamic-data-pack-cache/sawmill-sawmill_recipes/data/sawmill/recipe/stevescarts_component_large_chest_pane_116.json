@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "malum:runewood_log"
+    },
+    {
+      "item": "malum:runewood"
+    },
+    {
+      "item": "malum:stripped_runewood_log"
+    },
+    {
+      "item": "malum:stripped_runewood"
+    }
+  ],
+  "result": {
+    "id": "stevescarts:component_large_chest_pane",
+    "count": 2
+  },
+  "type": "sawmill:woodcutting"
+}

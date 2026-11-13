@@ -1,0 +1,23 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "evilcraft:undead_log"
+    },
+    {
+      "item": "evilcraft:undead_wood"
+    },
+    {
+      "item": "evilcraft:undead_log_stripped"
+    },
+    {
+      "item": "evilcraft:undead_wood_stripped"
+    }
+  ],
+  "result": {
+    "id": "minecraft:chest",
+    "count": 1
+  },
+  "ingredient_count": 2,
+  "type": "sawmill:woodcutting"
+}

@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "regions_unexplored:wisteria_log"
+    },
+    {
+      "item": "regions_unexplored:wisteria_wood"
+    },
+    {
+      "item": "regions_unexplored:stripped_wisteria_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_wisteria_wood"
+    }
+  ],
+  "result": {
+    "id": "regions_unexplored:wisteria_slab",
+    "count": 8
+  },
+  "type": "sawmill:woodcutting"
+}

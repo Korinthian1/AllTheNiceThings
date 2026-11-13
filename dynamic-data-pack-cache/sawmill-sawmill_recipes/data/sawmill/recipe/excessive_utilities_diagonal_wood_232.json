@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:blackthorn_log"
+    },
+    {
+      "item": "productivetrees:blackthorn_wood"
+    },
+    {
+      "item": "productivetrees:blackthorn_stripped_log"
+    },
+    {
+      "item": "productivetrees:blackthorn_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:diagonal_wood",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

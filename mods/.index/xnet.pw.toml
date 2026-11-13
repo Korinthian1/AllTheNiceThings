@@ -1,0 +1,29 @@
+filename = 'xnet-1.21-7.0.7.jar'
+name = 'XNet'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'XNet - 1.21-7.0.7'
+
+[download]
+hash = '3ee807801ee484ee06d53d0bdb9ed85a6f10abf5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8256226
+project-id = 260912
+
+[[x-prismlauncher-dependencies]]
+addonId = '233105'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '245211'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '326041'
+type = 'REQUIRED'

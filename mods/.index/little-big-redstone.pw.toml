@@ -1,0 +1,25 @@
+filename = 'little-big-redstone-1.9.13-1.21.1.jar'
+name = 'Little Big Redstone'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Little Big Redstone 1.9.13-1.21.1'
+
+[download]
+hash = '989fba9ee7f8ccf984a043a1018ed7ecb7b22d4a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9303735
+project-id = 1180560
+
+[[x-prismlauncher-dependencies]]
+addonId = '1067672'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1173950'
+type = 'REQUIRED'

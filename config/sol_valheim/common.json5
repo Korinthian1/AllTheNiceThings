@@ -1,0 +1,4999 @@
+{
+  "defaultTimer": 180,
+  "regenSpeedModifier": 1.0,
+  "regenDelay": 200,
+  "respawnGracePeriod": 300,
+  "keepFoodOnDeath": false,
+  "speedBoost": 0.2,
+  "startingHealth": 3,
+  "maxHealth": 30,
+  "maxSlots": 3,
+  "eatAgainPercentage": 0.2,
+  "drinkSlotFoodEffectivenessBonus": 0.1,
+  "passTicksDuringNight": true,
+  "convertHungerCosts": true,
+  "hungerSecondsPerPoint": 60.0,
+  "exhaustionSecondsPerPoint": 10.0,
+  "hungerConsumptionExponent": 0.5,
+  "hungerConsumesDrinks": true,
+  "foodBlacklist": [],
+  "foodConfigs": {
+    "minecraft:apple": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:mushroom_stew": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:bread": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:porkchop": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cooked_porkchop": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:golden_apple": {
+      "nutrition": 10,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.5,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:enchanted_golden_apple": {
+      "nutrition": 10,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.5,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:milk_bucket": {
+      "nutrition": 6,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cod": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:salmon": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:tropical_fish": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:pufferfish": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cooked_cod": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cooked_salmon": {
+      "nutrition": 6,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cake": {
+      "nutrition": 10,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:melon_slice": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:dried_kelp": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:beef": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cooked_beef": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:chicken": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cooked_chicken": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:rotten_flesh": {
+      "nutrition": 4,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:potion": {
+      "nutrition": 4,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:spider_eye": {
+      "nutrition": 2,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:carrot": {
+      "nutrition": 3,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:potato": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:baked_potato": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:poisonous_potato": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:golden_carrot": {
+      "nutrition": 6,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:pumpkin_pie": {
+      "nutrition": 8,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:rabbit": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cooked_rabbit": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:rabbit_stew": {
+      "nutrition": 14,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:mutton": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:cooked_mutton": {
+      "nutrition": 6,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:chorus_fruit": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:beetroot": {
+      "nutrition": 1,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:beetroot_soup": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:splash_potion": {
+      "nutrition": 4,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:lingering_potion": {
+      "nutrition": 4,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:suspicious_stew": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:sweet_berries": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:glow_berries": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:honey_bottle": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "minecraft:ominous_bottle": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "evilcraft:flesh_werewolf": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "evilcraft:flesh_humanoid": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "evilcraft:darkened_apple": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "supplementaries:lumisene_bottle": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "supplementaries:candy": {
+      "nutrition": 1,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "supplementaries:soap": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "industrialforegoing:straw": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mcwholidays:candy_cane": {
+      "nutrition": 2,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:crab": {
+      "nutrition": 2,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:cooked_crab": {
+      "nutrition": 5,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:banana": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:ostrich": {
+      "nutrition": 3,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:cooked_ostrich": {
+      "nutrition": 6,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:elephant": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:cooked_elephant": {
+      "nutrition": 7,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:lion": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:cooked_lion": {
+      "nutrition": 6,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:giraffe": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "livingthings:cooked_giraffe": {
+      "nutrition": 6,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:avocado_slices": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tuna_fillet": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:salmon_fillet": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:cooked_rice": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:cucumber_slices": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:imitation_crab": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:sesame_seed": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:cheese": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:shrimp": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:soy_sauce": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:wasabi_paste": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:salmon_maki": {
+      "nutrition": 5,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tuna_maki": {
+      "nutrition": 5,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:avocado_maki": {
+      "nutrition": 3,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:cucumber_maki": {
+      "nutrition": 3,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:crab_maki": {
+      "nutrition": 3,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:salmon_gunkan": {
+      "nutrition": 5,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tuna_gunkan": {
+      "nutrition": 5,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:wakame_gunkan": {
+      "nutrition": 1,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko_tuna_cucumber_california": {
+      "nutrition": 11,
+      "saturationModifier": 1.5625,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tuna_cucumber_california": {
+      "nutrition": 10,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko_tuna_california": {
+      "nutrition": 8,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tuna_california": {
+      "nutrition": 7,
+      "saturationModifier": 0.9375,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko_tuna_cheese_california": {
+      "nutrition": 10,
+      "saturationModifier": 1.5625,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tuna_cheese_california": {
+      "nutrition": 8,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko_salmon_cucumber_california": {
+      "nutrition": 11,
+      "saturationModifier": 1.5625,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:salmon_cucumber_california": {
+      "nutrition": 10,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko_salmon_california": {
+      "nutrition": 8,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:salmon_california": {
+      "nutrition": 7,
+      "saturationModifier": 0.9375,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko_salmon_cheese_california": {
+      "nutrition": 10,
+      "saturationModifier": 1.5625,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:salmon_cheese_california": {
+      "nutrition": 8,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko_crab_cucumber_california": {
+      "nutrition": 10,
+      "saturationModifier": 1.5625,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:crab_cucumber_california": {
+      "nutrition": 8,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko_crab_california": {
+      "nutrition": 7,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:crab_california": {
+      "nutrition": 6,
+      "saturationModifier": 0.9375,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tobiko_crab_cheese_california": {
+      "nutrition": 8,
+      "saturationModifier": 1.5625,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:crab_cheese_california": {
+      "nutrition": 7,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:salmon_nigiri": {
+      "nutrition": 5,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tuna_nigiri": {
+      "nutrition": 5,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:shrimp_nigiri": {
+      "nutrition": 3,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:onigiri": {
+      "nutrition": 1,
+      "saturationModifier": 0.9375,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:salmon_temaki": {
+      "nutrition": 7,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:tuna_temaki": {
+      "nutrition": 7,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:shrimp_temaki": {
+      "nutrition": 6,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "sushigocrafting:chicken_temaki": {
+      "nutrition": 6,
+      "saturationModifier": 1.25,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "bhc:relic_apple": {
+      "nutrition": 20,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "neovitae:tainted_flesh": {
+      "nutrition": 4,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "neovitae:vitae_morsel": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "neovitae:bottled_spite": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "neovitae:alchemy_flask": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "occultism:datura": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "occultism:demons_dream_essence": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "occultism:otherworld_essence": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "occultism:beaver_nugget": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "occultism:cursed_honey": {
+      "nutrition": 2,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "occultism:sweet_honey_heart": {
+      "nutrition": 5,
+      "saturationModifier": 1.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "occultism:demonic_meat": {
+      "nutrition": 11,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "excessive_utilities:magical_apple": {
+      "nutrition": 4,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "cataclysm:lionfish": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "cataclysm:amethyst_crab_meat": {
+      "nutrition": 6,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "cataclysm:blessed_amethyst_crab_meat": {
+      "nutrition": 6,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:droopvine_item": {
+      "nutrition": 1,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:underbeans": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:roasted_underbeans": {
+      "nutrition": 6,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:blisterberry": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:rotten_blisterberry": {
+      "nutrition": 3,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:goo_ball": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:gloomgourd_pie": {
+      "nutrition": 8,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:raw_dweller_meat": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:dweller_steak": {
+      "nutrition": 8,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:raw_gwibling": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:cooked_gwibling": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:raw_gloomper_leg": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:gloomper_leg": {
+      "nutrition": 6,
+      "saturationModifier": 0.8999999,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:blood_globule": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:bloody_stew": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:inky_stew": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:indigo_stew": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:veiled_stew": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:slop_bowl": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:gronglet": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:utheric_gronglet": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "undergarden:rogdoric_gronglet": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "refurbished_furniture:bread_slice": {
+      "nutrition": 1,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "refurbished_furniture:toast": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "refurbished_furniture:sweet_berry_jam_toast": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "refurbished_furniture:glow_berry_jam_toast": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "refurbished_furniture:cheese": {
+      "nutrition": 2,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "refurbished_furniture:cheese_sandwich": {
+      "nutrition": 6,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "refurbished_furniture:cheese_toastie": {
+      "nutrition": 6,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "refurbished_furniture:vegetable_pizza_slice": {
+      "nutrition": 5,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "refurbished_furniture:meatlovers_pizza_slice": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "artifacts:everlasting_beef": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "artifacts:eternal_steak": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "enderio:enderios": {
+      "nutrition": 10,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "enderio:void_vial": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "reliquary:emperor_chalice": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "reliquary:potion": {
+      "nutrition": 4,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "reliquary:glowing_bread": {
+      "nutrition": 20,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:maple_syrup": {
+      "nutrition": 6,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:date_palm_juice": {
+      "nutrition": 6,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:planet_peach": {
+      "nutrition": 6,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:elderberry": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:juniper_berry": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:sloe": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:haw": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:asai_berry": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:rowan": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:apricot": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:black_cherry": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:cherry_plum": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:date": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:fig": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:kumquat": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:olive": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:osage_orange": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:plum": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:sour_cherry": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:sparkling_cherry": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:wild_cherry": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:golden_delicious_apple": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:granny_smith_apple": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:beliy_naliv_apple": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:avocado": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:banana": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:red_banana": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:sweet_crabapple": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:prairie_crabapple": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:flowering_crabapple": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:grapefruit": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:nectarine": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:peach": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:pear": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:persimmon": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:pomelo": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:pomegranate": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:sand_pear": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:satsuma": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:snake_fruit": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:star_fruit": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:tangerine": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:sweetsop": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:coconut": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:mango": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:plantain": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:papaya": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:breadfruit": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:copoazu": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:cempedak": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:jackfruit": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:hala_fruit": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:soursop": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:baobab_fruit": {
+      "nutrition": 5,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:lime": {
+      "nutrition": 2,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:key_lime": {
+      "nutrition": 2,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:finger_lime": {
+      "nutrition": 2,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:citron": {
+      "nutrition": 2,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:lemon": {
+      "nutrition": 2,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:orange": {
+      "nutrition": 3,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:mandarin": {
+      "nutrition": 3,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:buddhas_hand": {
+      "nutrition": 3,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:almond": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:beechnut": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:brazil_nut": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:butternut": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:candlenut": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:cashew": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:chestnut": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:ginkgo_nut": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:hazelnut": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:pecan": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:pistachio": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:walnut": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_almond": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_beechnut": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_brazil_nut": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_butternut": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_candlenut": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_cashew": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_chestnut": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_ginkgo_nut": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_hazelnut": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_pecan": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_pistachio": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivetrees:roasted_walnut": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "everythingcopper:copper_nugget": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mysticalagradditions:inferium_apple": {
+      "nutrition": 6,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mysticalagradditions:prudentium_apple": {
+      "nutrition": 8,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mysticalagradditions:tertium_apple": {
+      "nutrition": 10,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mysticalagradditions:imperium_apple": {
+      "nutrition": 12,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mysticalagradditions:supremium_apple": {
+      "nutrition": 16,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mysticalagradditions:insanium_apple": {
+      "nutrition": 20,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "silentgear:nether_banana": {
+      "nutrition": 5,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "silentgear:golden_nether_banana": {
+      "nutrition": 10,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mekanism:canteen": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mekanism:nutritional_paste_bucket": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "pneumaticcraft:sourdough_bread": {
+      "nutrition": 7,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "pneumaticcraft:chips": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "pneumaticcraft:cod_n_chips": {
+      "nutrition": 12,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "pneumaticcraft:salmon_tempura": {
+      "nutrition": 12,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:fire_dragon_flesh": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:ice_dragon_flesh": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:lightning_dragon_flesh": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:pixie_dust": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:ambrosia": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:cannoli": {
+      "nutrition": 20,
+      "saturationModifier": 2.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:cooked_rice_with_fire_dragon_meat": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:cooked_rice_with_ice_dragon_meat": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:cooked_rice_with_lightning_dragon_meat": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:ghost_cream": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "iceandfire:pixie_dust_milky_tea": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "allthemodium:allthemodium_apple": {
+      "nutrition": 20,
+      "saturationModifier": 2.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "allthemodium:allthemodium_carrot": {
+      "nutrition": 40,
+      "saturationModifier": 4.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "allthemodium:ancient_soulberries": {
+      "nutrition": 5,
+      "saturationModifier": 4.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "integrateddynamics:menril_berries": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:potion_flask": {
+      "nutrition": 4,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:potion_flask_amplify": {
+      "nutrition": 4,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:potion_flask_extend_time": {
+      "nutrition": 4,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:source_berry_pie": {
+      "nutrition": 9,
+      "saturationModifier": 0.8999999,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:source_berry_roll": {
+      "nutrition": 8,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:sourceberry_bush": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:mendosteen_pod": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:bastion_pod": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:frostaya_pod": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_nouveau:bombegranate_pod": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:blue_berry": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:enchanted_berry": {
+      "nutrition": 6,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:white_apple": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:blue_gummy_swet": {
+      "nutrition": 20,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:golden_gummy_swet": {
+      "nutrition": 20,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:healing_stone": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:candy_cane": {
+      "nutrition": 2,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:gingerbread_man": {
+      "nutrition": 2,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:skyroot_poison_bucket": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:skyroot_remedy_bucket": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "aether:skyroot_milk_bucket": {
+      "nutrition": 6,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "potionsmaster:bezoar": {
+      "nutrition": 1,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "potionsmaster:gallbladder": {
+      "nutrition": 1,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "potionsmaster:activated_charcoal": {
+      "nutrition": 1,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "relics:raw_meatball": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "relics:cooked_meatball": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:garlic_clove": {
+      "nutrition": 1,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:oats": {
+      "nutrition": 1,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:peanuts": {
+      "nutrition": 1,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:rice": {
+      "nutrition": 1,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:asparagus": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:corn": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:eggplant": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:blackberry": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:blueberry": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:broccoli": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cabbage": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cauliflower": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:celery": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cucumber": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:garlic_bulb": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:ginger_root": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:green_bean": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:green_pepper": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lettuce": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:onion": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:peanut": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:peas": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pineapple": {
+      "nutrition": 5,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:radish": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:raspberry": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:rice_item": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:squash": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:strawberry": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:sweet_potato": {
+      "nutrition": 6,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:tomato": {
+      "nutrition": 3,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:turmeric_root": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:turnip": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:zucchini": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_basil": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_bay_leaf": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_chive": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_cilantro": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_dill": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_lemongrass": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_mint": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_mustard": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_oregano": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_parsley": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_peppercorn": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_rosemary": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_sage": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:fresh_thyme": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:grapes": {
+      "nutrition": 3,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:avocado": {
+      "nutrition": 6,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cherries": {
+      "nutrition": 3,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lemon": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lime": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:orange": {
+      "nutrition": 3,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:peach": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pear": {
+      "nutrition": 5,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:plum": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cup_apple": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cup_berry": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cup_grape": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cup_fruit_punch": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cup_lemonade": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cup_milk": {
+      "nutrition": 6,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cup_orange": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cup_water": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:aged_cheddar": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:aged_parmesan": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:aged_gouda": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:aged_swiss": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chevre": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:caravane": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:feta": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:ricotta": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cheddar_wedge": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:swiss_wedge": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:parmesan_wedge": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:gouda_wedge": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chevre_wedge": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:feta_wedge": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:caravane_wedge": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:ricotta_wedge": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:butter": {
+      "nutrition": 4,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:goat_milk_bucket": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:sheep_milk_bucket": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:camel_milk_bucket": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cream_bucket": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pepperoni": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pepperoni_slice": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:salami": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:salami_slice": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:sausage": {
+      "nutrition": 4,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cooked_sausage": {
+      "nutrition": 6,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cooked_sausages": {
+      "nutrition": 7,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:bacon": {
+      "nutrition": 3,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cooked_bacon": {
+      "nutrition": 6,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chicken_cutlet": {
+      "nutrition": 2,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cooked_chicken_cutlet": {
+      "nutrition": 6,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:salmon_steak": {
+      "nutrition": 3,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cooked_salmon_steak": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:barley_loaf": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:barley_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:rye_loaf": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:rye_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pumpernickel_loaf": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pumpernickel_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:garlic_bread": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:garlic_bread_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:bread_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:sweet_roll": {
+      "nutrition": 4,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cinnamon_roll": {
+      "nutrition": 4,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:bagel": {
+      "nutrition": 4,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:bagel_cream_cheese": {
+      "nutrition": 5,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:bagel_with_salmon": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:graham_crackers": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:biscuits_gravy": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:oatmeal": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pancakes": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:eggs": {
+      "nutrition": 5,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:avocado_toast": {
+      "nutrition": 5,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:mashed_potatoes": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cornbread_stuffing": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:vegetable_medley": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:reuben": {
+      "nutrition": 7,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:ham_swiss": {
+      "nutrition": 7,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:beef_cheddar": {
+      "nutrition": 7,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:salami_rye": {
+      "nutrition": 7,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:peanut_butter_jelly": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:grilled_cheese": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:monte_cristo": {
+      "nutrition": 7,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:taco": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:burrito": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chips": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:guacamole": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:guacamole_chips": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chef_salad": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chicken_berry_salad": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:caesar_salad": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:garden_salad": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:mayo": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:ketchup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:mustard": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:whipped_cream": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:sour_cream": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cream_cheese": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:blackberry_jam": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:raspberry_jam": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:peanut_butter": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:apple_muffin": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pumpkin_muffin": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:sweet_berry_muffin": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:blueberry_muffin": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:carrot_cupcake": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:black_forest_cupcake": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:yellow_cupcake": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:strawberry_cupcake": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:oatmeal_raisin_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:snickerdoodle_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:peanut_butter_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:sugar_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:beef_stew": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chicken_dumplings": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:broccoli_cheddar_soup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pea_soup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:squash_soup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chicken_noodle_soup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:vegetable_soup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:corn_chowder": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chicken_rice_soup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:tomato_soup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:potato_soup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lasagna_plate_plain": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:eggplant_plate_plain": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:salmon_plate_plain": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chicken_plate_plain": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pork_plate_plain": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:wellington_plate_plain": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:meatloaf_plate_plain": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:roast_plate_plain": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lamb_plate_plain": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:charcuterie_plate_plain": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pears_plate_plain": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lasagna_plate_delftware": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:eggplant_plate_delftware": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:salmon_plate_delftware": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chicken_plate_delftware": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pork_plate_delftware": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:wellington_plate_delftware": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:meatloaf_plate_delftware": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:roast_plate_delftware": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lamb_plate_delftware": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:charcuterie_plate_delftware": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pears_plate_delftware": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lasagna_plate_holiday": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:eggplant_plate_holiday": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:salmon_plate_holiday": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chicken_plate_holiday": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pork_plate_holiday": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:wellington_plate_holiday": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:meatloaf_plate_holiday": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:roast_plate_holiday": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lamb_plate_holiday": {
+      "nutrition": 8,
+      "saturationModifier": 0.9,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:charcuterie_plate_holiday": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pears_plate_holiday": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:apple_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:blueberry_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cherry_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chocolate_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:key_lime_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lemon_meringue_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:peach_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:beef_pie_slice": {
+      "nutrition": 6,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:chicken_pie_slice": {
+      "nutrition": 6,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:lamb_pie_slice": {
+      "nutrition": 6,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pork_pie_slice": {
+      "nutrition": 6,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:cheesecake_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:blueberry_cheesecake_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:raspberry_cheesecake_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:pineapple_cake_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:yellow_cake_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:black_forest_cake_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:strawberry_cake_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:carrot_cake_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "herbsandharvest:plum_pudding_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:torchberries": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:raw_venison": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:cooked_venison": {
+      "nutrition": 6,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:hydra_chop": {
+      "nutrition": 18,
+      "saturationModifier": 2.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:raw_meef": {
+      "nutrition": 2,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:cooked_meef": {
+      "nutrition": 7,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:meef_stroganoff": {
+      "nutrition": 14,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:maze_wafer": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:brittle_potion_flask": {
+      "nutrition": 4,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:greater_potion_flask": {
+      "nutrition": 4,
+      "saturationModifier": 0.75,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:experiment_115": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:raspberry": {
+      "nutrition": 1,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:blueberry": {
+      "nutrition": 1,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:blackberry": {
+      "nutrition": 1,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:maloberry": {
+      "nutrition": 1,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:blightberry": {
+      "nutrition": 1,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:duskberry": {
+      "nutrition": 1,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:skyberry": {
+      "nutrition": 1,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:stingberry": {
+      "nutrition": 1,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:berry_medley": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:moss_soup": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:shika_senbei": {
+      "nutrition": 4,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:monster_jerky": {
+      "nutrition": 4,
+      "saturationModifier": 0.275,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:beef_jerky": {
+      "nutrition": 6,
+      "saturationModifier": 1.18,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:chicken_jerky": {
+      "nutrition": 4,
+      "saturationModifier": 1.075,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:pork_jerky": {
+      "nutrition": 6,
+      "saturationModifier": 1.18,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:mutton_jerky": {
+      "nutrition": 4,
+      "saturationModifier": 1.35,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:rabbit_jerky": {
+      "nutrition": 4,
+      "saturationModifier": 0.925,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:cod_jerky": {
+      "nutrition": 4,
+      "saturationModifier": 0.875,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:salmon_jerky": {
+      "nutrition": 4,
+      "saturationModifier": 1.35,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:tropical_fish_jerky": {
+      "nutrition": 2,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:fugu_jerky": {
+      "nutrition": 2,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:venison_jerky": {
+      "nutrition": 6,
+      "saturationModifier": 1.18,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:meef_jerky": {
+      "nutrition": 6,
+      "saturationModifier": 1.18,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:gelatinous_slime_drop": {
+      "nutrition": 1,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "twilightforest:gelatinous_maze_slime_drop": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mob_grinding_utils:solid_xp_baby": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cabbage": {
+      "nutrition": 2,
+      "saturationModifier": 0.44000003,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:tomato": {
+      "nutrition": 1,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:onion": {
+      "nutrition": 2,
+      "saturationModifier": 0.44000003,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:fried_egg": {
+      "nutrition": 5,
+      "saturationModifier": 0.44000003,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:milk_bottle": {
+      "nutrition": 7,
+      "saturationModifier": 1.1,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:hot_cocoa": {
+      "nutrition": 2,
+      "saturationModifier": 0.55,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:apple_cider": {
+      "nutrition": 2,
+      "saturationModifier": 0.55,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:melon_juice": {
+      "nutrition": 2,
+      "saturationModifier": 0.55,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:tomato_sauce": {
+      "nutrition": 5,
+      "saturationModifier": 0.44000003,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:wheat_dough": {
+      "nutrition": 2,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:raw_pasta": {
+      "nutrition": 2,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:pumpkin_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cabbage_leaf": {
+      "nutrition": 1,
+      "saturationModifier": 0.44000003,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:minced_beef": {
+      "nutrition": 2,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:beef_patty": {
+      "nutrition": 5,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:chicken_cuts": {
+      "nutrition": 1,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cooked_chicken_cuts": {
+      "nutrition": 3,
+      "saturationModifier": 0.66,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:bacon": {
+      "nutrition": 2,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cooked_bacon": {
+      "nutrition": 5,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cod_slice": {
+      "nutrition": 1,
+      "saturationModifier": 0.11000001,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cooked_cod_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.55,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:salmon_slice": {
+      "nutrition": 1,
+      "saturationModifier": 0.11000001,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cooked_salmon_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:mutton_chops": {
+      "nutrition": 1,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cooked_mutton_chops": {
+      "nutrition": 3,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:ham": {
+      "nutrition": 6,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:smoked_ham": {
+      "nutrition": 12,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:pie_crust": {
+      "nutrition": 2,
+      "saturationModifier": 0.22000001,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cake_slice": {
+      "nutrition": 2,
+      "saturationModifier": 0.11000001,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:apple_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:sweet_berry_cheesecake_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:chocolate_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:pumpkin_pie_slice": {
+      "nutrition": 3,
+      "saturationModifier": 0.33,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:sweet_berry_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.11000001,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:honey_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.11000001,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:melon_popsicle": {
+      "nutrition": 3,
+      "saturationModifier": 0.22000001,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:glow_berry_custard": {
+      "nutrition": 8,
+      "saturationModifier": 0.66,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:fruit_salad": {
+      "nutrition": 7,
+      "saturationModifier": 0.66,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:mixed_salad": {
+      "nutrition": 7,
+      "saturationModifier": 0.66,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:nether_salad": {
+      "nutrition": 6,
+      "saturationModifier": 0.44000003,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:barbecue_stick": {
+      "nutrition": 10,
+      "saturationModifier": 0.99,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:egg_sandwich": {
+      "nutrition": 10,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:chicken_sandwich": {
+      "nutrition": 12,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:hamburger": {
+      "nutrition": 13,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:bacon_sandwich": {
+      "nutrition": 12,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:mutton_wrap": {
+      "nutrition": 12,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:dumplings": {
+      "nutrition": 10,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:stuffed_potato": {
+      "nutrition": 12,
+      "saturationModifier": 0.77,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cabbage_rolls": {
+      "nutrition": 6,
+      "saturationModifier": 0.55,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:salmon_roll": {
+      "nutrition": 8,
+      "saturationModifier": 0.66,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cod_roll": {
+      "nutrition": 8,
+      "saturationModifier": 0.66,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:kelp_roll": {
+      "nutrition": 15,
+      "saturationModifier": 0.55,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:kelp_roll_slice": {
+      "nutrition": 7,
+      "saturationModifier": 0.55,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:cooked_rice": {
+      "nutrition": 7,
+      "saturationModifier": 0.44000003,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:bone_broth": {
+      "nutrition": 2,
+      "saturationModifier": 0.55,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:beef_stew": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:chicken_soup": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:vegetable_soup": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:fish_stew": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:fried_rice": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:pumpkin_soup": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:baked_cod_stew": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:noodle_soup": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:onion_soup": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:bacon_and_eggs": {
+      "nutrition": 12,
+      "saturationModifier": 0.66,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:pasta_with_meatballs": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:pasta_with_mutton_chop": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:mushroom_rice": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:roasted_mutton_chops": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:vegetable_noodles": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:steak_and_potatoes": {
+      "nutrition": 15,
+      "saturationModifier": 0.88000005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:ratatouille": {
+      "nutrition": 12,
+      "saturationModifier": 0.66,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:squid_ink_pasta": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:grilled_salmon": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:roast_chicken": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:stuffed_pumpkin": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:honey_glazed_ham": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:shepherds_pie": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:gleaming_salad": {
+      "nutrition": 17,
+      "saturationModifier": 0.82500005,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "farmersdelight:dog_food": {
+      "nutrition": 5,
+      "saturationModifier": 0.22000001,
+      "healthRegenModifier": 1.25,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "actuallyadditions:coffee_cup": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "deeperdarker:bloom_berries": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "deeperdarker:angler_fish": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "deeperdarker:cooked_angler_fish": {
+      "nutrition": 6,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "oritech:banana": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "oritech:biomass": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivebees:sugarbag_honeycomb": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivemetalworks:meat_nugget": {
+      "nutrition": 1,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivemetalworks:meat_ingot": {
+      "nutrition": 8,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "productivemetalworks:shiny_meat_ingot": {
+      "nutrition": 6,
+      "saturationModifier": 1.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:ham": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:cooked_ham": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:rugelach": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:latke": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:tree_christmas_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:stocking_christmas_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:mitten_christmas_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:candy_cane": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:gingerbread_dough": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:cookie_dough": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:mug_cocoa": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:hot_cocoa": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:egg_nog": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:gingerbread_cookie": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:fudge": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:peppermint_cocoa": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:dried_sweet_berries": {
+      "nutrition": 4,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "merrymaking:icing": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:old_root": {
+      "nutrition": 1,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:dragons_eye": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:nightshade": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:blackcurrant": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:redcurrant": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:whitecurrant": {
+      "nutrition": 4,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:elderberry": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:healing_poultice": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:rooty_stew": {
+      "nutrition": 7,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "rootsclassic:fruit_salad": {
+      "nutrition": 8,
+      "saturationModifier": 0.90000004,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "create:bar_of_chocolate": {
+      "nutrition": 6,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "create:sweet_roll": {
+      "nutrition": 6,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "create:chocolate_glazed_berries": {
+      "nutrition": 7,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "create:honeyed_apple": {
+      "nutrition": 8,
+      "saturationModifier": 0.8,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "create:builders_tea": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "ars_elemental:flashpine_pod": {
+      "nutrition": 4,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "mahoutsukai:faecake": {
+      "nutrition": 3,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "regions_unexplored:salmonberry": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "regions_unexplored:duskmelon_slice": {
+      "nutrition": 5,
+      "saturationModifier": 1.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "regions_unexplored:hanging_earlight_fruit": {
+      "nutrition": 6,
+      "saturationModifier": 0.4,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "regions_unexplored:meadow_sage": {
+      "nutrition": 2,
+      "saturationModifier": 0.15,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "modern_industrialization:mixed_ingot_iridium": {
+      "nutrition": 20,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "extended_industrialization:canned_food": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "extended_industrialization:mulch": {
+      "nutrition": 2,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "extended_industrialization:crystallized_honey": {
+      "nutrition": 3,
+      "saturationModifier": 0.3,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "forbidden_arcanus:bat_wing": {
+      "nutrition": 3,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "forbidden_arcanus:bat_soup": {
+      "nutrition": 7,
+      "saturationModifier": 0.7,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "forbidden_arcanus:tentacle": {
+      "nutrition": 2,
+      "saturationModifier": 0.1,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "forbidden_arcanus:cooked_tentacle": {
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "forbidden_arcanus:aureal_bottle": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "forbidden_arcanus:edelwood_milk_bucket": {
+      "nutrition": 6,
+      "saturationModifier": 1.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "malum:runic_sap": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "malum:cursed_sap": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "malum:refined_brilliance": {
+      "nutrition": 0,
+      "saturationModifier": 0.0,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "malum:rotting_essence": {
+      "nutrition": 6,
+      "saturationModifier": 0.2,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    },
+    "malum:concentrated_gluttony": {
+      "nutrition": 2,
+      "saturationModifier": 0.5,
+      "healthRegenModifier": 1.0,
+      "useStackFoodValues": true,
+      "extraEffects": []
+    }
+  }
+}

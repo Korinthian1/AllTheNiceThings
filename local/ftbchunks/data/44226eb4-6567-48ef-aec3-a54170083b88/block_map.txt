@@ -1,0 +1,2 @@
+#2208EB minecraft:enchanting_table
+#3F84B7 minecraft:grass_block

@@ -1,0 +1,29 @@
+filename = 'productivetrees-1.21.1-1.1.1.jar'
+name = 'Productive Trees'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'productivetrees-1.21.1-1.1.1.jar'
+
+[download]
+hash = '33b7f304e4e13297fdbbef4822f8b178d73868cc'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8841208
+project-id = 867074
+
+[[x-prismlauncher-dependencies]]
+addonId = '377897'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '927874'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'OPTIONAL'

@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:red_maple_log"
+    },
+    {
+      "item": "productivetrees:red_maple_wood"
+    },
+    {
+      "item": "productivetrees:red_maple_stripped_log"
+    },
+    {
+      "item": "productivetrees:red_maple_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:diagonal_wood",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

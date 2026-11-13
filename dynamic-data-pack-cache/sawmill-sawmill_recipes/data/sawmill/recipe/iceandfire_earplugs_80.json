@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "malum:soulwood_log"
+    },
+    {
+      "item": "malum:soulwood"
+    },
+    {
+      "item": "malum:stripped_soulwood_log"
+    },
+    {
+      "item": "malum:stripped_soulwood"
+    }
+  ],
+  "result": {
+    "id": "iceandfire:earplugs",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

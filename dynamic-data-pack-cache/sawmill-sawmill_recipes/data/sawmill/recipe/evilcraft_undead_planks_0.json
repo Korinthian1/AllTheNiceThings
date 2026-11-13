@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "evilcraft:undead_log"
+    },
+    {
+      "item": "evilcraft:undead_wood"
+    },
+    {
+      "item": "evilcraft:undead_log_stripped"
+    },
+    {
+      "item": "evilcraft:undead_wood_stripped"
+    }
+  ],
+  "result": {
+    "id": "evilcraft:undead_planks",
+    "count": 4
+  },
+  "type": "sawmill:woodcutting"
+}

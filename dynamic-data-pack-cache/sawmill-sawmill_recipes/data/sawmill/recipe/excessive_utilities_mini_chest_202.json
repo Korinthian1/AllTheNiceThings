@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:sparkle_cherry_log"
+    },
+    {
+      "item": "productivetrees:sparkle_cherry_wood"
+    },
+    {
+      "item": "productivetrees:sparkle_cherry_stripped_log"
+    },
+    {
+      "item": "productivetrees:sparkle_cherry_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:mini_chest",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

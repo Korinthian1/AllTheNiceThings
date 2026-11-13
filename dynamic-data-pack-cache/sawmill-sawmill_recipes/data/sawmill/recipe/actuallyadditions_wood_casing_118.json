@@ -1,0 +1,23 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "integrateddynamics:menril_log"
+    },
+    {
+      "item": "integrateddynamics:menril_wood"
+    },
+    {
+      "item": "integrateddynamics:menril_log_stripped"
+    },
+    {
+      "item": "integrateddynamics:menril_wood_stripped"
+    }
+  ],
+  "result": {
+    "id": "actuallyadditions:wood_casing",
+    "count": 1
+  },
+  "ingredient_count": 2,
+  "type": "sawmill:woodcutting"
+}

@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:cave_dweller_log"
+    },
+    {
+      "item": "productivetrees:cave_dweller_wood"
+    },
+    {
+      "item": "productivetrees:cave_dweller_stripped_log"
+    },
+    {
+      "item": "productivetrees:cave_dweller_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:mini_chest",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}

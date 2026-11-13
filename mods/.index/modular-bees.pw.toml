@@ -1,0 +1,25 @@
+filename = 'ModularBees-1.21.1-3.4-neoforge.jar'
+name = 'Modular Bees'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ModularBees-1.21.1-3.4-neoforge.jar'
+
+[download]
+hash = '22751f006a5608cd03b52a3b5faab992880e18fd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8705124
+project-id = 1350380
+
+[[x-prismlauncher-dependencies]]
+addonId = '377897'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '957920'
+type = 'REQUIRED'

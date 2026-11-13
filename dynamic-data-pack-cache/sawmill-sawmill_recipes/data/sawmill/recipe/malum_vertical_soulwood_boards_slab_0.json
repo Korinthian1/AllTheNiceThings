@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "malum:soulwood_log"
+    },
+    {
+      "item": "malum:soulwood"
+    },
+    {
+      "item": "malum:stripped_soulwood_log"
+    },
+    {
+      "item": "malum:stripped_soulwood"
+    }
+  ],
+  "result": {
+    "id": "malum:vertical_soulwood_boards_slab",
+    "count": 8
+  },
+  "type": "sawmill:woodcutting"
+}

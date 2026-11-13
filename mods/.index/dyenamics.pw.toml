@@ -1,0 +1,18 @@
+filename = 'dyenamics-1.21.1-3.5.0.jar'
+name = 'Dyenamics'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'dyenamics-1.21.1-3.5.0.jar'
+
+[download]
+hash = '2052d5df6ece75baa40539e1c87bc63ead3019e7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9011797
+project-id = 509276

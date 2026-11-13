@@ -1,0 +1,21 @@
+filename = 'gadgets-and-gizmos-bundled-2.0-pre-release-4.jar'
+name = 'Create Aeronautics: Gadgets & Gizmos'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Create Aeronautics: Gadgets & Gizmos 2.0.0-Pre-Release-4'
+
+[download]
+hash = '935ffdc6696ed9e00817d87859b9175a5d14fcc1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9260191
+project-id = 1537945
+
+[[x-prismlauncher-dependencies]]
+addonId = '676721'
+type = 'REQUIRED'

@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "malum:runewood_planks"
+  },
+  "result": {
+    "id": "malum:vertical_rustic_runewood_planks",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

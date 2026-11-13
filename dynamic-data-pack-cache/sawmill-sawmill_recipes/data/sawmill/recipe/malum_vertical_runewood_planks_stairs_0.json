@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "malum:runewood_log"
+    },
+    {
+      "item": "malum:runewood"
+    },
+    {
+      "item": "malum:stripped_runewood_log"
+    },
+    {
+      "item": "malum:stripped_runewood"
+    }
+  ],
+  "result": {
+    "id": "malum:vertical_runewood_planks_stairs",
+    "count": 3
+  },
+  "type": "sawmill:woodcutting"
+}

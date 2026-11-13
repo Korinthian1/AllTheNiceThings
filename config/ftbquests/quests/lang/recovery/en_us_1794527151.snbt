@@ -1,0 +1,66 @@
+{
+	"chapters/elmystical_agriculturerr.snbt": {
+		image.26CF1BB4714A782E.title: {
+			new: "Supremium Watering Can"
+			old: "Regador Suprêmio"
+		}
+		image.17F3F3EC2F3CF866.title: {
+			new: "Machine Frame"
+			old: "Chassi de Máquina"
+		}
+		image.732F32D55E7EC2CD.title: {
+			new: "Awakened Supremium Machine Upgrade"
+			old: "Atualização de Máquina Suprêmio Despertada"
+		}
+		image.7471FCFF6684EA8B.title: {
+			new: "Inferium Machine Upgrade"
+			old: "Atualização de Máquina Infério"
+		}
+		image.04BECD7AD8A41E3D.title: {
+			new: "Prudentium Watering Can"
+			old: "Regador Prudêncio"
+		}
+		image.558C038DD5F819D9.title: {
+			new: "Prudentium Machine Upgrade"
+			old: "Atualização de Máquina Prudêncio"
+		}
+		image.74D93D051E3DDE39.title: {
+			new: "Tertium Watering Can"
+			old: "Regador Tértio"
+		}
+		image.2476056FD4A4FBC8.title: {
+			new: "Imperium Machine Upgrade"
+			old: "Atualização de Máquina Imperita"
+		}
+		image.67DEC8CDB70FC46C.title: {
+			new: "Imperium Watering Can"
+			old: "Regador Imperita"
+		}
+		image.3A01454B7B3D5F41.title: {
+			new: "Inferium Watering Can"
+			old: "Regador Infério"
+		}
+		image.3DB1AFCC24A14147.title: {
+			new: "Tertium Machine Upgrade"
+			old: "Atualização de Máquina Tértio"
+		}
+	}
+	"chapters/extended__advanced_ae.snbt": {
+		image.23E849CECDB50D7B.title: {
+			new: "Quantum Leggings"
+			old: "Calças Quânticas"
+		}
+		image.2E4DE5F916E2E67C.title: {
+			new: "Quantum Helmet"
+			old: "Capacete Quântico"
+		}
+		image.0B2D5CD977F74A21.title: {
+			new: "Quantum Boots"
+			old: "Botas Quânticas"
+		}
+		image.149A176D07AB65FF.title: {
+			new: "Quantum Chestplate"
+			old: "Peitoral Quântico"
+		}
+	}
+}

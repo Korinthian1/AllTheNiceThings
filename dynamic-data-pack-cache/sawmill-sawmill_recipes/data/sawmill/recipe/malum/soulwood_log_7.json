@@ -1,0 +1,11 @@
+{
+  "group": "log",
+  "ingredient": {
+    "item": "malum:stripped_soulwood_log"
+  },
+  "result": {
+    "id": "malum:stripped_soulwood",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

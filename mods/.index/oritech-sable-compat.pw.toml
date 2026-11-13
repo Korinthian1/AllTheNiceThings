@@ -1,0 +1,21 @@
+filename = 'oritechsablecompat-0.2.0-RELEASE.jar'
+name = 'Oritech Sable Compat'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'oritechsablecompat-0.2.0-RELEASE.jar'
+
+[download]
+hash = '21f65fc7f529076cb1a5e49a74de2c3a55caf3cb'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9082061
+project-id = 1667983
+
+[[x-prismlauncher-dependencies]]
+addonId = '1030830'
+type = 'REQUIRED'

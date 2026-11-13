@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "undergarden:ancient_root_planks"
+  },
+  "result": {
+    "id": "undergarden:ancient_root_button",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

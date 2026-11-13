@@ -1,0 +1,11 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "item": "iceandfire:dreadwood_log"
+  },
+  "result": {
+    "id": "excessive_utilities:wooden_sickle",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

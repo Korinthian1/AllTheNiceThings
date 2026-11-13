@@ -1,0 +1,18 @@
+filename = 'crystalix-3.0.3.jar'
+name = 'Crystalix'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NeoForge] Crystalix 3.0.3+1.21.1'
+
+[download]
+hash = '07f07243f846573dfb4deb6b0ce2481809303caf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 9251153
+project-id = 1187033

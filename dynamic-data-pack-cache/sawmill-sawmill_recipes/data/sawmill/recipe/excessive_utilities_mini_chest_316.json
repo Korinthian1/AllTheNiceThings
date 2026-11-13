@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "productivetrees:ceylon_ebony_log"
+    },
+    {
+      "item": "productivetrees:ceylon_ebony_wood"
+    },
+    {
+      "item": "productivetrees:ceylon_ebony_stripped_log"
+    },
+    {
+      "item": "productivetrees:ceylon_ebony_stripped_wood"
+    }
+  ],
+  "result": {
+    "id": "excessive_utilities:mini_chest",
+    "count": 5
+  },
+  "type": "sawmill:woodcutting"
+}
